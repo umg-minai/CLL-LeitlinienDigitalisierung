@@ -12,16 +12,16 @@ Description: "Population die eine Chronisch Lymphatische Leukämie hat und bei d
 * description = "Population die eine Chronisch Lymphatische Leukämie hat und bei der eine Therapieplanung ansteht"
 * characteristic[0].definitionByCombination 
   * code = #all-of
-  * characteristic[+]
+  * characteristic[condition][+]
     * linkId = "CLL"
     * definitionByTypeAndValue
     // typeCodeableConcept *must* use the code below
     * typeCodeableConcept  = $sct#404684003 "Clinical finding (finding)"
     * valueCodeableConcept = $sct#92814006 "Chronic lymphoid leukaemia, disease"
-  * characteristic[+]
+  * characteristic[Procedure][+]
     * linkId = "DevelopingATreatmentPlan"
     * definitionByTypeAndValue
     // typeCodeableConcept *must* use the code below
     * typeCodeableConcept = $sct#71388002 "Procedure (procedure)"
     * valueCodeableConcept = $sct#225292002 "Developing a treatment plan"
-  * characteristic[condition][=].exclude = false
+  * characteristic[0].exclude = false
