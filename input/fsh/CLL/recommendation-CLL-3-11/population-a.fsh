@@ -1,25 +1,25 @@
 /**************/
 /* Population */
 /**************/
-Instance: Population-CLL-PlanungOnkoTherapie
+Instance: PopulationCLLPlanungOnkoTherapie
 InstanceOf: recommendation-eligibility-criteria
 Usage: #example
-Title: "Population-CLL-PlanungOnkoTherapie"
+Title: "PopulationCLLPlanungOnkoTherapie"
 Description: "Population die eine Chronisch Lymphatische Leukämie hat und bei der eine Therapieplanung ansteht"
 * status = #active 
 * url = ".."
-* name = "Population-CLL-PlanungOnkoTherapie"
+* name = "PopulationCLLPlanungOnkoTherapie"
 * description = "Population die eine Chronisch Lymphatische Leukämie hat und bei der eine Therapieplanung ansteht"
 * characteristic[0].definitionByCombination 
   * code = #all-of
-  * characteristic[condition][+]
-    * linkId = "CLL"
+  * characteristic[+]
+    //linkId = "CLL"
     * definitionByTypeAndValue
     // typeCodeableConcept *must* use the code below
     * typeCodeableConcept  = $sct#404684003 "Clinical finding (finding)"
     * valueCodeableConcept = $sct#92814006 "Chronic lymphoid leukaemia, disease"
-  * characteristic[Procedure][+]
-    * linkId = "DevelopingATreatmentPlan"
+  * characteristic[+]
+    // linkId = "DevelopingATreatmentPlan"
     * definitionByTypeAndValue
     // typeCodeableConcept *must* use the code below
     * typeCodeableConcept = $sct#71388002 "Procedure (procedure)"
