@@ -7,11 +7,11 @@ Usage: #definition
 Title: "Untersuchung vor Einleitung einer CLL Therapielinie "
 Description: "Untersuchung die vor der Einleitung einer CLL Therapielinie vorliegen sollen"
 //* insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-LMWH)
-* insert publisher-experimental-version(7.0)//Richtige Version?
+* insert publisher-experimental-version(7.0) //Richtige Version?
 * name = "UntersuchungenVorCLLPlanungOnkoTherapie"
 * title = "Untersuchung vor Einleitung einer CLL Therapielinie "
 * description = "Untersuchung die vor der Einleitung einer CLL Therapielinie vorliegen sollen"
-* date = "2023-04"
+* date = "2023-05"
 * status = #active
 * subjectCanonical = Canonical(PopulationCLLPlanungOnkoTherapie)
 * extension[partOf].valueCanonical = Canonical(RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie)
@@ -53,6 +53,64 @@ Description: "Untersuchung die vor der Einleitung einer CLL Therapielinie vorlie
   * definitionCanonical = Canonical(HEVSerologyCLL)
 * action[assessment][+]
   * definitionCanonical = Canonical(BinetStagingCLL)
+
+Instance: UntersuchungenVorPlanungOnkoTherapieFertileFemale
+InstanceOf: recommendation-plan
+Usage: #definition
+Title: "Untersuchung vor Einleitung einer CLL Therapielinie bei gebährfähige Frauen"
+Description: "Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie gebährfähige Frauen vorliegen sollen"
+* insert publisher-experimental-version(7.0) //Richtige Version?
+* name = "UntersuchungenVorPlanungOnkoTherapieFertileFemale"
+* title = "Untersuchung vor Einleitung einer CLL Therapielinie bei gebährfähige Frauen"
+* description = "Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie gebährfähige Frauen vorliegen sollen"
+* date = "2023-05"
+* status = #active
+* subjectCanonical = Canonical(PopulationCLLPlanungOnkoTherapieFertileFemale)
+* extension[partOf].valueCanonical = Canonical(RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie)
+* insert rs-combination-all
+* action[assessment][+]
+  * definitionCanonical = Canonical(PregnancyTestbHCGCLL)
+  
+Instance: UntersuchungenVorPlanungOnkoTherapieIdelalisib
+InstanceOf: recommendation-plan
+Usage: #definition
+Title: "Untersuchung vor Einleitung einer CLL Therapielinie mit Idelalisib"
+Description: "Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie mit Idelalisib vorliegen sollen"
+* insert publisher-experimental-version(7.0) //Richtige Version?
+* name = "UntersuchungenVorPlanungOnkoTherapieIdelalisib"
+* title = "Untersuchung vor Einleitung einer CLL Therapielinie bei gebaehrfähige Frauen"
+* description = "Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie mit Idelalisib vorliegen sollen"
+* date = "2023-05"
+* status = #active
+* subjectCanonical = Canonical(PopulationCLLPlanungOnkoTherapieIdelalisib)
+* extension[partOf].valueCanonical = Canonical(RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie)
+* insert rs-combination-all
+* action[assessment][+]
+  * definitionCanonical = Canonical(CMVAntibodyIgMCLL)
+* action[assessment][+]
+  * definitionCanonical = Canonical(CMVAntibodyIgGCLL)
+
+Instance: UntersuchungenWhileTherapieIdelalisib
+InstanceOf: recommendation-plan
+Usage: #definition
+Title: "Untersuchung waehrend CLL Therapielinie mit Idelalisib"
+Description: "regelmäßige Untersuchung waehrend CLL Therapie mit Idelalisib"
+* insert publisher-experimental-version(7.0) //Richtige Version?
+* name = "UntersuchungenWhileTherapieIdelalisib"
+* title = "Untersuchung waehrend CLL Therapie mit Idelalisib"
+* description = "regelmäßige Untersuchung waehrend CLL Therapie mit Idelalisib"
+* date = "2023-05"
+* status = #active
+* subjectCanonical = Canonical(PopulationCLLOnkoTherapieIdelalisib)
+* extension[partOf].valueCanonical = Canonical(RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie)
+* insert rs-combination-all
+* action[assessment][+]
+  * definitionCanonical = Canonical(CMVPCRCLL)
+
+
+
+
+  //code = $sct#386053000 "Evaluation procedure (procedure)"
 
 /**********************/
 /* Recommended Actions */
@@ -294,3 +352,64 @@ Description: "Bestimmung des aktuellen klinischen Stadiums (Binet Staging) CLL"
 * status = #active
 * code = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
 * timingTiming.repeat.count = 1
+
+Instance: PregnancyTestbHCGCLL
+InstanceOf: assessment-action   
+Usage: #definition
+Title: "Pregnancy Test betaHCG CLL"
+Description: "Pregnancy Test betaHCG CLL"
+* name = "PregnancyTestbHCGCLL"
+* description = "Schwangerschaftstest betaHCG CLL"
+* experimental = true
+* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
+* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* status = #active
+* code = $sct#44789311 "Pregnancy test (beta human chorionic gonadotropin) (procedure)"
+* timingTiming.repeat.count = 1
+
+
+
+Instance: CMVAntibodyIgGCLL
+InstanceOf: assessment-action   
+Usage: #definition
+Title: "CMV IgG Antibody CLL"
+Description: "CMV IgG Antikörper Bestimmung"
+* name = "CMVAntibodyIgGCLL"
+* description = "CMV IgG Antikörper Bestimmung"
+* experimental = true
+* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
+* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* status = #active
+* code = $sct#64681000237105 "CMV (cytomegalovirus) IgG antibody in serum qualitative result"
+* timingTiming.repeat.count = 1
+
+Instance: CMVAntibodyIgMCLL
+InstanceOf: assessment-action   
+Usage: #definition
+Title: "CMV IgM Antibody CLL"
+Description: "CMV IgM Antikörper Bestimmung"
+* name = "CMVAntibodyIgMCLL"
+* description = "CMV IgM Antikörper Bestimmung"
+* experimental = true
+* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
+* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* status = #active
+* code = $sct#62681000237103 "CMV (cytomegalovirus) IgM antibody in serum qualitative result"
+* timingTiming.repeat.count = 1
+
+Instance: CMVPCRCLL
+InstanceOf: assessment-action   
+Usage: #definition
+Title: "CMV PCR CLL"
+Description: "CMV PCR Viruslast Bestimmung"
+* name = "CMVPCRCLL"
+* description = "CMV PCR Viruslast Bestimmung"
+* experimental = true
+* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
+* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* status = #active
+* code = $sct#1107381000000101 "Cytomegalovirus viral load"
+* timingTiming.repeat
+  * frequency = 1
+  * period = 30 // bisher nicht klar nur "regelmäßig"
+  * periodUnit = $ucum#d "day" 

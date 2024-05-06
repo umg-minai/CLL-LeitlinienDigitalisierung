@@ -15,12 +15,27 @@ Description: "Folgende Untersuchungsverfahren sollen zeitnah vor Einleitung eine
 * insert canonical-url(covid19-inpatient-therapy, recommendation/therapeutic-anticoagulation) //?? Das stimmt ja bestimmt nicht : soll das die CLL_Website sein?
 * experimental = true
 * publisher = "Deutsche Krebsgesellschaft e.V."
-* insert rs-combination-exactly(1)
+* insert rs-combination-all
 * action[+]
   * title = "UntersuchungenVorCLLPlanungOnkoTherapie"
-  * code = $cs-common-process#guideline-based-care
+  * code = $cs-common-process#guideline-based-care // ist das richtig??
   * description = "Untersuchungen, die bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen"
   * definitionCanonical = Canonical(UntersuchungenVorCLLPlanungOnkoTherapie)
+* action[+]
+  * title = "UntersuchungenVorPlanungOnkoTherapieFertileFemale"
+  * code = $cs-common-process#guideline-based-care
+  * description = "Untersuchungen, die bei gebährfähigen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen"
+  * definitionCanonical = Canonical(UntersuchungenVorPlanungOnkoTherapieFertileFemale)
+* action[+]
+  * title = "UntersuchungenVorPlanungOnkoTherapieIdelalisib"
+  * code = $cs-common-process#guideline-based-care
+  * description = "Untersuchungen, die bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie mit Idelalisib vorhanden sein sollen"
+  * definitionCanonical = Canonical(UntersuchungenVorPlanungOnkoTherapieIdelalisib)
+* action[+]
+  * title = "UntersuchungenWhileTherapieIdelalisib"
+  * code = $cs-common-process#guideline-based-care
+  * description = "Untersuchungen, die bei allen CLL-Patienten während der Therapie mit Idelalisib"
+  * definitionCanonical = Canonical(UntersuchungenVorPlanungOnkoTherapieIdelalisib)
 
   // Bei Allen:  (Anamnese; Körperliche Untersuchung mit vollständiger Erhebung des peripheren Lymphknotenstatus und Leber- und Milzgrößenabschätzung; Abdomensonographie; Bestimmung des ECOG Scores oder Karnofsky-Index; Bestimmung der Komorbidität; Maschinelles Blutbild; Mikroskopisches Differentialblutbild; Klinische Chemie;  Virusserologie (HBV, HCV, HEV, HIV); Bestimmung des aktuellen klinischen Stadiums; 
   // Bei Frauen im gebärfähigen Alter: ß-HCG aus Blut/Urin
