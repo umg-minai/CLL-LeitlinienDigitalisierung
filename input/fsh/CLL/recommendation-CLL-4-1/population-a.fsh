@@ -34,7 +34,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
 * name = "PopulationCLLBinetAB"
 * description = "Population, bei der Binet A oder B sowie eine bestimmte klinische Symptomatik vorliegt"
 // insert canonical-url(covid19-inpatient-therapy, population/hospitalised-covid19-patients-no-LMWH-contraindications)
-* characteristic[0].definitionByCombination 
+* characteristic[+].definitionByCombination 
   * code = #all-of
   * characteristic[condition][+] 
     * linkId = "CLL"
@@ -46,9 +46,9 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
       * type = $sct#254291000 "Staging and scales (staging scale)"
       * valueCodeableConcept = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
       * //hier sollte irgend was wie MeasurementValue "A"|"B" hin!!
-  * characteristic[0].definitionByCombination 
+  * characteristic[+].definitionByCombination 
     * code = #any-of
-    * characteristic[0].definitionByCombination 
+    * characteristic[+].definitionByCombination 
       * code = #all-of
       * characteristic[condition][+] 
         * linkId = "CLL"
@@ -65,7 +65,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * definitionByTypeAndValue
           * type  = $sct#404684003 "Clinical finding (finding)"
           * valueCodeableConcept = $sct#42984000 "Night sweats"
-    * characteristic[0].definitionByCombination 
+    * characteristic[+].definitionByCombination 
       * code = #all-of
       * characteristic[condition][+] 
         * linkId = "CLL"
@@ -77,7 +77,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * definitionByTypeAndValue
           * typeCodeableConcept = $loinc#26453-1 "Erythrocytes [#/volume] in Blood"
           * value // wie können wir abnehmend darstellen?!
-    * characteristic[0].definitionByCombination 
+    * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[condition][+] 
         * linkId = "CLL"
@@ -89,7 +89,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * definitionByTypeAndValue
           * typeCodeableConcept = $loinc#26515-7 "Platelets [#/volume] in Blood"
           * value // wie können wir abnehmend darstellen?!
-    * characteristic[0].definitionByCombination 
+    * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[drug-administration][+]  // das kann nicht richtig sein!
         * definitionByTypeAndValue
@@ -99,19 +99,19 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * definitionByTypeAndValue
           * type  = $sct#404684003 "Clinical finding (finding)"
           * valueCodeableConcept = $sct#405786003 "Poor response to treatment"
-      * characteristic[0].definitionByCombination 
-         * code = #any-of
-         * characteristic[condition][+] 
-           * linkId = "CLL"
-           * definitionByTypeAndValue
-             * type  = $sct#404684003 "Clinical finding (finding)"
-             * valueCodeableConcept = $sct#413603009 "Autoimmune hemolytic anemia"      
-         * characteristic[condition][+] 
-           * linkId = "CLL"
-           * definitionByTypeAndValue
-             * type  = $sct#404684003 "Clinical finding (finding)"
-             * valueCodeableConcept = $sct#2897005 "Immune thrombocytopenia"    
-    * characteristic[0].definitionByCombination 
+      * characteristic[+].definitionByCombination 
+        * code = #any-of
+        * characteristic[condition][+] 
+          * linkId = "CLL"
+          * definitionByTypeAndValue
+            * type  = $sct#404684003 "Clinical finding (finding)"
+            * valueCodeableConcept = $sct#413603009 "Autoimmune hemolytic anemia"      
+        * characteristic[condition][+] 
+          * linkId = "CLL"
+          * definitionByTypeAndValue
+            * type  = $sct#404684003 "Clinical finding (finding)"
+            * valueCodeableConcept = $sct#2897005 "Immune thrombocytopenia"    
+    * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[observation][+] // Das stimmt auch nicht, keine passenden Slice gefunden
         * linkId = "CLL"
@@ -120,29 +120,29 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
           * valueRange
             * low = 6 'cm'
       * characteristic[condition][+] 
-          * linkId = "CLL"
-          * definitionByTypeAndValue
-            * type  = $sct#404684003 "Clinical finding (finding)"
-            * valueCodeableConcept = $sct#830137004 "Pain due to enlargement of spleen"   
-    * characteristic[observation][+] // Das stimmt auch nicht, keine passenden Slice gefunden
         * linkId = "CLL"
         * definitionByTypeAndValue
-          * type  = $loinc#32489-7 "Spleen tip distance below costal margin"
-          * value // wie können wir zunehmend darstellen?!
-    * characteristic[0].definitionByCombination 
+          * type  = $sct#404684003 "Clinical finding (finding)"
+          * valueCodeableConcept = $sct#830137004 "Pain due to enlargement of spleen"   
+    * characteristic[observation][+] // Das stimmt auch nicht, keine passenden Slice gefunden
+      * linkId = "CLL"
+      * definitionByTypeAndValue
+        * type  = $loinc#32489-7 "Spleen tip distance below costal margin"
+        * value // wie können wir zunehmend darstellen?!
+    * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[observation][+] // Das stimmt auch nicht, keine passenden Slice gefunden
         * linkId = "CLL"
         * definitionByTypeAndValue
-          * type  = $ct#246120007 "Nodule size"
+          * type  = $sct#246120007 "Nodule size"
           * valueRange
             * low = 10 'cm'
       * characteristic[condition][+] 
-          * linkId = "CLL"
-          * definitionByTypeAndValue
-            * type  = $sct#404684003 "Clinical finding (finding)"
-            * valueCodeableConcept = $sct#30746006 "Lymphadenopathy"
-    * characteristic[0].definitionByCombination 
+        * linkId = "CLL"
+        * definitionByTypeAndValue
+          * type  = $sct#404684003 "Clinical finding (finding)"
+          * valueCodeableConcept = $sct#30746006 "Lymphadenopathy"
+    * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[observation][+] // Das stimmt auch nicht, keine passenden Slice gefunden
         * linkId = "CLL"
@@ -150,16 +150,16 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
           * type  = $ct#246120007 "Nodule size"
           * value // wie können wir zunehmend darstellen?!
       * characteristic[condition][+] 
-          * linkId = "CLL"
-          * definitionByTypeAndValue
-            * type  = $sct#404684003 "Clinical finding (finding)"
-            * valueCodeableConcept = $sct#30746006 "Lymphadenopathy"  
+        * linkId = "CLL"
+        * definitionByTypeAndValue
+          * type  = $sct#404684003 "Clinical finding (finding)"
+          * valueCodeableConcept = $sct#30746006 "Lymphadenopathy"  
     * characteristic[laboratory][+] 
       * linkId = "CLL"
       * definitionByTypeAndValue
         * typeCodeableConcept = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
         * value // wie können wir Zunahme >50% innerhalb von 2 Monaten darstellen?! // Ich gehe hier davon aus, dass die mindest Lymphozytenzahl nur für die nächsten Teil gilt
-    * characteristic[0].definitionByCombination 
+    * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[laboratory][+] 
         * linkId = "CLL"
