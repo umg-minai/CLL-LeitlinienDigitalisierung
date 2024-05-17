@@ -34,15 +34,15 @@ Description: "Die Indikation zur Therapie in Abhängigkeit der Symptomatik wenn 
 * subjectCanonical = Canonical(PopulationCLLBinetAB)
 * extension[partOf].valueCanonical = Canonical(RecCollectionTherapieplanungBinetCLL)
 * insert rs-combination-all
-* action[assessment][+]
+* action[drugAdministration][+]
   * definitionCanonical = Canonical(TherapieIndikationCLL)
-
+  * code = $sct#432678004 "Indication for procedure" // macht das überhaupt sinn da ungleich Indikation 
 
 /**********************/
 /* Recommended Actions */
 /**********************/
 Instance: TherapieIndikationCLL
-InstanceOf: assessment-action //Hier muss ein Aktionsprofil für  "Erstlinientherapie" oder genauer "Therapieindikation"   
+InstanceOf: drug-administration-action //Hier muss ein Aktionsprofil für  "Erstlinientherapie" oder genauer "Therapieindikation"   
 Usage: #definition
 Title: "TherapieIndikationCLL"
 Description: "Therapie Indikation bei CLL"
