@@ -20,9 +20,8 @@ Description: "Population, die eine Chronisch Lymphatische Leukämie hat und bei 
       * valueCodeableConcept = $sct#92814006 "Chronic lymphoid leukaemia, disease"
   * characteristic[assessmentScale][+]
     * definitionByTypeAndValue
-      * type = $sct#254291000 "Staging and scales (staging scale)"
-      * valueCodeableConcept = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
-      * //hier sollte irgend was wie MeasurementValue "C" oder "Stadium C" hin!!
+      * type = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
+      * valueCodeableConcept = $sct-uk#863781000000100 "Clinical stage C chronic lymphocytic leukaemia"
 
 Instance: PopulationCLLBinetAB
 InstanceOf: recommendation-eligibility-criteria
@@ -43,9 +42,8 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
       * valueCodeableConcept = $sct#92814006 "Chronic lymphoid leukaemia, disease"
   * characteristic[assessmentScale][+] 
     * definitionByTypeAndValue
-      * type = $sct#254291000 "Staging and scales (staging scale)"
-      * valueCodeableConcept = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
-      * //hier sollte irgend was wie MeasurementValue "A"|"B" hin!!
+      * type = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
+      * valueCodeableConcept = $sct-uk#863781000000100 "Clinical stage C chronic lymphocytic leukaemia" // TODO Aund B ODER einfügen
   * characteristic[+].definitionByCombination 
     * code = #any-of
     * characteristic[+].definitionByCombination 
@@ -75,8 +73,8 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
       * characteristic[laboratory][+] 
         * linkId = "CLL"
         * definitionByTypeAndValue
-          * typeCodeableConcept = $loinc#26453-1 "Erythrocytes [#/volume] in Blood"
-          * value // wie können wir abnehmend darstellen?!
+          * type = $loinc#26453-1 "Erythrocytes [#/volume] in Blood"
+          * valueCodeableConcept = 260371004 "Decreasing"
     * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[condition][+] 
@@ -87,7 +85,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
       * characteristic[laboratory][+] 
         * linkId = "CLL"
         * definitionByTypeAndValue
-          * typeCodeableConcept = $loinc#26515-7 "Platelets [#/volume] in Blood"
+          * type = $loinc#26515-7 "Platelets [#/volume] in Blood"
           * value // wie können wir abnehmend darstellen?!
     * characteristic[+].definitionByCombination 
       * code = #all-of  
@@ -113,7 +111,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
             * valueCodeableConcept = $sct#2897005 "Immune thrombocytopenia"    
     * characteristic[+].definitionByCombination 
       * code = #all-of  
-      * characteristic[observation][+] // Das stimmt auch nicht, keine passenden Slice gefunden
+      * characteristic[observation][+] // TODO warten auf Gregors Anpassung 
         * linkId = "CLL"
         * definitionByTypeAndValue
           * type  = $loinc#32489-7 "Spleen tip distance below costal margin"
@@ -124,14 +122,14 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * definitionByTypeAndValue
           * type  = $sct#404684003 "Clinical finding (finding)"
           * valueCodeableConcept = $sct#830137004 "Pain due to enlargement of spleen"   
-    * characteristic[observation][+] // Das stimmt auch nicht, keine passenden Slice gefunden
+    * characteristic[observation][+] // TODO warten auf Gregors Anpassung 
       * linkId = "CLL"
       * definitionByTypeAndValue
         * type  = $loinc#32489-7 "Spleen tip distance below costal margin"
-        * value // wie können wir zunehmend darstellen?!
+        * value // TODO wie können wir zunehmend darstellen?!
     * characteristic[+].definitionByCombination 
       * code = #all-of  
-      * characteristic[observation][+] // Das stimmt auch nicht, keine passenden Slice gefunden
+      * characteristic[observation][+] // TODO warten auf Gregors Anpassung 
         * linkId = "CLL"
         * definitionByTypeAndValue
           * type  = $sct#246120007 "Nodule size"
@@ -148,7 +146,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * linkId = "CLL"
         * definitionByTypeAndValue
           * type  = $ct#246120007 "Nodule size"
-          * value // wie können wir zunehmend darstellen?!
+          * value // TODO "increasing" wie können wir zunehmend darstellen?!
       * characteristic[condition][+] 
         * linkId = "CLL"
         * definitionByTypeAndValue
@@ -157,18 +155,19 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
     * characteristic[laboratory][+] 
       * linkId = "CLL"
       * definitionByTypeAndValue
-        * typeCodeableConcept = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
-        * value // wie können wir Zunahme >50% innerhalb von 2 Monaten darstellen?! // Ich gehe hier davon aus, dass die mindest Lymphozytenzahl nur für die nächsten Teil gilt
+        * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
+        * valueCodeableConcept.text = "Zunahme..." // TODO wie können wir Zunahme >50% innerhalb von 2 Monaten darstellen?! // Ich gehe hier davon aus, dass die mindest Lymphozytenzahl nur für die nächsten Teil gilt
+   
     * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[laboratory][+] 
         * linkId = "CLL"
         * definitionByTypeAndValue
-          * typeCodeableConcept = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
+          * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
           * value // wie können wir Zunahme >100% innerhalb von <6 Monaten darstellen?!      
-      * characteristic[laboratory][+] 
+      * characteristic[laboratory][+]  // TODO absolutenzahl in den text mit rein 
         * linkId = "CLL"
         * definitionByTypeAndValue
-          * typeCodeableConcept = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
+          * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
           * valueRange 
             * low = 60.000 '/µl'      // hiermit möchte ich folgenden Satz darstellen: Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl

@@ -20,7 +20,7 @@ Description: "Die Indikation zur Therapie besteht in Abhängigkeit der Symptomat
 * insert rs-combination-all
 * action[+]
   * title = "CLLTherapieindikationBinetC"
-  * code = $cs-common-process#guideline-based-care // ist das richtig??
+  * code = $cs-common-process#guideline-based-care // TODO fehlt das woanders? 
   * description = "Die Indikation zur Therapie besteht bei Übergang in Stadium Binet C"
   * definitionCanonical = Canonical(CLLTherapieindikationBinetC)
 * action[+]

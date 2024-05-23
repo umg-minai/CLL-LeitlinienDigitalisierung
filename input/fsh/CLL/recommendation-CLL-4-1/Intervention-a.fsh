@@ -7,7 +7,7 @@ Usage: #definition
 Title: "CLL Therapieindikation Binet C"
 Description: "Die Indikation zur Therapie besteht bei Übergang in Stadium Binet C"
 //* insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-LMWH)
-* insert publisher-experimental-version(7.0) //Richtige Version?
+* insert publisher-experimental-version
 * name = "CLLTherapieindikationBinetC"
 * title = "CLL Therapieindikation Binet C"
 * description = "Die Indikation zur Therapie besteht bei Übergang in Stadium Binet C"
@@ -34,15 +34,15 @@ Description: "Die Indikation zur Therapie in Abhängigkeit der Symptomatik wenn 
 * subjectCanonical = Canonical(PopulationCLLBinetAB)
 * extension[partOf].valueCanonical = Canonical(RecCollectionTherapieplanungBinetCLL)
 * insert rs-combination-all
-* action[drugAdministration][+]
+* action[other][+] // other slice erlaubt mehr freiheiten und hat weniger obligate felder
   * definitionCanonical = Canonical(TherapieIndikationCLL)
-  * code = $sct#432678004 "Indication for procedure" // macht das überhaupt sinn da ungleich Indikation 
+  // * code = $sct#432678004 "Indication for procedure" // ist vom Slice vorgegeben alternative Erstlinien Therapie
 
 /**********************/
 /* Recommended Actions */
 /**********************/
 Instance: TherapieIndikationCLL
-InstanceOf: drug-administration-action //Hier muss ein Aktionsprofil für  "Erstlinientherapie" oder genauer "Therapieindikation"   
+InstanceOf: ActivityDefinition //Hier muss ein Aktionsprofil für  "Erstlinientherapie" oder genauer "Therapieindikation"   
 Usage: #definition
 Title: "TherapieIndikationCLL"
 Description: "Therapie Indikation bei CLL"
@@ -52,5 +52,4 @@ Description: "Therapie Indikation bei CLL"
 * version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL" //so?
 * status = #active
 * description = "Therapie Indikation bei CLL"
-* code = $sct#225292002 "Developing a treatment plan" //das ist noch nicht wirklich passend zu "indikation und entsprricht eher dem Workaround"
-* timingTiming.repeat.count = //kontinuierlich??
+* code = $sct#225292002 "Developing a treatment plan" // TODO Erstlinen therapie einfügen 

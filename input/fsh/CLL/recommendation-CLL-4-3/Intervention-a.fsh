@@ -40,7 +40,7 @@ Description: "Erstlinienterapie mit BCL2-Inhibitor bei CLL"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
   * coding[sct] = $sct#725567006 "B-cell lymphoma 2 inhibitor"
- /* dosage[+]
+ /* dosage[+] // TODO ggf. später mit Fachinfo/Packungsbeilage ergänzen 
   * route = $sct#34206005 "Subcutaneous route (qualifier value)"
   * timing //nicht definiert in dieser Leitlinie
     * repeat

@@ -6,8 +6,8 @@ InstanceOf: recommendation-plan
 Usage: #definition
 Title: "Untersuchung vor Einleitung einer CLL Therapielinie "
 Description: "Untersuchung die vor der Einleitung einer CLL Therapielinie vorliegen sollen"
-//* insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-LMWH)
-* insert publisher-experimental-version(7.0) //Richtige Version?
+//* insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-LMWH) // TODO Wenn wir fertig sind, gegeben wir den ordentliche URLS hierüber
+* insert publisher-experimental-version(7.0) // TODO Richtige Version? Leitlinienversion? sonst 1.0
 * name = "UntersuchungenVorCLLPlanungOnkoTherapie"
 * title = "Untersuchung vor Einleitung einer CLL Therapielinie "
 * description = "Untersuchung die vor der Einleitung einer CLL Therapielinie vorliegen sollen"
@@ -18,7 +18,6 @@ Description: "Untersuchung die vor der Einleitung einer CLL Therapielinie vorlie
 * insert rs-combination-all
 * action[assessment][+]
   * definitionCanonical = Canonical(HistoryTakingCLL)
-  //code = $sct#386053000 "Evaluation procedure (procedure)"
 * action[assessment][+]
   * definitionCanonical = Canonical(PhysicalExaminationCLL)
 * action[assessment][+]
@@ -107,11 +106,6 @@ Description: "regelmäßige Untersuchung waehrend CLL Therapie mit Idelalisib"
 * action[assessment][+]
   * definitionCanonical = Canonical(CMVPCRCLL)
 
-
-
-
-  //code = $sct#386053000 "Evaluation procedure (procedure)"
-
 /**********************/
 /* Recommended Actions */
 /**********************/
@@ -121,9 +115,8 @@ Usage: #definition
 Title: "History Taking CLL"
 Description: "Anamnese bei CLL Patienten"
 * name = "HistoryTakingCLL"
-* experimental = true //Stimmt das?
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll" // Wer soll das werden?
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL" //so?
+* experimental = false //Stimmt das?
+* insert rs-publisher-experimental-version
 * status = #active
 * description = "Anamnese bei CLL Patienten"
 * code = $sct#84100007 "History taking"

@@ -8,12 +8,8 @@ Title: "Population: CLL und Planung Onkologische Therapielinie"
 Description: "Population die eine Chronisch Lymphatische Leukämie hat und bei der eine Therapieplanung ansteht"
 * status = #active 
 * actual = false
-// identifier.value = "WithoutContraIndications"
-// identifier.system = $ceosys
-// url = ".."
 * name = "PopulationCLLPlanungOnkoTherapie"
 * description = "Population die eine Chronisch Lymphatische Leukämie hat und bei der eine Therapieplanung ansteht"
-// insert canonical-url(covid19-inpatient-therapy, population/hospitalised-covid19-patients-no-LMWH-contraindications)
 * characteristic[0].definitionByCombination 
   * code = #all-of
   * characteristic[condition][+] 
@@ -74,7 +70,7 @@ Description: "Population die eine Chronisch Lymphatische Leukämie hat und bei d
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#225292002 "Developing a treatment plan"
-  * characteristic[drug-administration][+]  // das kann nicht richtig sein!
+  * characteristic[drug-administration][+]
     * definitionByTypeAndValue
       * type  = $sct#404684003 "Drug"
       * valueCodeableConcept = $sct#105590001 "Idelalisib"
@@ -96,7 +92,7 @@ Description: "Population, die eine Chronisch Lymphatische Leukämie hat und die 
     * definitionByTypeAndValue
       * type  = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#92814006 "Chronic lymphoid leukaemia, disease"
-  * characteristic[drug-administration][+]  // das kann nicht richtig sein!
+  * characteristic[drug-administration][+]
     * definitionByTypeAndValue
       * type  = $sct#404684003 "Drug"
       * valueCodeableConcept = $sct#105590001 "Idelalisib"
