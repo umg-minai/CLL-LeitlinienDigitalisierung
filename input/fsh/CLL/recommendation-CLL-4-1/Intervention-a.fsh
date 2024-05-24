@@ -17,6 +17,7 @@ Description: "Die Indikation zur Therapie besteht bei Übergang in Stadium Binet
 * extension[partOf].valueCanonical = Canonical(RecCollectionTherapieplanungBinetCLL)
 * insert rs-combination-all
 * action[assessment][+]
+  * code = $cs-common-process#guideline-based-care
   * definitionCanonical = Canonical(TherapieIndikationCLL)
 
 Instance: CLLTherapieindikationBinetAB
@@ -42,7 +43,7 @@ Description: "Die Indikation zur Therapie in Abhängigkeit der Symptomatik wenn 
 /* Recommended Actions */
 /**********************/
 Instance: TherapieIndikationCLL
-InstanceOf: ActivityDefinition //Hier muss ein Aktionsprofil für  "Erstlinientherapie" oder genauer "Therapieindikation"   
+InstanceOf: ActivityDefinition 
 Usage: #definition
 Title: "TherapieIndikationCLL"
 Description: "Therapie Indikation bei CLL"
@@ -52,4 +53,4 @@ Description: "Therapie Indikation bei CLL"
 * version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL" //so?
 * status = #active
 * description = "Therapie Indikation bei CLL"
-* code = $sct#225292002 "Developing a treatment plan" // TODO Erstlinen therapie einfügen 
+* code = $sct#708255002 "First line treatment"

@@ -40,10 +40,16 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
     * definitionByTypeAndValue
       * type  = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#92814006 "Chronic lymphoid leukaemia, disease"
-  * characteristic[assessmentScale][+] 
-    * definitionByTypeAndValue
-      * type = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
-      * valueCodeableConcept = $sct-uk#863781000000100 "Clinical stage C chronic lymphocytic leukaemia" // TODO Aund B ODER einfügen
+  * characteristic[+].definitionByCombination 
+    * code = #any-of
+    * characteristic[assessmentScale][+] 
+      * definitionByTypeAndValue
+        * type = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
+        * valueCodeableConcept = $sct-uk#863741000000108 "Clinical stage A chronic lymphocytic leukaemia" 
+    * characteristic[assessmentScale][+] 
+      * definitionByTypeAndValue
+        * type = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
+        * valueCodeableConcept = $sct-uk#863761000000109 "Clinical stage B chronic lymphocytic leukaemia"
   * characteristic[+].definitionByCombination 
     * code = #any-of
     * characteristic[+].definitionByCombination 
@@ -145,7 +151,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
       * characteristic[observation][+] // TODO warten auf Gregors Anpassung 
         * linkId = "CLL"
         * definitionByTypeAndValue
-          * type  = $ct#246120007 "Nodule size"
+          * type  = $sct#246120007 "Nodule size"
           * valueCodeableConcept = $sct#260369004 "Increasing" 
       * characteristic[condition][+] 
         * linkId = "CLL"
