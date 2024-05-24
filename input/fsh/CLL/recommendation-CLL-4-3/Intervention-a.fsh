@@ -7,7 +7,7 @@ Usage: #definition
 Title: "Erstlinientherapie mit BCL-2- und oder BTK-Inhibitor bei CLL"
 Description: "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer BCL-2-Inhibitor- und/oder BTK-Inhibitor-basierten Therapie behandelt werden."
 //* insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-LMWH)
-* insert publisher-experimental-version(7.0) //Richtige Version?
+* insert publisher-experimental-version
 * name = "ErstlinieBCL2undBTKbeiCLL"
 * title = "Erstlinientherapie mit BCL-2- und oder BTK-Inhibitor bei CLL"
 * description = "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer BCL-2-Inhibitor- und/oder BTK-Inhibitor-basierten Therapie behandelt werden."

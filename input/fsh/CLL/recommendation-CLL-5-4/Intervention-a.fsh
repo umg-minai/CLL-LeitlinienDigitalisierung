@@ -7,7 +7,7 @@ Usage: #definition
 Title: "Rezidivbehandlung mit BCL-2-Inhib. Oder BTK-Inhibitor"
 Description: "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem BTK-Inhibitor (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden."
 //* insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-LMWH)
-* insert publisher-experimental-version(7.0) //Richtige Version?
+* insert publisher-experimental-version
 * name = "RezidivbehandlungBCL2undBTKbeiCLL"
 * title = "Rezidivbehandlung mit BCL-2-Inhib. Oder BTK-Inhibitor"
 * description = "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem BTK-Inhibitor (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden."

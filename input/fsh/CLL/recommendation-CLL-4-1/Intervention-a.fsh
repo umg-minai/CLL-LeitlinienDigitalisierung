@@ -25,7 +25,7 @@ Usage: #definition
 Title: "CLL Therapieindikation Binet AB"
 Description: "Die Indikation zur Therapie in Abhängigkeit der Symptomatik wenn Binet A oder B vorliegt"
 //* insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-LMWH)
-* insert publisher-experimental-version(7.0) //Richtige Version?
+* insert publisher-experimental-version
 * name = "CLLTherapieindikationBinetAB"
 * title = "CLL Therapieindikation Binet AB"
 * description = "Die Indikation zur Therapie in Abhängigkeit der Symptomatik wenn Binet A oder B vorliegt"

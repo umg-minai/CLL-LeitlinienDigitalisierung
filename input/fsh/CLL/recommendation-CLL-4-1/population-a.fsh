@@ -74,7 +74,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * linkId = "CLL"
         * definitionByTypeAndValue
           * type = $loinc#26453-1 "Erythrocytes [#/volume] in Blood"
-          * valueCodeableConcept = 260371004 "Decreasing"
+          * valueCodeableConcept = $sct#260371004 "Decreasing"
     * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[condition][+] 
@@ -86,7 +86,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * linkId = "CLL"
         * definitionByTypeAndValue
           * type = $loinc#26515-7 "Platelets [#/volume] in Blood"
-          * value // wie können wir abnehmend darstellen?!
+          * valueCodeableConcept = $sct#260371004 "Decreasing"
     * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[drug-administration][+]  // das kann nicht richtig sein!
@@ -126,7 +126,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
       * linkId = "CLL"
       * definitionByTypeAndValue
         * type  = $loinc#32489-7 "Spleen tip distance below costal margin"
-        * value // TODO wie können wir zunehmend darstellen?!
+        * valueCodeableConcept = $sct#260369004 "Increasing"
     * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[observation][+] // TODO warten auf Gregors Anpassung 
@@ -142,11 +142,11 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
           * valueCodeableConcept = $sct#30746006 "Lymphadenopathy"
     * characteristic[+].definitionByCombination 
       * code = #all-of  
-      * characteristic[observation][+] // Das stimmt auch nicht, keine passenden Slice gefunden
+      * characteristic[observation][+] // TODO warten auf Gregors Anpassung 
         * linkId = "CLL"
         * definitionByTypeAndValue
           * type  = $ct#246120007 "Nodule size"
-          * value // TODO "increasing" wie können wir zunehmend darstellen?!
+          * valueCodeableConcept = $sct#260369004 "Increasing" 
       * characteristic[condition][+] 
         * linkId = "CLL"
         * definitionByTypeAndValue
@@ -156,18 +156,9 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
       * linkId = "CLL"
       * definitionByTypeAndValue
         * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
-        * valueCodeableConcept.text = "Zunahme..." // TODO wie können wir Zunahme >50% innerhalb von 2 Monaten darstellen?! // Ich gehe hier davon aus, dass die mindest Lymphozytenzahl nur für die nächsten Teil gilt
-   
-    * characteristic[+].definitionByCombination 
-      * code = #all-of  
-      * characteristic[laboratory][+] 
-        * linkId = "CLL"
-        * definitionByTypeAndValue
-          * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
-          * value // wie können wir Zunahme >100% innerhalb von <6 Monaten darstellen?!      
-      * characteristic[laboratory][+]  // TODO absolutenzahl in den text mit rein 
-        * linkId = "CLL"
-        * definitionByTypeAndValue
-          * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
-          * valueRange 
-            * low = 60.000 '/µl'      // hiermit möchte ich folgenden Satz darstellen: Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl
+        * valueCodeableConcept.text = "Zunahme >50% innerhalb von 2 Monaten,  gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl" // TODO Ich gehe hier davon aus, dass die mindestLymphozytenzahl für beide Teile gilt
+    * characteristic[laboratory][+] 
+      * linkId = "CLL"
+      * definitionByTypeAndValue
+        * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
+        * valueCodeableConcept.text = "Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl" // TODO Ich gehe hier davon aus, dass die mindestLymphozytenzahl für beide Teile gilt

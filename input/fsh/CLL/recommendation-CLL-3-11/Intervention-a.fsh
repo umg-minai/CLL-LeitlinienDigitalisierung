@@ -7,7 +7,7 @@ Usage: #definition
 Title: "Untersuchung vor Einleitung einer CLL Therapielinie "
 Description: "Untersuchung die vor der Einleitung einer CLL Therapielinie vorliegen sollen"
 //* insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-LMWH) // TODO Wenn wir fertig sind, gegeben wir den ordentliche URLS hierüber
-* insert publisher-experimental-version(7.0) // TODO Richtige Version? Leitlinienversion? sonst 1.0
+* insert publisher-experimental-version // TODO Richtige Version? Leitlinienversion? sonst 1.0 // 
 * name = "UntersuchungenVorCLLPlanungOnkoTherapie"
 * title = "Untersuchung vor Einleitung einer CLL Therapielinie "
 * description = "Untersuchung die vor der Einleitung einer CLL Therapielinie vorliegen sollen"
@@ -58,7 +58,7 @@ InstanceOf: recommendation-plan
 Usage: #definition
 Title: "Untersuchung vor Einleitung einer CLL Therapielinie bei gebährfähige Frauen"
 Description: "Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie gebährfähige Frauen vorliegen sollen"
-* insert publisher-experimental-version(7.0) //Richtige Version?
+* insert publisher-experimental-version
 * name = "UntersuchungenVorPlanungOnkoTherapieFertileFemale"
 * title = "Untersuchung vor Einleitung einer CLL Therapielinie bei gebährfähige Frauen"
 * description = "Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie gebährfähige Frauen vorliegen sollen"
@@ -75,7 +75,7 @@ InstanceOf: recommendation-plan
 Usage: #definition
 Title: "Untersuchung vor Einleitung einer CLL Therapielinie mit Idelalisib"
 Description: "Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie mit Idelalisib vorliegen sollen"
-* insert publisher-experimental-version(7.0) //Richtige Version?
+* insert publisher-experimental-version
 * name = "UntersuchungenVorPlanungOnkoTherapieIdelalisib"
 * title = "Untersuchung vor Einleitung einer CLL Therapielinie bei gebaehrfähige Frauen"
 * description = "Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie mit Idelalisib vorliegen sollen"
@@ -94,7 +94,7 @@ InstanceOf: recommendation-plan
 Usage: #definition
 Title: "Untersuchung waehrend CLL Therapielinie mit Idelalisib"
 Description: "regelmäßige Untersuchung waehrend CLL Therapie mit Idelalisib"
-* insert publisher-experimental-version(7.0) //Richtige Version?
+* insert publisher-experimental-version
 * name = "UntersuchungenWhileTherapieIdelalisib"
 * title = "Untersuchung waehrend CLL Therapie mit Idelalisib"
 * description = "regelmäßige Untersuchung waehrend CLL Therapie mit Idelalisib"
@@ -116,7 +116,7 @@ Title: "History Taking CLL"
 Description: "Anamnese bei CLL Patienten"
 * name = "HistoryTakingCLL"
 * experimental = false //Stimmt das?
-* insert rs-publisher-experimental-version
+* insert publisher-experimental-version
 * status = #active
 * description = "Anamnese bei CLL Patienten"
 * code = $sct#84100007 "History taking"
