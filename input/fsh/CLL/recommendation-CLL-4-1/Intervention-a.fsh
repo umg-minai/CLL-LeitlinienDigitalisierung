@@ -17,18 +17,17 @@ Description: "Die Indikation zur Therapie besteht bei Übergang in Stadium Binet
 * extension[partOf].valueCanonical = Canonical(RecCollectionTherapieplanungBinetCLL)
 * insert rs-combination-all
 * action[assessment][+]
-  * code = $cs-common-process#guideline-based-care
   * definitionCanonical = Canonical(TherapieIndikationCLL)
 
 Instance: CLLTherapieindikationBinetAB
 InstanceOf: recommendation-plan
 Usage: #definition
-Title: "CLL Therapieindikation Binet AB"
+Title: "CLL Therapieindikation Binet A B"
 Description: "Die Indikation zur Therapie in Abhängigkeit der Symptomatik wenn Binet A oder B vorliegt"
 //* insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-LMWH)
 * insert publisher-experimental-version
 * name = "CLLTherapieindikationBinetAB"
-* title = "CLL Therapieindikation Binet AB"
+* title = "CLL Therapieindikation Binet A B"
 * description = "Die Indikation zur Therapie in Abhängigkeit der Symptomatik wenn Binet A oder B vorliegt"
 * date = "2023-05"
 * status = #active
