@@ -7,7 +7,7 @@ Usage: #definition
 Title: "Untersuchung vor Einleitung einer CLL Therapielinie "
 Description: "Untersuchung die vor der Einleitung einer CLL Therapielinie vorliegen sollen"
 //* insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-LMWH) // TODO Wenn wir fertig sind, gegeben wir den ordentliche URLS hierüber
-* insert publisher-experimental-version // TODO Richtige Version? Leitlinienversion? sonst 1.0 // 
+* insert publisher-experimental-version
 * name = "UntersuchungenVorCLLPlanungOnkoTherapie"
 * title = "Untersuchung vor Einleitung einer CLL Therapielinie "
 * description = "Untersuchung die vor der Einleitung einer CLL Therapielinie vorliegen sollen"
@@ -115,7 +115,6 @@ Usage: #definition
 Title: "History Taking CLL"
 Description: "Anamnese bei CLL Patienten"
 * name = "HistoryTakingCLL"
-* experimental = false //Stimmt das?
 * insert publisher-experimental-version
 * status = #active
 * description = "Anamnese bei CLL Patienten"
@@ -128,9 +127,7 @@ Usage: #definition
 Title: "Physical Examination CLL"
 Description: "Körperliche Untersuchung bei CLL Patienten"
 * name = "PhysicalExaminationCLL"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * description = "Körperliche Untersuchung bei CLL Patienten"
 * code = $sct#5880005 "Physical examination"
@@ -142,9 +139,7 @@ Usage: #definition
 Title: "Examination Lymphatic nodes CLL"
 Description: "vollständiger Erhebung des peripheren Lymphknotenstatus"
 * name = "ExaminationLymphaticNodesCLL"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * description = "vollständiger Erhebung des peripheren Lymphknotenstatus"
 * code = $sct#284427004 "Examination of lymph nodes (procedure)"
@@ -156,9 +151,7 @@ Usage: #definition
 Title: "Examination spleen size CLL"
 Description: "Abschätzung der Milzgröße bei CLL"
 * name = "ExaminationSpleenSizeCLL"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * description = "Abschätzung der Milzgröße bei CLL"
 * code = $sct#47241002 "Palpation of spleen (procedure)"
@@ -170,9 +163,7 @@ Usage: #definition
 Title: "Examination liver size CLL"
 Description: "Abschätzung der Lebergröße bei CLL"
 * name = "ExaminationLiverSizeCLL"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * description = "Abschätzung der Lebergröße bei CLL"
 * code = $sct#172488004 "Palpation of liver (procedure)"
@@ -184,9 +175,7 @@ Usage: #definition
 Title: "Abdomial Ultrasonography CLL"
 Description: "Abdomensonographie bei CLL"
 * name = "AbdomialUltrasonographyCLL"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * description = "Abdomensonographie bei CLL"
 * code = $sct#45036003 "Ultrasonography of abdomen"
@@ -198,9 +187,7 @@ Usage: #definition
 Title: "Assesment ECOG Score CLL"
 Description: "Assesment of the ECOG Score CLL"
 * name = "AssesmentECOGScoreCLL"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * description = "Assesment of the ECOG Score CLL"
 * code = $sct#423740007 "ECOG performance status"
@@ -212,9 +199,7 @@ Usage: #definition
 Title: "Assesment Karnofsky-Index CLL"
 Description: "Assesment Karnofsky-Index CLL"
 * name = "AssesmentKarnofskyIndexCLL"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * description = "Assesment Karnofsky-Index CLL"
 * code = $sct#273546003 "Karnofsky performance status"
@@ -226,9 +211,7 @@ Usage: #definition
 Title: "Assesment Comorbidities CLL"
 Description: "Assesment Comorbidities CLL"
 * name = "AssesmentComorbiditiesCLL"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * description = "Assesment Comorbidities CLL"
 * code = $sct#398192003 "Co-morbid conditions (finding)"
@@ -241,9 +224,7 @@ Title: "Complete Blood Count and White cell Differential Automated CLL"
 Description: "Maschinelles Differentialblutbild CLL"
 * name = "CompleteBloodCountAutomatedCLL"
 * description = "Maschinelles Differentialblutbild CLL"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * code = $sct#9564003 "Complete blood count with white cell differential, automated"
 * timingTiming.repeat.count = 1
@@ -255,9 +236,7 @@ Title: "White cell Differential Microscopy CLL"
 Description: "Mikroskopisches Differentialblutbild"
 * name = "MicroscopyWhiteBloodCellCountCLL"
 * description = "Mikroskopisches Differentialblutbild"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * code = $sct#35774004 "Complete blood count with white cell differential, manual (procedure)"
 * timingTiming.repeat.count = 1
@@ -269,9 +248,7 @@ Title: "Clinical Chemistry Test CLL"
 Description: "Klinische Chemie"
 * name = "ClinicalChemistryTestCLL"
 * description = "Klinische Chemie"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * code = $sct#275711006 "Serum chemistry test (procedure)"
 * timingTiming.repeat.count = 1
@@ -283,9 +260,7 @@ Title: "HIV Serology CLL"
 Description: "HIV Serologie"
 * name = "HIVSerologyCLL"
 * description = "HIV Serologie"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * code = $sct#171121004 "Human immunodeficiency virus screening (procedure)"
 * timingTiming.repeat.count = 1
@@ -297,9 +272,7 @@ Title: "HBV Serology CLL"
 Description: "HBV Serologie"
 * name = "HBVSerologyCLL"
 * description = "HBV Serologie"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * code = $sct#171122006 "Hepatitis B screening (procedure)"
 * timingTiming.repeat.count = 1
@@ -311,9 +284,7 @@ Title: "HCV Serology CLL"
 Description: "HCV Serologie"
 * name = "HCVSerologyCLL"
 * description = "HCV Serologie"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * code = $sct#413107006 "Hepatitis C screening (procedure)"
 * timingTiming.repeat.count = 1
@@ -325,9 +296,7 @@ Title: "HEV Serology CLL"
 Description: "HEV Serologie"
 * name = "HEVSerologyCLL"
 * description = "HEV Serologie"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * code = $sct#36446003 "Hepatitis E virus measurement (procedure)"
 * timingTiming.repeat.count = 1
@@ -339,9 +308,7 @@ Title: "Binet Staging CLL"
 Description: "Bestimmung des aktuellen klinischen Stadiums (Binet Staging) CLL"
 * name = "BinetStagingCLL"
 * description = "Bestimmung des aktuellen klinischen Stadiums (Binet Staging) CLL"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * code = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
 * timingTiming.repeat.count = 1
@@ -353,9 +320,7 @@ Title: "Pregnancy Test betaHCG CLL"
 Description: "Pregnancy Test betaHCG CLL"
 * name = "PregnancyTestbHCGCLL"
 * description = "Schwangerschaftstest betaHCG CLL"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * code = $sct#44789311 "Pregnancy test (beta human chorionic gonadotropin) (procedure)"
 * timingTiming.repeat.count = 1
@@ -369,9 +334,7 @@ Title: "CMV IgG Antibody CLL"
 Description: "CMV IgG Antikörper Bestimmung"
 * name = "CMVAntibodyIgGCLL"
 * description = "CMV IgG Antikörper Bestimmung"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * code = $sct#64681000237105 "CMV (cytomegalovirus) IgG antibody in serum qualitative result"
 * timingTiming.repeat.count = 1
@@ -383,9 +346,7 @@ Title: "CMV IgM Antibody CLL"
 Description: "CMV IgM Antikörper Bestimmung"
 * name = "CMVAntibodyIgMCLL"
 * description = "CMV IgM Antikörper Bestimmung"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * code = $sct#62681000237103 "CMV (cytomegalovirus) IgM antibody in serum qualitative result"
 * timingTiming.repeat.count = 1
@@ -397,9 +358,7 @@ Title: "CMV PCR CLL"
 Description: "CMV PCR Viruslast Bestimmung"
 * name = "CMVPCRCLL"
 * description = "CMV PCR Viruslast Bestimmung"
-* experimental = true
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll"
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL"
+* insert publisher-experimental-version
 * status = #active
 * code = $sct#1107381000000101 "Cytomegalovirus viral load"
 * timingTiming.repeat

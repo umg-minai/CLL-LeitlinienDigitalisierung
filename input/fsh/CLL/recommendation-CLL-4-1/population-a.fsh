@@ -33,7 +33,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
 * name = "PopulationCLLBinetAB"
 * description = "Population, bei der Binet A oder B sowie eine bestimmte klinische Symptomatik vorliegt"
 // insert canonical-url(covid19-inpatient-therapy, population/hospitalised-covid19-patients-no-LMWH-contraindications)
-* characteristic[+].definitionByCombination 
+* characteristic[0].definitionByCombination 
   * code = #all-of
   * characteristic[condition][+] 
     * linkId = "CLL"
@@ -42,7 +42,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
       * valueCodeableConcept = $sct#92814006 "Chronic lymphoid leukaemia, disease"
   * characteristic[+].definitionByCombination 
     * code = #any-of
-    * characteristic[assessmentScale][+] 
+    * characteristic[assessmentScale][+] // TODO @Gregor ich bekomme hier immer einen Fehler. Liegt das daran, dass die Binet Scale kein Teil der Assessmentcales in der Expansion ist?
       * definitionByTypeAndValue
         * type = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
         * valueCodeableConcept = $sct-uk#863741000000108 "Clinical stage A chronic lymphocytic leukaemia" 

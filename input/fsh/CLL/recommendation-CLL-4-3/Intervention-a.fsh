@@ -32,9 +32,7 @@ Usage: #definition
 Title: "Erstlinienterapie mit BCL2-Inhibitor bei CLL"
 Description: "Erstlinienterapie mit BCL2-Inhibitor bei CLL"
 * name = "ErstlinieMitBCL2beiCLL"
-* experimental = true //Stimmt das?
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll" // Wer soll das werden?
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL" //so?
+* insert publisher-experimental-version
 * status = #active
 * description = "Erstlinienterapie mit BCL2-Inhibitor bei CLL"
 * code = $sct#432102000 "Administration of substance (procedure)"
@@ -56,9 +54,7 @@ Usage: #definition
 Title: "Erstlinienterapie mit BTK-Inhibitor bei CLL"
 Description: "Erstlinienterapie mit BTK-Inhibitor bei CLL"
 * name = "ErstlinieMitBTKbeiCLL"
-* experimental = true //Stimmt das?
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll" // Wer soll das werden?
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL" //so?
+* insert publisher-experimental-version
 * status = #active
 * description = "Erstlinienterapie mit BTK-Inhibitor bei CLL"
 * code = $sct#432102000 "Administration of substance (procedure)"

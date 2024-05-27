@@ -47,9 +47,7 @@ Usage: #definition
 Title: "TherapieIndikationCLL"
 Description: "Therapie Indikation bei CLL"
 * name = "TherapieIndikationCLL"
-* experimental = true //Stimmt das?
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll" // Wer soll das werden?
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL" //so?
+* insert publisher-experimental-version
 * status = #active
 * description = "Therapie Indikation bei CLL"
 * code = $sct#708255002 "First line treatment"

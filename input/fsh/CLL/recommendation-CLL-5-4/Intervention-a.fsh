@@ -32,9 +32,7 @@ Usage: #definition
 Title: "Rezidivtherapie mit Venetoclax bei CLL"
 Description: "Rezidivtherapie mit Venetoclax bei CLL"
 * name = "RezidivtherapieMitVenetoclaxBeiCLL"
-* experimental = true //Stimmt das?
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll" // Wer soll das werden?
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL" //so?
+* insert publisher-experimental-version
 * status = #active
 * description = "Rezidivtherapie mit Venetoclax bei CLL"
 * code = $sct#432102000 "Administration of substance (procedure)"
@@ -57,9 +55,7 @@ Usage: #definition
 Title: "Rezidivtherapie mit BTK-Inhibitor bei CLL"
 Description: "Rezidivtherapie mit BTK-Inhibitor bei CLL"
 * name = "RezidivtherapieMitBTKbeiCLL"
-* experimental = true //Stimmt das?
-* publisher = "https://www.leitlinienprogramm-onkologie.de/leitlinien/chronische-lymphatische-leukaemie-cll" // Wer soll das werden?
-* version = "Langversion 2.01 (01.10.2023) AWMF Reg.-Nr: 018-032OL" //so?
+* insert publisher-experimental-version
 * status = #active
 * description = "Rezidivtherapie mit BTK-Inhibitor bei CLL"
 * code = $sct#432102000 "Administration of substance (procedure)"
