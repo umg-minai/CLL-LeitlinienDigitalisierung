@@ -42,7 +42,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
       * valueCodeableConcept = $sct#92814006 "Chronic lymphoid leukaemia, disease"
   * characteristic[+].definitionByCombination 
     * code = #any-of
-    * characteristic[assessmentScale][+] // TODO @Gregor ich bekomme hier immer einen Fehler. Liegt das daran, dass die Binet Scale kein Teil der Assessmentcales in der Expansion ist?
+    * characteristic[assessmentScale][+] // TODO @Gregor ich bekomme hier immer einen Fehler. Liegt das daran, dass hier die Schachtelung beginnt, oder die Binet Scale kein Teil der Assessmentcales in der Expansion ist?
       * definitionByTypeAndValue
         * type = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
         * valueCodeableConcept = $sct-uk#863741000000108 "Clinical stage A chronic lymphocytic leukaemia" 
@@ -76,7 +76,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * definitionByTypeAndValue
           * type  = $sct#404684003 "Clinical finding (finding)"
           * valueCodeableConcept = $sct#271737000 "Anemia"
-      * characteristic[laboratory][+] 
+      * characteristic[observation][+] 
         * linkId = "CLL"
         * definitionByTypeAndValue
           * type = $loinc#26453-1 "Erythrocytes [#/volume] in Blood"
@@ -88,7 +88,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * definitionByTypeAndValue
           * type  = $sct#404684003 "Clinical finding (finding)"
           * valueCodeableConcept = $sct#302215000 "Thrombocytopenic disorder"      
-      * characteristic[laboratory][+] 
+      * characteristic[observation][+] 
         * linkId = "CLL"
         * definitionByTypeAndValue
           * type = $loinc#26515-7 "Platelets [#/volume] in Blood"
@@ -158,12 +158,12 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * definitionByTypeAndValue
           * type  = $sct#404684003 "Clinical finding (finding)"
           * valueCodeableConcept = $sct#30746006 "Lymphadenopathy"  
-    * characteristic[laboratory][+] 
+    * characteristic[observation][+] 
       * linkId = "CLL"
       * definitionByTypeAndValue
         * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
         * valueCodeableConcept.text = "Zunahme >50% innerhalb von 2 Monaten,  gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl" // TODO Ich gehe hier davon aus, dass die mindestLymphozytenzahl für beide Teile gilt
-    * characteristic[laboratory][+] 
+    * characteristic[observation][+] 
       * linkId = "CLL"
       * definitionByTypeAndValue
         * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"

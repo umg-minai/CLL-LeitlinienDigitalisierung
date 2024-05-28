@@ -10,7 +10,7 @@ Description: "Population die eine Chronisch Lymphatische Leukämie hat und bei d
 * actual = false
 * name = "PopulationCLLPlanungOnkoTherapie"
 * description = "Population die eine Chronisch Lymphatische Leukämie hat und bei der eine Therapieplanung ansteht"
-* characteristic[0].definitionByCombination 
+* characteristic[+].definitionByCombination 
   * code = #all-of
   * characteristic[condition][+] 
     * linkId = "CLL"
@@ -70,9 +70,8 @@ Description: "Population die eine Chronisch Lymphatische Leukämie hat und bei d
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#225292002 "Developing a treatment plan"
-  * characteristic[procedure][+] //TODO @Gregor geht das so.. nein wahrscheinlich nicht, neuer slice für Drug-Administration???
+  * characteristic[drugAdministration][+] //TODO @Gregor geht das so.. nein wahrscheinlich nicht, neuer slice für Drug-Administration???
     * definitionByTypeAndValue
-      * type  = $sct#404684003 "Drug"
       * valueCodeableConcept = $sct#105590001 "Idelalisib"
   * characteristic[0].exclude = false
   
@@ -92,8 +91,7 @@ Description: "Population, die eine Chronisch Lymphatische Leukämie hat und die 
     * definitionByTypeAndValue
       * type  = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#92814006 "Chronic lymphoid leukaemia, disease"
-  * characteristic[procedure][+] //TODO @Gregor geht das so.. nein wahrscheinlich nicht, neuer slice für Drug-Administration???
+  * characteristic[drugAdministration][+] //TODO @Gregor geht das so.. nein wahrscheinlich nicht, neuer slice für Drug-Administration???
     * definitionByTypeAndValue
-      * type  = $sct#404684003 "Drug"
       * valueCodeableConcept = $sct#105590001 "Idelalisib"
   * characteristic[0].exclude = false
