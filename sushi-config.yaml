@@ -13,7 +13,7 @@ publisher:
 
 dependencies:
   de.netzwerk-universitaetsmedizin.ebm-cpg:  
-    version: 0.9.0
+    version: 0.9.1
 
 pages:
   index.md:
