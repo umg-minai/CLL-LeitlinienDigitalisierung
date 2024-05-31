@@ -20,9 +20,6 @@ Description: "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- bas
   * definitionCanonical = Canonical(RezidivtherapieMitVenetoclaxBeiCLL)
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(RezidivtherapieMitBTKbeiCLL)
-  * code = $sct#432102000 "Administration of substance (procedure)"
-* action[drugAdministration][+]
   * definitionCanonical = Canonical(RezidivtherapieMitAcalabrutinibBeiCLL)
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]

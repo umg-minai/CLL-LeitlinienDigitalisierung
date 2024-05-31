@@ -15,7 +15,7 @@ Description: "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer
 * status = #active
 * subjectCanonical = Canonical(PopulationCLLErstlinientherapie)
 * extension[partOf].valueCanonical = Canonical(RecCollectionErstlinieBCL2undBTKbeiCLL)
-* insert rs-combination-at-least(1)
+* insert rs-combination-exactly(1)
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(ErstlinieMitBCL2beiCLL)
   * code = $sct#432102000 "Administration of substance (procedure)"
