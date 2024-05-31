@@ -19,20 +19,20 @@ Description: "Folgende Untersuchungsverfahren sollen zeitnah vor Einleitung eine
 * action[+]
   * title = "UntersuchungenVorCLLPlanungOnkoTherapie"
   * code = $cs-common-process#guideline-based-care
-  * description = "Untersuchungen, die bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen"
+  * description = "Untersuchungen, bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen"
   * definitionCanonical = Canonical(UntersuchungenVorCLLPlanungOnkoTherapie)
 * action[+]
   * title = "UntersuchungenVorPlanungOnkoTherapieFertileFemale"
   * code = $cs-common-process#guideline-based-care
-  * description = "Untersuchungen, die bei gebährfähigen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen"
+  * description = "Untersuchungen, bei gebährfähigen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen"
   * definitionCanonical = Canonical(UntersuchungenVorPlanungOnkoTherapieFertileFemale)
 * action[+]
   * title = "UntersuchungenVorPlanungOnkoTherapieIdelalisib"
   * code = $cs-common-process#guideline-based-care
-  * description = "Untersuchungen, die bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie mit Idelalisib vorhanden sein sollen"
+  * description = "Untersuchungen, bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie mit Idelalisib vorhanden sein sollen"
   * definitionCanonical = Canonical(UntersuchungenVorPlanungOnkoTherapieIdelalisib)
 * action[+]
   * title = "UntersuchungenWhileTherapieIdelalisib"
   * code = $cs-common-process#guideline-based-care
-  * description = "Untersuchungen, die bei allen CLL-Patienten während der Therapie mit Idelalisib"
+  * description = "Untersuchungen, bei allen CLL-Patienten während der Therapie mit Idelalisib"
   * definitionCanonical = Canonical(UntersuchungenVorPlanungOnkoTherapieIdelalisib)

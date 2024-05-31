@@ -4,13 +4,13 @@
 Instance: RezidivBehandlungBCL2undBTKbeiCLL
 InstanceOf: recommendation-plan
 Usage: #definition
-Title: "Rezidivbehandlung mit BCL-2-Inhib. Oder BTK-Inhibitor"
-Description: "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem BTK-Inhibitor (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden."
+Title: "Rezidivbehandlung mit BCL-2-Inhib. Oder Acalabrutinib"
+Description: "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem Acalabrutinib (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden."
 //* insert canonical-url(covid19-inpatient-therapy, intervention-plan/antithrombotic-prophylaxis-LMWH)
 * insert publisher-experimental-version
 * name = "RezidivbehandlungBCL2undBTKbeiCLL"
-* title = "Rezidivbehandlung mit BCL-2-Inhib. Oder BTK-Inhibitor"
-* description = "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem BTK-Inhibitor (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden."
+* title = "Rezidivbehandlung mit BCL-2-Inhib. Oder Acalabrutinib"
+* description = "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem Acalabrutinib (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden."
 * date = "2023-05"
 * status = #active
 * subjectCanonical = Canonical(PopulationCLLRezidivtherapie)
@@ -21,6 +21,15 @@ Description: "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- bas
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
   * definitionCanonical = Canonical(RezidivtherapieMitBTKbeiCLL)
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(RezidivtherapieMitAcalabrutinibBeiCLL)
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(RezidivtherapieMitIbrutinibBeiCLL)
+  * code = $sct#432102000 "Administration of substance (procedure)"
+* action[drugAdministration][+]
+  * definitionCanonical = Canonical(RezidivtherapieMitZanubrutinibBeiCLL)
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 /**********************/
@@ -48,25 +57,41 @@ Description: "Rezidivtherapie mit Venetoclax bei CLL"
   * doseAndRate //nicht definiert in dieser Leitlinie
     * doseQuantity = 200 '[iU]/kg' "IU/kg"*/
 
-
-Instance: RezidivtherapieMitBTKbeiCLL
+Instance: RezidivtherapieMitAcalabrutinibBeiCLL
 InstanceOf: drug-administration-action
 Usage: #definition
-Title: "Rezidivtherapie mit BTK-Inhibitor bei CLL"
-Description: "Rezidivtherapie mit BTK-Inhibitor bei CLL"
-* name = "RezidivtherapieMitBTKbeiCLL"
+Title: "Rezidivtherapie mit Acalabrutinib bei CLL"
+Description: "Rezidivtherapieterapie mit Acalabrutinib bei CLL"
+* name = "RezidivtherapieMitAcalabrutinibBeiCLL"
 * insert publisher-experimental-version
 * status = #active
-* description = "Rezidivtherapie mit BTK-Inhibitor bei CLL"
+* description = "Rezidivtherapieterapie mit Acalabrutinib bei CLL"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[sct] = $sct#710227007 "Non-specific protein-tyrosine kinase inhibitor"
- /* dosage[+]
-  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
-  * timing //nicht definiert in dieser Leitlinie
-    * repeat
-      * frequency = 1
-      * period = 1
-      * periodUnit = $ucum#d "day"
-  * doseAndRate //nicht definiert in dieser Leitlinie
-    * doseQuantity = 200 '[iU]/kg' "IU/kg"*/
+  * coding[sct] = $sct#763037006 "Acalabrutinib"
+
+Instance: RezidivtherapieMitIbrutinibBeiCLL
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "Rezidivtherapie mit Ibrutinib bei CLL"
+Description: "Rezidivtherapie mit Ibrutinib bei CLL"
+* name = "ErstlinieMitIbrutinibBeiCLL"
+* insert publisher-experimental-version
+* status = #active
+* description = "Rezidivtherapie mit Ibrutinib bei CLL"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#710228002 "Ibrutinib"
+
+Instance: RezidivtherapieMitZanubrutinibBeiCLL
+InstanceOf: drug-administration-action
+Usage: #definition
+Title: "Rezidivtherapie mit Zanubrutinib bei CLL"
+Description: "Rezidivtherapie mit Zanubrutinib bei CLL"
+* name = "ErstlinieMitZanubrutinibBeiCLL"
+* insert publisher-experimental-version
+* status = #active
+* description = "Rezidivtherapie mit Zanubrutinib bei CLL"
+* code = $sct#432102000 "Administration of substance (procedure)"
+* productCodeableConcept
+  * coding[sct] = $sct#830162004 "Zanubrutinib"

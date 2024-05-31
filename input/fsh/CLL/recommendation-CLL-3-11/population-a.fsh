@@ -70,7 +70,7 @@ Description: "Population die eine Chronisch Lymphatische Leukämie hat und bei d
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
       * valueCodeableConcept = $sct#225292002 "Developing a treatment plan"
-  * characteristic[drugAdministration][+] //TODO @Gregor geht das so.. nein wahrscheinlich nicht, neuer slice für Drug-Administration???
+  * characteristic[drugAdministration][+]
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#105590001 "Idelalisib"
   * characteristic[0].exclude = false
@@ -91,7 +91,7 @@ Description: "Population, die eine Chronisch Lymphatische Leukämie hat und die 
     * definitionByTypeAndValue
       * type  = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#92814006 "Chronic lymphoid leukaemia, disease"
-  * characteristic[drugAdministration][+] //TODO @Gregor geht das so.. nein wahrscheinlich nicht, neuer slice für Drug-Administration???
+  * characteristic[drugAdministration][+]
     * definitionByTypeAndValue
       * valueCodeableConcept = $sct#105590001 "Idelalisib"
   * characteristic[0].exclude = false
