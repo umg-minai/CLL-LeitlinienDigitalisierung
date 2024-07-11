@@ -1,0 +1,53 @@
+{
+	"name": "Allergy to [nut] (finding)",
+	"domain": "<< 91934008 |Allergy to nut (finding)|",
+	"version": 1,
+	"logicalTemplate": "91934008 |Allergy to nut (finding)|:\n\t[[~1..1]] {\n\t\t[[~1..1]] 719722006 |Has realization  (attribute)| = [[+id(<<472964009 |Allergic process (qualifier value)|) @hasRealization]],\n\t\t[[~1..1]] 246075003 |Causative agent  (attribute)| = [[+id(<<13577000 |Nut (substance)|) @causativeAgent]],\n\t\t[[~1..1]] 116676008 |Associated morphology (attribute)| = [[+id(<<49755003 |Morphologically abnormal structure (morphologic abnormality)|)]],\n\t\t[[~1..1]] 363698007 |Finding site (attribute)| = [[+id(<<442083009 |Anatomical or acquired body structure (body structure)|) @findingSite]]\n\t}",
+	"conceptOutline": {
+		"definitionStatus": "FULLY_DEFINED",
+		"descriptions": [
+			{
+        "type": "FSN",
+        "lang": "en",
+        "termTemplate": "$findingSite$ $causativeAgent$ $hasRealization$ (finding)",
+        "caseSignificance": "CASE_INSENSITIVE",
+        "acceptabilityMap": {
+          "900000000000508004": "PREFERRED",
+          "900000000000509007": "PREFERRED"
+        }
+      },
+      {
+        "type": "SYNONYM",
+        "lang": "en",
+        "termTemplate": "$findingSite$ $causativeAgent$ $hasRealization$",
+        "caseSignificance": "CASE_INSENSITIVE",
+        "acceptabilityMap": {
+          "900000000000508004": "PREFERRED",
+          "900000000000509007": "PREFERRED"
+        }
+      }
+		]
+	},
+	"lexicalTemplates": [
+		{
+			"name": "findingSite",
+			"displayName": "[findingSite]",
+			"takeFSNFromSlot": "findingSite",
+			"removeParts": [
+				"Structure of",
+				"structure of",
+				"structure"
+			]
+		},
+		{
+			"name": "causativeAgent",
+			"displayName": "[causativeAgent]",
+			"takeFSNFromSlot": "causativeAgent"
+		},
+		{
+			"name": "hasRealization",
+			"displayName": "[hasRealization]",
+			"takeFSNFromSlot": "hasRealization"
+		}
+	]
+}

@@ -1,5 +1,5 @@
 /************************/
-/* Intervention Plans */
+/* Intervention Plans */ //TODO alle Untersuchungen sollen innerhalb der letzten 2-4 Wochen vorliegen. Wie soll ich das am besten umsetzten? 1. Bei den Einzelnen Activities? 2. 
 /************************/
 Instance: UntersuchungenVorCLLPlanungOnkoTherapie
 InstanceOf: recommendation-plan
@@ -119,7 +119,10 @@ Description: "Anamnese bei CLL Patienten"
 * status = #active
 * description = "Anamnese bei CLL Patienten"
 * code = $sct#84100007 "History taking"
-* timingTiming.repeat.count = 1
+* timingTiming.repeat.count = 1 //TODO ich hab das hier als Vorschlag, wenn inordnung: bei allen assessment actions umsetzen  :)
+* timingTiming.repeat.period = 4
+* timingTiming.repeat.periodUnit = #wk
+
 
 Instance: PhysicalExaminationCLL
 InstanceOf: assessment-action    

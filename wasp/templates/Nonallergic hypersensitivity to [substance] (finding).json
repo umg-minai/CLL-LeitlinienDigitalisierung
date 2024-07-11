@@ -1,0 +1,60 @@
+{
+  "name": "Nonallergic hypersensitivity to [substance] (finding) - v2.0",
+  "domain": "< 609397002 |Pseudoallergy to substance (finding)|",
+  "version": 2,
+  "logicalTemplate":"420134006 |Propensity to adverse reactions (finding)|:\n\t [[~1..1]]\t{\n\t\t [[~1..1]] 719722006 |Has realization (attribute)| = 609404002 |Non-allergic hypersensitivity process (qualifier value)|,\n\t\t [[~1..1]] 246075003 |Causative agent (attribute)| = [[+id(< 105590001 |Substance (substance)|) @substance]]\n\t}\n",
+  "conceptOutline": {
+    "definitionStatus": "FULLY_DEFINED",
+    "descriptions": [
+      {
+        "type": "FSN",
+        "lang": "en",
+        "termTemplate": "Non-allergic hypersensitivity to $substance$ (finding)",
+        "caseSignificance": "CASE_INSENSITIVE",
+        "acceptabilityMap": {
+          "900000000000508004": "PREFERRED",
+          "900000000000509007": "PREFERRED"
+        }
+      },
+      {
+        "type": "SYNONYM",
+        "lang": "en",
+        "termTemplate": "Non-allergic hypersensitivity to $substance$",
+        "caseSignificance": "CASE_INSENSITIVE",
+        "acceptabilityMap": {
+          "900000000000508004": "PREFERRED",
+          "900000000000509007": "PREFERRED"
+        }
+      },
+      {
+        "type": "SYNONYM",
+        "lang": "en",
+        "termTemplate": "Nonallergic hypersensitivity to $substance$",
+        "caseSignificance": "CASE_INSENSITIVE",
+        "acceptabilityMap": {
+          "900000000000508004": "ACCEPTABLE",
+          "900000000000509007": "ACCEPTABLE"
+        }
+      },
+      {
+        "type": "SYNONYM",
+        "lang": "en",
+        "termTemplate": "Pseudoallergy to $substance$",
+        "caseSignificance": "CASE_INSENSITIVE",
+        "acceptabilityMap": {
+          "900000000000508004": "ACCEPTABLE",
+          "900000000000509007": "ACCEPTABLE"
+        }
+      }
+    ]
+  },
+  "lexicalTemplates": [
+    {
+      "name": "substance",
+      "displayName": "[substance]",
+      "takeFSNFromSlot": "substance",
+      "removeParts": [
+      ]
+    }
+  ]
+}
