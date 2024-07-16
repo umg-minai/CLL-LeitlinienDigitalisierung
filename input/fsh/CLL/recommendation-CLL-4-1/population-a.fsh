@@ -52,23 +52,21 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * valueCodeableConcept = $sct-uk#863761000000109 "Clinical stage B chronic lymphocytic leukaemia"
   * characteristic[+].definitionByCombination 
     * code = #any-of
-    * characteristic[+].definitionByCombination 
-      * code = #all-of
-      * characteristic[condition][+] 
-        * linkId = "CLL"
-        * definitionByTypeAndValue
-          * type  = $sct#404684003 "Clinical finding (finding)"
-          * valueCodeableConcept = $sct#161832001 "Weight decreasing"
-      * characteristic[condition][+] 
-        * linkId = "CLL"
-        * definitionByTypeAndValue
-          * type  = $sct#404684003 "Clinical finding (finding)"
-          * valueCodeableConcept = $sct#7520000 "Pyrexia of unknown origin"
-      * characteristic[condition][+] 
-        * linkId = "CLL"
-        * definitionByTypeAndValue
-          * type  = $sct#404684003 "Clinical finding (finding)"
-          * valueCodeableConcept = $sct#42984000 "Night sweats"
+    * characteristic[condition][+] 
+      * linkId = "CLL"
+      * definitionByTypeAndValue
+        * type  = $sct#404684003 "Clinical finding (finding)"
+        * valueCodeableConcept = $sct#161832001 "Weight decreasing"
+    * characteristic[condition][+] 
+      * linkId = "CLL"
+      * definitionByTypeAndValue
+        * type  = $sct#404684003 "Clinical finding (finding)"
+        * valueCodeableConcept = $sct#7520000 "Pyrexia of unknown origin"
+    * characteristic[condition][+] 
+      * linkId = "CLL"
+      * definitionByTypeAndValue
+        * type  = $sct#404684003 "Clinical finding (finding)"
+        * valueCodeableConcept = $sct#42984000 "Night sweats"
     * characteristic[+].definitionByCombination 
       * code = #all-of
       * characteristic[condition][+] 
@@ -79,7 +77,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
       * characteristic[observation][+] 
         * linkId = "CLL"
         * definitionByTypeAndValue
-          * type = $loinc#26453-1 "Erythrocytes [#/volume] in Blood"
+          * type = $loinc#718-7 "Hemoglobin [Mass/volume] in Blood"
           * valueCodeableConcept = $sct#260371004 "Decreasing"
     * characteristic[+].definitionByCombination 
       * code = #all-of  
@@ -95,14 +93,10 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
           * valueCodeableConcept = $sct#260371004 "Decreasing"
     * characteristic[+].definitionByCombination 
       * code = #all-of  
-      * characteristic[drugAdministration][+]
-        * definitionByTypeAndValue
-          //* type  = $sct#404684003 "Drug"
-          * valueCodeableConcept = $sct#304275008 "Corticosteroid and/or corticosteroid derivative"   
       * characteristic[condition][+]
         * definitionByTypeAndValue
           * type  = $sct#404684003 "Clinical finding (finding)"
-          * valueCodeableConcept = $sct#405786003 "Poor response to treatment"
+          * valueCodeableConcept = $cs-cll#porecotr "Poor response to corticosteroid treatment"
       * characteristic[+].definitionByCombination 
         * code = #any-of
         * characteristic[condition][+] 
@@ -120,19 +114,11 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
       * characteristic[observation][+]
         * linkId = "CLL"
         * definitionByTypeAndValue
-          * type  = $loinc#32489-7 "Spleen tip distance below costal margin"
-          * valueRange
-            * low = 6 'cm'
-      * characteristic[condition][+] 
-        * linkId = "CLL"
-        * definitionByTypeAndValue
-          * type  = $sct#404684003 "Clinical finding (finding)"
-          * valueCodeableConcept = $sct#830137004 "Pain due to enlargement of spleen"   
     * characteristic[observation][+]
       * linkId = "CLL"
       * definitionByTypeAndValue
-        * type  = $loinc#32489-7 "Spleen tip distance below costal margin"
-        * valueCodeableConcept = $sct#260369004 "Increasing"
+        * type  = $sct#404684003 "Clinical finding (finding)"
+        * valueCodeableConcept = $cs-cll#sycasp "Symptom-causing splenomegaly"
     * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[observation][+] 

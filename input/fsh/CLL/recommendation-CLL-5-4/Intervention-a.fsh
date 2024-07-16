@@ -17,78 +17,38 @@ Description: "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- bas
 * extension[partOf].valueCanonical = Canonical(RecCollectionRezidivtherapieBCL2undBTKbeiCLL)
 * insert rs-combination-exactly(1)
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(RezidivtherapieMitVenetoclaxBeiCLL)
+  * definitionCanonical = Canonical(RezidivtherapieMitBCL2beiCLL)
   * code = $sct#432102000 "Administration of substance (procedure)"
 * action[drugAdministration][+]
-  * definitionCanonical = Canonical(RezidivtherapieMitAcalabrutinibBeiCLL)
-  * code = $sct#432102000 "Administration of substance (procedure)"
-* action[drugAdministration][+]
-  * definitionCanonical = Canonical(RezidivtherapieMitIbrutinibBeiCLL)
-  * code = $sct#432102000 "Administration of substance (procedure)"
-* action[drugAdministration][+]
-  * definitionCanonical = Canonical(RezidivtherapieMitZanubrutinibBeiCLL)
+  * definitionCanonical = Canonical(RezidivtherapieMitBTKbeiCLL)
   * code = $sct#432102000 "Administration of substance (procedure)"
 
 /**********************/
 /* Recommended Actions */
 /**********************/
-Instance: RezidivtherapieMitVenetoclaxBeiCLL
-InstanceOf: drug-administration-action
-Usage: #definition
-Title: "Rezidivtherapie mit Venetoclax bei CLL"
-Description: "Rezidivtherapie mit Venetoclax bei CLL"
-* name = "RezidivtherapieMitVenetoclaxBeiCLL"
-* insert publisher-experimental-version
-* status = #active
-* description = "Rezidivtherapie mit Venetoclax bei CLL"
-* code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept
-  * coding[sct] = $sct#720491001 "Venetoclax"
- /* dosage[+]
-  * route = $sct#34206005 "Subcutaneous route (qualifier value)"
-  * timing //nicht definiert in dieser Leitlinie
-    * repeat
-      * frequency = 1
-      * period = 1
-      * periodUnit = $ucum#d "day"
-  * doseAndRate //nicht definiert in dieser Leitlinie
-    * doseQuantity = 200 '[iU]/kg' "IU/kg"*/
 
-Instance: RezidivtherapieMitAcalabrutinibBeiCLL
+Instance: RezidivtherapieMitBCL2beiCLL
 InstanceOf: drug-administration-action
 Usage: #definition
-Title: "Rezidivtherapie mit Acalabrutinib bei CLL"
-Description: "Rezidivtherapieterapie mit Acalabrutinib bei CLL"
-* name = "RezidivtherapieMitAcalabrutinibBeiCLL"
+Title: "Erstlinienterapie mit BCL2-Inhibitor bei CLL"
+Description: "Erstlinienterapie mit BCL2-Inhibitor bei CLL"
+* name = "ErstlinieMitBCL2beiCLL"
 * insert publisher-experimental-version
 * status = #active
-* description = "Rezidivtherapieterapie mit Acalabrutinib bei CLL"
+* description = "Erstlinienterapie mit BCL2-Inhibitor bei CLL"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[sct] = $sct#763037006 "Acalabrutinib"
+  * coding[sct] = $sct#725567006 "B-cell lymphoma 2 inhibitor"
 
-Instance: RezidivtherapieMitIbrutinibBeiCLL
+Instance: RezidivtherapieMitBTKbeiCLL
 InstanceOf: drug-administration-action
 Usage: #definition
-Title: "Rezidivtherapie mit Ibrutinib bei CLL"
-Description: "Rezidivtherapie mit Ibrutinib bei CLL"
-* name = "ErstlinieMitIbrutinibBeiCLL"
+Title: "Rezidivtherapie mit BTK-Inhibitor bei CLL"
+Description: "Rezidivtherapie mit BTK-Inhibitor bei CLL"
+* name = "RezidivtherapieMitBTKbeiCLL"
 * insert publisher-experimental-version
 * status = #active
-* description = "Rezidivtherapie mit Ibrutinib bei CLL"
+* description = "Rezidivtherapie mit BTK-Inhibitor bei CLL"
 * code = $sct#432102000 "Administration of substance (procedure)"
 * productCodeableConcept
-  * coding[sct] = $sct#710228002 "Ibrutinib"
-
-Instance: RezidivtherapieMitZanubrutinibBeiCLL
-InstanceOf: drug-administration-action
-Usage: #definition
-Title: "Rezidivtherapie mit Zanubrutinib bei CLL"
-Description: "Rezidivtherapie mit Zanubrutinib bei CLL"
-* name = "ErstlinieMitZanubrutinibBeiCLL"
-* insert publisher-experimental-version
-* status = #active
-* description = "Rezidivtherapie mit Zanubrutinib bei CLL"
-* code = $sct#432102000 "Administration of substance (procedure)"
-* productCodeableConcept
-  * coding[sct] = $sct#830162004 "Zanubrutinib"
+  * coding[sct] = $sct#710227007 "Non-specific protein-tyrosine kinase inhibitor"

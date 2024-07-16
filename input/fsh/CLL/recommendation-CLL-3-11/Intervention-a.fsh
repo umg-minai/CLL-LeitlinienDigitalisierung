@@ -119,10 +119,7 @@ Description: "Anamnese bei CLL Patienten"
 * status = #active
 * description = "Anamnese bei CLL Patienten"
 * code = $sct#84100007 "History taking"
-* timingTiming.repeat.count = 1 //TODO ich hab das hier als Vorschlag, wenn inordnung: bei allen assessment actions umsetzen  :)
-* timingTiming.repeat.period = 4
-* timingTiming.repeat.periodUnit = #wk
-
+* insert rs-timingCLL(1,4) 
 
 Instance: PhysicalExaminationCLL
 InstanceOf: assessment-action    
@@ -134,7 +131,7 @@ Description: "Körperliche Untersuchung bei CLL Patienten"
 * status = #active
 * description = "Körperliche Untersuchung bei CLL Patienten"
 * code = $sct#5880005 "Physical examination"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: ExaminationLymphaticNodesCLL
 InstanceOf: assessment-action    
@@ -146,7 +143,7 @@ Description: "vollständiger Erhebung des peripheren Lymphknotenstatus"
 * status = #active
 * description = "vollständiger Erhebung des peripheren Lymphknotenstatus"
 * code = $sct#284427004 "Examination of lymph nodes (procedure)"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: ExaminationSpleenSizeCLL
 InstanceOf: assessment-action  
@@ -158,7 +155,7 @@ Description: "Abschätzung der Milzgröße bei CLL"
 * status = #active
 * description = "Abschätzung der Milzgröße bei CLL"
 * code = $sct#47241002 "Palpation of spleen (procedure)"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: ExaminationLiverSizeCLL
 InstanceOf: assessment-action   
@@ -170,7 +167,7 @@ Description: "Abschätzung der Lebergröße bei CLL"
 * status = #active
 * description = "Abschätzung der Lebergröße bei CLL"
 * code = $sct#172488004 "Palpation of liver (procedure)"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: AbdomialUltrasonographyCLL
 InstanceOf: assessment-action   
@@ -182,7 +179,7 @@ Description: "Abdomensonographie bei CLL"
 * status = #active
 * description = "Abdomensonographie bei CLL"
 * code = $sct#45036003 "Ultrasonography of abdomen"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: AssessmentECOGScoreCLL
 InstanceOf: assessment-action    
@@ -194,7 +191,7 @@ Description: "Assesment of the ECOG Score CLL"
 * status = #active
 * description = "Assesment of the ECOG Score CLL"
 * code = $sct#423740007 "ECOG performance status"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: AssessmentKarnofskyIndexCLL
 InstanceOf: assessment-action    
@@ -206,7 +203,7 @@ Description: "Assesment Karnofsky-Index CLL"
 * status = #active
 * description = "Assesment Karnofsky-Index CLL"
 * code = $sct#273546003 "Karnofsky performance status"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: AssessmentComorbiditiesCLL
 InstanceOf: assessment-action   
@@ -218,7 +215,7 @@ Description: "Assesment Comorbidities CLL"
 * status = #active
 * description = "Assesment Comorbidities CLL"
 * code = $sct#398192003 "Co-morbid conditions (finding)"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: CompleteBloodCountAutomatedCLL
 InstanceOf: assessment-action   
@@ -230,7 +227,7 @@ Description: "Maschinelles Differentialblutbild CLL"
 * insert publisher-experimental-version
 * status = #active
 * code = $sct#9564003 "Complete blood count with white cell differential, automated"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: MicroscopyWhiteBloodCellCountCLL
 InstanceOf: assessment-action    
@@ -242,7 +239,7 @@ Description: "Mikroskopisches Differentialblutbild"
 * insert publisher-experimental-version
 * status = #active
 * code = $sct#35774004 "Complete blood count with white cell differential, manual (procedure)"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: ClinicalChemistryTestCLL
 InstanceOf: assessment-action
@@ -254,7 +251,7 @@ Description: "Klinische Chemie"
 * insert publisher-experimental-version
 * status = #active
 * code = $sct#275711006 "Serum chemistry test (procedure)"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: HIVSerologyCLL
 InstanceOf: assessment-action    
@@ -266,7 +263,7 @@ Description: "HIV Serologie"
 * insert publisher-experimental-version
 * status = #active
 * code = $sct#171121004 "Human immunodeficiency virus screening (procedure)"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: HBVSerologyCLL
 InstanceOf: assessment-action    
@@ -278,7 +275,7 @@ Description: "HBV Serologie"
 * insert publisher-experimental-version
 * status = #active
 * code = $sct#171122006 "Hepatitis B screening (procedure)"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: HCVSerologyCLL
 InstanceOf: assessment-action   
@@ -290,7 +287,7 @@ Description: "HCV Serologie"
 * insert publisher-experimental-version
 * status = #active
 * code = $sct#413107006 "Hepatitis C screening (procedure)"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: HEVSerologyCLL
 InstanceOf: assessment-action   
@@ -302,7 +299,7 @@ Description: "HEV Serologie"
 * insert publisher-experimental-version
 * status = #active
 * code = $sct#36446003 "Hepatitis E virus measurement (procedure)"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: BinetStagingCLL
 InstanceOf: assessment-action    
@@ -314,7 +311,7 @@ Description: "Bestimmung des aktuellen klinischen Stadiums (Binet Staging) CLL"
 * insert publisher-experimental-version
 * status = #active
 * code = $sct#1149099005 "Binet staging classification for chronic lymphocytic leukemia"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: PregnancyTestbHCGCLL
 InstanceOf: assessment-action   
@@ -326,7 +323,7 @@ Description: "Pregnancy Test betaHCG CLL"
 * insert publisher-experimental-version
 * status = #active
 * code = $sct#44789311 "Pregnancy test (beta human chorionic gonadotropin) (procedure)"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 
 
@@ -340,7 +337,7 @@ Description: "CMV IgG Antikörper Bestimmung"
 * insert publisher-experimental-version
 * status = #active
 * code = $sct#64681000237105 "CMV (cytomegalovirus) IgG antibody in serum qualitative result"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: CMVAntibodyIgMCLL
 InstanceOf: assessment-action   
@@ -352,7 +349,7 @@ Description: "CMV IgM Antikörper Bestimmung"
 * insert publisher-experimental-version
 * status = #active
 * code = $sct#62681000237103 "CMV (cytomegalovirus) IgM antibody in serum qualitative result"
-* timingTiming.repeat.count = 1
+* insert rs-timingCLL(1,4)
 
 Instance: CMVPCRCLL
 InstanceOf: assessment-action   
@@ -366,5 +363,5 @@ Description: "CMV PCR Viruslast Bestimmung"
 * code = $sct#1107381000000101 "Cytomegalovirus viral load"
 * timingTiming.repeat
   * frequency = 1
-  * period = 30 // bisher nicht klar nur "regelmäßig"
-  * periodUnit = $ucum#d "day" 
+  * period = 2 
+  * periodUnit = $ucum#wk "week" 

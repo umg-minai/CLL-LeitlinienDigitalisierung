@@ -50,4 +50,4 @@ Description: "Therapie Indikation bei CLL"
 * insert publisher-experimental-version
 * status = #active
 * description = "Therapie Indikation bei CLL"
-* code = $sct#708255002 "First line treatment"
+* code = $cs-cll#scllt "Systemic CLL therapy"

@@ -18,13 +18,8 @@ Description: "Population, die eine Chronisch Lymphatische Leukämie hat und eine
     * definitionByTypeAndValue
       * type  = $sct#404684003 "Clinical finding (finding)"
       * valueCodeableConcept = $sct#92814006 "Chronic lymphoid leukaemia, disease"
-  * characteristic[condition][+] 
-    * linkId = "CLL"
-    * definitionByTypeAndValue
-      * type  = $sct#404684003 "Clinical finding (finding)"
-      * valueCodeableConcept = $sct#123781000119107 "Chronic leukemia in relapse"
   * characteristic[procedure][+]
     * linkId = "CLL"
     * definitionByTypeAndValue
       * type = $sct#71388002 "Procedure (procedure)"
-      * valueCodeableConcept = $sct#708255002 "First line treatment"
+      * valueCodeableConcept = $cs-cll#cllrete "CLL Relapse therapy"
