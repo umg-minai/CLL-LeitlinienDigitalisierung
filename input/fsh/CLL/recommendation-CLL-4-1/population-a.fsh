@@ -74,7 +74,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * definitionByTypeAndValue
           * type  = $sct#404684003 "Clinical finding (finding)"
           * valueCodeableConcept = $sct#271737000 "Anemia"
-      * characteristic[observation][+] 
+      * characteristic[observation][+]
         * linkId = "CLL"
         * definitionByTypeAndValue
           * type = $loinc#718-7 "Hemoglobin [Mass/volume] in Blood"
@@ -108,12 +108,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
           * linkId = "CLL"
           * definitionByTypeAndValue
             * type  = $sct#404684003 "Clinical finding (finding)"
-            * valueCodeableConcept = $sct#2897005 "Immune thrombocytopenia"    
-    * characteristic[+].definitionByCombination 
-      * code = #all-of  
-      * characteristic[observation][+]
-        * linkId = "CLL"
-        * definitionByTypeAndValue
+            * valueCodeableConcept = $sct#2897005 "Immune thrombocytopenia"  
     * characteristic[observation][+]
       * linkId = "CLL"
       * definitionByTypeAndValue
@@ -132,6 +127,7 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * definitionByTypeAndValue
           * type  = $sct#404684003 "Clinical finding (finding)"
           * valueCodeableConcept = $sct#30746006 "Lymphadenopathy"
+    //
     * characteristic[+].definitionByCombination 
       * code = #all-of  
       * characteristic[observation][+] 
@@ -144,15 +140,16 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * definitionByTypeAndValue
           * type  = $sct#404684003 "Clinical finding (finding)"
           * valueCodeableConcept = $sct#30746006 "Lymphadenopathy"  
+          //TODO: valueCodeableConcept.text - ist nicht definiert in FHIR.
+    /* characteristic[observation][+]  
+      * linkId = "CLL"
+      * definitionByTypeAndValue
+        * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
+        * valueCodeableConcept.text = "Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
+    
     * characteristic[observation][+] 
       * linkId = "CLL"
       * definitionByTypeAndValue
         * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
-        * valueCodeableConcept.text = "Zunahme >50% innerhalb von 2 Monaten,  gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl" // TODO Ich gehe hier davon aus, dass die mindestLymphozytenzahl für beide Teile gilt
-    //  * TODO valueCodeableConcept hinzufügen? Coding nicht obligat machen? 
-    * characteristic[observation][+] 
-      * linkId = "CLL"
-      * definitionByTypeAndValue
-        * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
-        * valueCodeableConcept.text = "Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl" // TODO Ich gehe hier davon aus, dass die mindestLymphozytenzahl für beide Teile gilt
-    //  * TODO valueCodeableConcept hinzufügen? Coding nicht obligat machen? 
+        * valueCodeableConcept.text = "Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
+        */

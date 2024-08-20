@@ -1,5 +1,5 @@
 /************************/
-/* Intervention Plans */ //TODO alle Untersuchungen sollen innerhalb der letzten 2-4 Wochen vorliegen. Wie soll ich das am besten umsetzten? 1. Bei den Einzelnen Activities? 2. 
+/* Intervention Plans   */ 
 /************************/
 Instance: UntersuchungenVorCLLPlanungOnkoTherapie
 InstanceOf: recommendation-plan
@@ -119,8 +119,11 @@ Description: "Anamnese bei CLL Patienten"
 * status = #active
 * description = "Anamnese bei CLL Patienten"
 * code = $sct#84100007 "History taking"
-* insert rs-timingCLL(1,4) 
+/* insert rs-timingCLL(1,4) */
+* extension[relativeTime].extension[contextCode].valueCodeableConcept = $loinc#63936-9 //TODO wieso funktioniert das so noch nicht?
+* extension[relativeTime].extension[offset].valueDuration = -4 'wk'
 
+/*
 Instance: PhysicalExaminationCLL
 InstanceOf: assessment-action    
 Usage: #definition
@@ -365,3 +368,4 @@ Description: "CMV PCR Viruslast Bestimmung"
   * frequency = 1
   * period = 2 
   * periodUnit = $ucum#wk "week" 
+*/
