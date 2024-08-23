@@ -140,16 +140,14 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
         * definitionByTypeAndValue
           * type  = $sct#404684003 "Clinical finding (finding)"
           * valueCodeableConcept = $sct#30746006 "Lymphadenopathy"  
-          //TODO: valueCodeableConcept.text - ist nicht definiert in FHIR.
-    /* characteristic[observation][+]  
+    * characteristic[observation][+]  
       * linkId = "CLL"
       * definitionByTypeAndValue
         * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
-        * valueCodeableConcept.text = "Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
-    
+        * valueCodeableConcept = $cs-cll#ingrfiftyintwomo "Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
     * characteristic[observation][+] 
       * linkId = "CLL"
       * definitionByTypeAndValue
         * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
-        * valueCodeableConcept.text = "Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
-        */
+        * valueCodeableConcept = $cs-cll#dopeunsixmo "Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
+        
