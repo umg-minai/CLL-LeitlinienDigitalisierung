@@ -16,7 +16,7 @@ instanceOptions:
 
 dependencies:
   de.netzwerk-universitaetsmedizin.ebm-cpg:  
-    version: v1.0.1-feat-relativetime-as-timing-extension.1
+    version: 1.0.1
 
 pages:
   index.md:
