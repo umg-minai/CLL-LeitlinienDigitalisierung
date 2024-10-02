@@ -143,11 +143,11 @@ Description: "Population, bei der Binet A oder B sowie eine bestimmte klinische 
     * characteristic[observation][+]  
       * linkId = "CLL"
       * definitionByTypeAndValue
-        * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
+        * type = $loinc#26474-7 "Lymphocytes [#/volume] in Blood"
         * valueCodeableConcept = $cs-cll#ingrfiftyintwomo "Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
     * characteristic[observation][+] 
       * linkId = "CLL"
       * definitionByTypeAndValue
-        * type = $loinc#26515-7 "Lymphocytes [#/volume] in Blood"
+        * type = $loinc#26474-7 "Lymphocytes [#/volume] in Blood"
         * valueCodeableConcept = $cs-cll#dopeunsixmo "Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
         

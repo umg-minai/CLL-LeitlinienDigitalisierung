@@ -87,5 +87,5 @@ Description: "Population, die eine Chronisch Lymphatische Leukämie hat und die 
       * valueCodeableConcept = $sct#92814006 "Chronic lymphoid leukaemia, disease"
   * characteristic[drugAdministration][+]
     * definitionByTypeAndValue
-      * valueCodeableConcept = $sct#105590001 "Idelalisib"
+      * valueCodeableConcept = $sct#710278000 "Idelalisib"
   * characteristic[0].exclude = false

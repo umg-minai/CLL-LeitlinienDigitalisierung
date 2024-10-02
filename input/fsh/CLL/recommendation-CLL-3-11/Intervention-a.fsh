@@ -321,7 +321,7 @@ Description: "Pregnancy Test betaHCG CLL"
 * description = "Schwangerschaftstest betaHCG CLL"
 * insert publisher-experimental-version
 * status = #active
-* code = $sct#44789311 "Pregnancy test (beta human chorionic gonadotropin) (procedure)"
+* code = $sct-uk#195311000000100 "Pregnancy test (beta human chorionic gonadotropin) (procedure)"
 * insert rs-timingCLL(4)
 
 
@@ -335,7 +335,7 @@ Description: "CMV IgG Antikörper Bestimmung"
 * description = "CMV IgG Antikörper Bestimmung"
 * insert publisher-experimental-version
 * status = #active
-* code = $sct#64681000237105 "CMV (cytomegalovirus) IgG antibody in serum qualitative result"
+* code = $sct-uk#64681000237105 "CMV (cytomegalovirus) IgG antibody in serum qualitative result"
 * insert rs-timingCLL(4)
 
 Instance: CMVAntibodyIgMCLL
@@ -347,7 +347,7 @@ Description: "CMV IgM Antikörper Bestimmung"
 * description = "CMV IgM Antikörper Bestimmung"
 * insert publisher-experimental-version
 * status = #active
-* code = $sct#62681000237103 "CMV (cytomegalovirus) IgM antibody in serum qualitative result"
+* code = $sct-uk#62681000237103 "CMV (cytomegalovirus) IgM antibody in serum qualitative result"
 * insert rs-timingCLL(4)
 
 Instance: CMVPCRCLL
@@ -359,7 +359,7 @@ Description: "CMV PCR Viruslast Bestimmung"
 * description = "CMV PCR Viruslast Bestimmung"
 * insert publisher-experimental-version
 * status = #active
-* code = $sct#1107381000000101 "Cytomegalovirus viral load"
+* code = $sct-uk#1107381000000101 "Cytomegalovirus viral load"
 * timingTiming.repeat
   * frequency = 1
   * period = 2 
