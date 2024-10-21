@@ -14,6 +14,7 @@ Description: "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer
 * status = #active
 * description = "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer BCL-2-Inhibitor- und/oder BTK-Inhibitor-basierten Therapie behandelt werden."
 * insert publisher-experimental-version
+* insert rs-combination-all
 * action[+]
   * title = "ErstlinieBCL2undBTKbeiCLL"
   * code = $cs-common-process#guideline-based-care // ist das richtig??

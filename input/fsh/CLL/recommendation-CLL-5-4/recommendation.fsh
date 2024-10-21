@@ -11,6 +11,7 @@ Description: "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- bas
 * name = "RecommendationCollection5_4"
 * title = "Recommendation Collection CLL: Rezidivbehandlung mit BCL-2-Inhib. Oder BTK-Inhibitor (5.4)"
 * insert publisher-experimental-version
+* insert rs-combination-all
 * date = "2024-05-06"
 * status = #active
 * description = "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem BTK-Inhibitor (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden."
