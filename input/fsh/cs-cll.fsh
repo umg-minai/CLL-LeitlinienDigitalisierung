@@ -14,3 +14,4 @@ Description: "Concepts required in recommendations that are not defined elsewher
 * #cllrete  "CLL Relapse therapy"
 * #ingrfiftyintwomo "Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
 * #dopeunsixmo "Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
+* #cllflt   "CLL-specific firstline treatment"
