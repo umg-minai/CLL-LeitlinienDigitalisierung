@@ -3,7 +3,7 @@ canonical: https://www.medizin.uni-greifswald.de/fhir/guideline/cll
 name: CLL_Guidelines_QI
 title: Chronisch Lymphatische Leukämie Guidline and Quality indicator 
 status: draft
-version: 0.1.0
+version: 0.2.0
 fhirVersion: 5.0.0
 copyrightYear: 2023+
 releaseLabel: ci-build
