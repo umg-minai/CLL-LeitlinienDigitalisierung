@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationQIRezidivKlinischeStudien> a fhir:EvidenceVariable ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PopulationQIRezidivKlinischeStudien"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable PopulationQIRezidivKlinischeStudien</b></p><a name=\"PopulationQIRezidivKlinischeStudien\"> </a><a name=\"hcPopulationQIRezidivKlinischeStudien\"> </a><a name=\"PopulationQIRezidivKlinischeStudien-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-PopulationQIRezidivKlinischeStudien.html\">EvidenceVariable Population CLL Rezidiv einschluss in klinische Studien</a></p><p><b>name</b>: PopulationQIRezidivKlinischeStudien</p><p><b>title</b>: Population CLL Rezidiv einschluss in klinische Studien</p><p><b>status</b>: Active</p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>description</b>: </p><div><p>QI 4: Einschluss von Pat. mit Rezidiv in klinische Studien (modifiziert 2024)</p>\n</div><p><b>actual</b>: false</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 92814006}\">Chronic lymphoid leukaemia, disease</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 cllrlpstherapy}\">CLL-relapse under treatment</span></td></tr></table></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationQIRezidivKlinischeStudien"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "PopulationQIRezidivKlinischeStudien"] ; # 
+  fhir:title [ fhir:v "Population CLL Rezidiv einschluss in klinische Studien"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-01-16T09:02:23+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "QI 4: Einschluss von Pat. mit Rezidiv in klinische Studien (modifiziert 2024)"] ; # 
+  fhir:actual [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:characteristic ( [
+     fhir:definitionByCombination [
+       fhir:code [ fhir:v "all-of" ] ;
+       fhir:characteristic ( [
+         fhir:definitionByTypeAndValue [
+           fhir:type [
+             fhir:coding ( [
+               a sct:404684003 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "404684003" ] ;
+               fhir:display [ fhir:v "Clinical finding (finding)" ]
+             ] )
+           ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               a sct:92814006 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "92814006" ] ;
+               fhir:display [ fhir:v "Chronic lymphoid leukaemia, disease" ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:definitionByTypeAndValue [
+           fhir:type [
+             fhir:coding ( [
+               a sct:404684003 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "404684003" ] ;
+               fhir:display [ fhir:v "Clinical finding (finding)" ]
+             ] )
+           ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "cllrlpstherapy" ] ;
+               fhir:display [ fhir:v "CLL-relapse under treatment" ]
+             ] )
+           ]
+         ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

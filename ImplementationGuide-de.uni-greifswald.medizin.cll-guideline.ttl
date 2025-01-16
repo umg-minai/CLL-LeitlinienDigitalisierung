@@ -1,0 +1,1105 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ImplementationGuide/de.uni-greifswald.medizin.cll-guideline> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "de.uni-greifswald.medizin.cll-guideline"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide de.uni-greifswald.medizin.cll-guideline</b></p><a name=\"de.uni-greifswald.medizin.cll-guideline\"> </a><a name=\"hcde.uni-greifswald.medizin.cll-guideline\"> </a><a name=\"de.uni-greifswald.medizin.cll-guideline-en-US\"> </a><h2>CLL_Guidelines_QI</h2><p>The official URL for this implementation guide is: </p><pre>https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ImplementationGuide/de.uni-greifswald.medizin.cll-guideline</pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ImplementationGuide/de.uni-greifswald.medizin.cll-guideline"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "CLL_Guidelines_QI"] ; # 
+  fhir:title [ fhir:v "Chronisch Lymphatische Leukämie Guidline and Quality indicator"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-01-16T09:02:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Universitätsmedizin Greifswald, Klink für Anästhesie, Intensiv-, Notfall- und Schmerzmedizin"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Universitätsmedizin Greifswald, Klink für Anästhesie, Intensiv-, Notfall- und Schmerzmedizin" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.medizin.uni-greifswald.de/intensiv/" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "de.uni-greifswald.medizin.cll-guideline"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "6.1.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r5" ] ;
+     fhir:version [ fhir:v "5.1.0" ]
+  ] [
+     fhir:id [ fhir:v "de_netzwerk_universitaetsmedizin_ebm_cpg" ] ;
+     fhir:uri [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg>
+     ] ;
+     fhir:packageId [ fhir:v "de.netzwerk-universitaetsmedizin.ebm-cpg" ] ;
+     fhir:version [ fhir:v "1.0.2" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools.r5#0.3.0" ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AbdomialUltrasonographyCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/AbdomialUltrasonographyCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Abdomial Ultrasonography CLL" ] ;
+       fhir:description [ fhir:v "Abdomensonographie bei CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentComorbiditiesCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/AssessmentComorbiditiesCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Assesment Comorbidities CLL" ] ;
+       fhir:description [ fhir:v "Assesment Comorbidities CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentECOGScoreCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/AssessmentECOGScoreCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Assesment ECOG Score CLL" ] ;
+       fhir:description [ fhir:v "Assesment of the ECOG Score CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentKarnofskyIndexCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/AssessmentKarnofskyIndexCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Assesment Karnofsky-Index CLL" ] ;
+       fhir:description [ fhir:v "Assesment Karnofsky-Index CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/BinetStagingCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/BinetStagingCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Binet Staging CLL" ] ;
+       fhir:description [ fhir:v "Bestimmung des aktuellen klinischen Stadiums (Binet Staging) CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ClinicalChemistryTestCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ClinicalChemistryTestCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Clinical Chemistry Test CLL" ] ;
+       fhir:description [ fhir:v "Klinische Chemie" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/CLLTherapieindikationBinetAB> ;
+         fhir:reference [ fhir:v "PlanDefinition/CLLTherapieindikationBinetAB" ]
+       ] ;
+       fhir:name [ fhir:v "CLL Therapieindikation Binet A B" ] ;
+       fhir:description [ fhir:v "Die Indikation zur Therapie in Abhängigkeit der Symptomatik wenn Binet A oder B vorliegt" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/CLLTherapieindikationBinetC> ;
+         fhir:reference [ fhir:v "PlanDefinition/CLLTherapieindikationBinetC" ]
+       ] ;
+       fhir:name [ fhir:v "CLL Therapieindikation Binet C" ] ;
+       fhir:description [ fhir:v "Die Indikation zur Therapie besteht bei Übergang in Stadium Binet C" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CLLPatientInCLLRelapseStudy> ;
+         fhir:reference [ fhir:v "ActivityDefinition/CLLPatientInCLLRelapseStudy" ]
+       ] ;
+       fhir:name [ fhir:v "CLLPatientInCLLRelapseStudy" ] ;
+       fhir:description [ fhir:v "CLLPatientInCLLRelapseStudy" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2> ;
+         fhir:reference [ fhir:v "CodeSystem/cll-v2" ]
+       ] ;
+       fhir:name [ fhir:v "CLL_V2" ] ;
+       fhir:description [ fhir:v "Concepts required in recommendations that are not defined elsewhere" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CMVAntibodyIgGCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/CMVAntibodyIgGCLL" ]
+       ] ;
+       fhir:name [ fhir:v "CMV IgG Antibody CLL" ] ;
+       fhir:description [ fhir:v "CMV IgG Antikörper Bestimmung" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CMVAntibodyIgMCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/CMVAntibodyIgMCLL" ]
+       ] ;
+       fhir:name [ fhir:v "CMV IgM Antibody CLL" ] ;
+       fhir:description [ fhir:v "CMV IgM Antikörper Bestimmung" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CMVPCRCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/CMVPCRCLL" ]
+       ] ;
+       fhir:name [ fhir:v "CMV PCR CLL" ] ;
+       fhir:description [ fhir:v "CMV PCR Viruslast Bestimmung" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CompleteBloodCountAutomatedCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/CompleteBloodCountAutomatedCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Complete Blood Count and White cell Differential Automated CLL" ] ;
+       fhir:description [ fhir:v "Maschinelles Differentialblutbild CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ErstlinieMitBCL2beiCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ErstlinieMitBCL2beiCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Erstlinienterapie mit BCL2-Inhibitor bei CLL" ] ;
+       fhir:description [ fhir:v "Erstlinienterapie mit BCL2-Inhibitor bei CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/RezidivtherapieMitBCL2beiCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RezidivtherapieMitBCL2beiCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Erstlinienterapie mit BCL2-Inhibitor bei CLL" ] ;
+       fhir:description [ fhir:v "Erstlinienterapie mit BCL2-Inhibitor bei CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/ErstlinieBCL2undBTKbeiCLL> ;
+         fhir:reference [ fhir:v "PlanDefinition/ErstlinieBCL2undBTKbeiCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Erstlinientherapie mit BCL-2- und oder BTK-Inhibitor bei CLL" ] ;
+       fhir:description [ fhir:v "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer BCL-2-Inhibitor- und/oder BTK-Inhibitor-basierten Therapie behandelt werden." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ExaminationLiverSizeCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ExaminationLiverSizeCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Examination liver size CLL" ] ;
+       fhir:description [ fhir:v "Abschätzung der Lebergröße bei CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ExaminationLymphaticNodesCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ExaminationLymphaticNodesCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Examination Lymphatic nodes CLL" ] ;
+       fhir:description [ fhir:v "vollständiger Erhebung des peripheren Lymphknotenstatus" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ExaminationSpleenSizeCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ExaminationSpleenSizeCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Examination spleen size CLL" ] ;
+       fhir:description [ fhir:v "Abschätzung der Milzgröße bei CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/TP53andDEL17pCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/TP53andDEL17pCLL" ]
+       ] ;
+       fhir:name [ fhir:v "FISH hinsichtlich TP53 und DEL17p" ] ;
+       fhir:description [ fhir:v "TP53-Deletions- und Mutationsstatus (FISH hinsichtlich del17p und TP53-Mutationsanalyse ≤ 12 Wochen vor Therapiebeginn)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HBVSerologyCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/HBVSerologyCLL" ]
+       ] ;
+       fhir:name [ fhir:v "HBV Serology CLL" ] ;
+       fhir:description [ fhir:v "HBV Serologie" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HCVSerologyCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/HCVSerologyCLL" ]
+       ] ;
+       fhir:name [ fhir:v "HCV Serology CLL" ] ;
+       fhir:description [ fhir:v "HCV Serologie" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HEVSerologyCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/HEVSerologyCLL" ]
+       ] ;
+       fhir:name [ fhir:v "HEV Serology CLL" ] ;
+       fhir:description [ fhir:v "HEV Serologie" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HistoryTakingCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/HistoryTakingCLL" ]
+       ] ;
+       fhir:name [ fhir:v "History Taking CLL" ] ;
+       fhir:description [ fhir:v "Anamnese bei CLL Patienten" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HIVSerologyCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/HIVSerologyCLL" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Serology CLL" ] ;
+       fhir:description [ fhir:v "HIV Serologie" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/IGHVmutationCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/IGHVmutationCLL" ]
+       ] ;
+       fhir:name [ fhir:v "IGHV-Mutationsstatus" ] ;
+       fhir:description [ fhir:v "Bekannter IGHV-Mutationsstatus vor Therapiebeginn" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/PhysicalExaminationCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/PhysicalExaminationCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Physical Examination CLL" ] ;
+       fhir:description [ fhir:v "Körperliche Untersuchung bei CLL Patienten" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationQIRezidivKlinischeStudien> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationQIRezidivKlinischeStudien" ]
+       ] ;
+       fhir:name [ fhir:v "Population CLL Rezidiv einschluss in klinische Studien" ] ;
+       fhir:description [ fhir:v "Population CLL Pat. mit Rezidiv" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationQIMedikationErstlinienTherapie> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationQIMedikationErstlinienTherapie" ]
+       ] ;
+       fhir:name [ fhir:v "Population für CLL Erstlinien-Therapie" ] ;
+       fhir:description [ fhir:v "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer Bcl-2- oder BTK-Inhibitor-basierten Therapie behandelt werden." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationQIMutationsstatusVorTherapie> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationQIMutationsstatusVorTherapie" ]
+       ] ;
+       fhir:name [ fhir:v "Population Genetischer Mutationsstatus vor Therapie" ] ;
+       fhir:description [ fhir:v "Population mit einer Chronisch Lymphatische Leukämie unter Erstlinientherapie" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLOnkoTherapieIdelalisib> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationCLLOnkoTherapieIdelalisib" ]
+       ] ;
+       fhir:name [ fhir:v "Population: CLL onkologische Therapielinie mit Idelalisib Frauen" ] ;
+       fhir:description [ fhir:v "Population, die eine Chronisch Lymphatische Leukämie hat und die mit Idelalisib behandelt werden" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLBinetAB> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationCLLBinetAB" ]
+       ] ;
+       fhir:name [ fhir:v "Population: CLL und Binet Stadium AB " ] ;
+       fhir:description [ fhir:v "Population, bei der Binet A oder B sowie eine bestimmte klinische Symptomatik vorliegt" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLBinetC> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationCLLBinetC" ]
+       ] ;
+       fhir:name [ fhir:v "Population: CLL und Binet Stadium C" ] ;
+       fhir:description [ fhir:v "Population, die eine Chronisch Lymphatische Leukämie hat und bei der eine Binet Stadium C vorliegt" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLErstlinientherapie> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationCLLErstlinientherapie" ]
+       ] ;
+       fhir:name [ fhir:v "Population: CLL und Erstlinientherapie" ] ;
+       fhir:description [ fhir:v "Population, die eine Chronisch Lymphatische Leukämie hat und eine Erstlinientherapie bekommt" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLPlanungOnkoTherapie> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationCLLPlanungOnkoTherapie" ]
+       ] ;
+       fhir:name [ fhir:v "Population: CLL und Planung Onkologische Therapielinie" ] ;
+       fhir:description [ fhir:v "Population mit einer Chronisch Lymphatische Leukämie und einem behandlungsbedürftigen Progress" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLPlanungOnkoTherapieFertileFemale> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationCLLPlanungOnkoTherapieFertileFemale" ]
+       ] ;
+       fhir:name [ fhir:v "Population: CLL und Planung Onkologische Therapielinie gebährfähige Frauen" ] ;
+       fhir:description [ fhir:v "Population mit einer Chronisch Lymphatische Leukämie, einem behandlungsbedürftigen Progress und weiblich in einem gebährfähigen Alter" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLPlanungOnkoTherapieIdelalisib> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationCLLPlanungOnkoTherapieIdelalisib" ]
+       ] ;
+       fhir:name [ fhir:v "Population: CLL und Planung Onkologische Therapielinie mit Idelalisib" ] ;
+       fhir:description [ fhir:v "Population mit einer Chronisch Lymphatische Leukämie, einem behandlungsbedürftigen Progress und bei der eine Therapieplanung mit Idelalisib ansteht" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "EvidenceVariable" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLRezidivtherapie> ;
+         fhir:reference [ fhir:v "EvidenceVariable/PopulationCLLRezidivtherapie" ]
+       ] ;
+       fhir:name [ fhir:v "Population: CLL und Rezidivtherapie" ] ;
+       fhir:description [ fhir:v "Population, die eine Chronisch Lymphatische Leukämie hat und eine Rezidivtherapie bekommt" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/PregnancyTestbHCGCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/PregnancyTestbHCGCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Pregnancy Test betaHCG CLL" ] ;
+       fhir:description [ fhir:v "Pregnancy Test betaHCG CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/QIMutationsstatusVorTherapie> ;
+         fhir:reference [ fhir:v "PlanDefinition/QIMutationsstatusVorTherapie" ]
+       ] ;
+       fhir:name [ fhir:v "QI 2: Bestimmung TP53-Deletions- und TP53-/IGHV-Mutationsstatus vor erster systemischer CLL-Therapie (modifiziert 2024)" ] ;
+       fhir:description [ fhir:v "Folgende Untersuchungsverfahren sollen vor Einleitung einer neuen Therapielinie zur Anwendung kommen: (I) Bestimmung des TP53-Deletions- und Mutationsstatus (FISH hinsichtlich del(17)(p13) und TP53-Mutationsanalyse); (II) Erhebung des IGHV-Mutationsstatus (sofern noch nicht bekannt)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionQIMutationsstatusVorTherapie> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollectionQIMutationsstatusVorTherapie" ]
+       ] ;
+       fhir:name [ fhir:v "QI 2: Bestimmung TP53-Deletions- und TP53-/IGHV-Mutationsstatus vor erster systemischer CLL-Therapie (modifiziert 2024)" ] ;
+       fhir:description [ fhir:v "Folgende Untersuchungsverfahren sollen vor Einleitung einer neuen Therapielinie zur Anwendung kommen: (I) Bestimmung des TP53-Deletions- und Mutationsstatus (FISH hinsichtlich del(17)(p13) und TP53-Mutationsanalyse); (II) Erhebung des IGHV-Mutationsstatus (sofern noch nicht bekannt)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionQIRezidivKlinischeStudien> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollectionQIRezidivKlinischeStudien" ]
+       ] ;
+       fhir:name [ fhir:v "QI 4: Einschluss von CLL-Pat. mit Rezidiv in klinische Studien (modifiziert 2024)" ] ;
+       fhir:description [ fhir:v "Patient*innen mit einem Rezidiv sollen, sofern eine passende klinische Studie verfügbar ist, die Therapie im Rahmen einer klinischen Studie angeboten werden." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/QIRezidivKlinischeStudien> ;
+         fhir:reference [ fhir:v "PlanDefinition/QIRezidivKlinischeStudien" ]
+       ] ;
+       fhir:name [ fhir:v "QI 4: Einschluss von CLL-Pat. mit Rezidiv in klinische Studien (modifiziert 2024))" ] ;
+       fhir:description [ fhir:v "Patient*innen mit einem Rezidiv sollen, sofern eine passende klinische Studie verfügbar ist, die Therapie im Rahmen einer klinischen Studie angeboten werden.)" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/QICLLErstlinienTherapie> ;
+         fhir:reference [ fhir:v "PlanDefinition/QICLLErstlinienTherapie" ]
+       ] ;
+       fhir:name [ fhir:v "QI 5: Bcl-2- oder BTK-Inhibitor-basierten Therapie als Erstlinientherapie (neu 2024)" ] ;
+       fhir:description [ fhir:v "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer Bcl-2- oder BTK-Inhibitor-basierten Therapie behandelt werden." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionQIMedikationErstlinienTherapie> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollectionQIMedikationErstlinienTherapie" ]
+       ] ;
+       fhir:name [ fhir:v "QI 5: Bcl-2- oder BTK-Inhibitor-basierten Therapie als Erstlinientherapie (neu 2024)" ] ;
+       fhir:description [ fhir:v "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer Bcl-2- oder BTK-Inhibitor-basierten Therapie behandelt werden." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionErstlinieBCL2undBTKbeiCLL> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollectionErstlinieBCL2undBTKbeiCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection CLL: Erstlinien-Behandlung mit BCL-2-Inhib. Oder BTK-Inhibitor (4.3)" ] ;
+       fhir:description [ fhir:v "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer BCL-2-Inhibitor- und/oder BTK-Inhibitor-basierten Therapie behandelt werden." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionRezidivtherapieBCL2undBTKbeiCLL> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollectionRezidivtherapieBCL2undBTKbeiCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection CLL: Rezidivbehandlung mit BCL-2-Inhib. Oder BTK-Inhibitor (5.4)" ] ;
+       fhir:description [ fhir:v "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem BTK-Inhibitor (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionTherapieplanungBinetCLL> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollectionTherapieplanungBinetCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection CLL: Therapieindikation nach Binet Stadium (4.1)" ] ;
+       fhir:description [ fhir:v "Die Indikation zur Therapie besteht in Abhängigkeit der Symptomatik oder bei Übergang in Stadium Binet C" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie> ;
+         fhir:reference [ fhir:v "PlanDefinition/RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie" ]
+       ] ;
+       fhir:name [ fhir:v "Recommendation Collection CLL: Untersuchungen vor Therapieeinleitung (3.11)" ] ;
+       fhir:description [ fhir:v "Folgende Untersuchungsverfahren sollen zeitnah vor Einleitung einer neuen Therapielinie zur Anwendung kommen:" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RezidivBehandlungBCL2undBTKbeiCLL> ;
+         fhir:reference [ fhir:v "PlanDefinition/RezidivBehandlungBCL2undBTKbeiCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Rezidivbehandlung mit BCL-2-Inhib. Oder Acalabrutinib" ] ;
+       fhir:description [ fhir:v "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem Acalabrutinib (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ErstlinieMitBTKbeiCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/ErstlinieMitBTKbeiCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Rezidivtherapie mit BTK-Inhibitor bei CLL" ] ;
+       fhir:description [ fhir:v "Rezidivtherapie mit BTK-Inhibitor bei CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/RezidivtherapieMitBTKbeiCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/RezidivtherapieMitBTKbeiCLL" ]
+       ] ;
+       fhir:name [ fhir:v "Rezidivtherapie mit BTK-Inhibitor bei CLL" ] ;
+       fhir:description [ fhir:v "Rezidivtherapie mit BTK-Inhibitor bei CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/TherapieIndikationCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/TherapieIndikationCLL" ]
+       ] ;
+       fhir:name [ fhir:v "TherapieIndikationCLL" ] ;
+       fhir:description [ fhir:v "Therapie Indikation bei CLL" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorCLLPlanungOnkoTherapie> ;
+         fhir:reference [ fhir:v "PlanDefinition/UntersuchungenVorCLLPlanungOnkoTherapie" ]
+       ] ;
+       fhir:name [ fhir:v "Untersuchung vor Einleitung einer CLL Therapielinie " ] ;
+       fhir:description [ fhir:v "Untersuchung die vor der Einleitung einer CLL Therapielinie vorliegen sollen" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieFertileFemale> ;
+         fhir:reference [ fhir:v "PlanDefinition/UntersuchungenVorPlanungOnkoTherapieFertileFemale" ]
+       ] ;
+       fhir:name [ fhir:v "Untersuchung vor Einleitung einer CLL Therapielinie bei gebährfähige Frauen" ] ;
+       fhir:description [ fhir:v "Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie gebährfähige Frauen vorliegen sollen" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieIdelalisib> ;
+         fhir:reference [ fhir:v "PlanDefinition/UntersuchungenVorPlanungOnkoTherapieIdelalisib" ]
+       ] ;
+       fhir:name [ fhir:v "Untersuchung vor Einleitung einer CLL Therapielinie mit Idelalisib" ] ;
+       fhir:description [ fhir:v "Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie mit Idelalisib vorliegen sollen" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenWhileTherapieIdelalisib> ;
+         fhir:reference [ fhir:v "PlanDefinition/UntersuchungenWhileTherapieIdelalisib" ]
+       ] ;
+       fhir:name [ fhir:v "Untersuchung waehrend CLL Therapielinie mit Idelalisib" ] ;
+       fhir:description [ fhir:v "regelmäßige Untersuchung waehrend CLL Therapie mit Idelalisib" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ActivityDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/MicroscopyWhiteBloodCellCountCLL> ;
+         fhir:reference [ fhir:v "ActivityDefinition/MicroscopyWhiteBloodCellCountCLL" ]
+       ] ;
+       fhir:name [ fhir:v "White cell Differential Microscopy CLL" ] ;
+       fhir:description [ fhir:v "Mikroskopisches Differentialblutbild" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:page [
+       fhir:source [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Index" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:source [ fhir:v "changelog.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "changelog.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Change Log" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2023+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "ci-build" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "show-inherited-invariants" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "usage-stats-opt-out" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludexml" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludejsn" ]
+       ] ;
+       fhir:value [ fhir:v "false" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludettl" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludemap" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludeexample" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "extension-domain" ]
+       ] ;
+       fhir:value [ fhir:v "https://www.netzwerk-universitaetsmedizin.de" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "extension-domain" ]
+       ] ;
+       fhir:value [ fhir:v "https://www.medizin.uni-greifswald.de" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "extension-domain" ]
+       ] ;
+       fhir:value [ fhir:v "https://simplifier.net" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

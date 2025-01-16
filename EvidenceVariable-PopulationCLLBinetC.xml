@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EvidenceVariable xmlns="http://hl7.org/fhir">
+  <id value="PopulationCLLBinetC"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: EvidenceVariable PopulationCLLBinetC</b></p><a name="PopulationCLLBinetC"> </a><a name="hcPopulationCLLBinetC"> </a><a name="PopulationCLLBinetC-en-US"> </a><p><b>url</b>: <a href="EvidenceVariable-PopulationCLLBinetC.html">EvidenceVariable Population: CLL und Binet Stadium C</a></p><p><b>name</b>: PopulationCLLBinetC</p><p><b>title</b>: Population: CLL und Binet Stadium C</p><p><b>status</b>: Active</p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>description</b>: </p><div><p>Population, die eine Chronisch Lymphatische Leukämie hat und bei der eine Binet Stadium C vorliegt</p>
+</div><p><b>actual</b>: false</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 404684003}">Clinical finding (finding)</span></td><td><span title="Codes:{http://snomed.info/sct 92814006}">Chronic lymphoid leukaemia, disease</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 1149099005}">Binet staging classification for chronic lymphocytic leukemia</span></td><td><span title="Codes:{http://snomed.info/sct 863781000000100}">Clinical stage C chronic lymphocytic leukaemia</span></td></tr></table></blockquote></blockquote></blockquote></div>
+  </text>
+  <url value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLBinetC"/>
+  <name value="PopulationCLLBinetC"/>
+  <title value="Population: CLL und Binet Stadium C"/>
+  <status value="active"/>
+  <date value="2025-01-16T09:02:23+00:00"/>
+  <description value="Population, die eine Chronisch Lymphatische Leukämie hat und bei der eine Binet Stadium C vorliegt"/>
+  <actual value="false"/>
+  <characteristic>
+    <definitionByCombination>
+      <code value="all-of"/>
+      <characteristic>
+        <linkId value="CLL"/>
+        <definitionByTypeAndValue>
+          <type>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="404684003"/>
+              <display value="Clinical finding (finding)"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="92814006"/>
+              <display value="Chronic lymphoid leukaemia, disease"/>
+            </coding>
+          </valueCodeableConcept>
+        </definitionByTypeAndValue>
+      </characteristic>
+      <characteristic>
+        <definitionByTypeAndValue>
+          <type>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1149099005"/>
+              <display value="Binet staging classification for chronic lymphocytic leukemia"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <version value="http://snomed.info/sct/83821000000107/version/20230412fd"/>
+              <code value="863781000000100"/>
+              <display value="Clinical stage C chronic lymphocytic leukaemia"/>
+            </coding>
+          </valueCodeableConcept>
+        </definitionByTypeAndValue>
+      </characteristic>
+    </definitionByCombination>
+  </characteristic>
+</EvidenceVariable>

@@ -1,0 +1,6 @@
+{
+  "version" : "0.2.0",
+  "fhirVersion" : ["5.0.0"],
+  "date" : "20250116090159",
+  "name" : "de.uni-greifswald.medizin.cll-guideline"
+}

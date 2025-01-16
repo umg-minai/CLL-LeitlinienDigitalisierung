@@ -1,0 +1,74 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "HEVSerologyCLL",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition HEVSerologyCLL</b></p><a name=\"HEVSerologyCLL\"> </a><a name=\"hcHEVSerologyCLL\"> </a><a name=\"HEVSerologyCLL-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-HEVSerologyCLL.html\">ActivityDefinition HEV Serology CLL</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: HEVSerologyCLL</p><p><b>title</b>: HEV Serology CLL</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>HEV Serologie</p>\n</div><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 36446003}\">Hepatitis E virus measurement (procedure)</span></p><p><b>timing</b>: Count 1  times, Once</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HEVSerologyCLL",
+  "version" : "Langversion 2.01",
+  "name" : "HEVSerologyCLL",
+  "title" : "HEV Serology CLL",
+  "status" : "active",
+  "experimental" : false,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2025-01-16T09:02:23+00:00",
+  "publisher" : "https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll",
+  "description" : "HEV Serologie",
+  "kind" : "ServiceRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "36446003",
+      "display" : "Hepatitis E virus measurement (procedure)"
+    }]
+  },
+  "timingTiming" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "contextCode",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "63936-9"
+          }]
+        }
+      },
+      {
+        "url" : "offset",
+        "valueRange" : {
+          "low" : {
+            "value" : -4,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "wk"
+          },
+          "high" : {
+            "value" : 0,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "wk"
+          }
+        }
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/relative-time"
+    }],
+    "repeat" : {
+      "count" : 1
+    }
+  }
+}

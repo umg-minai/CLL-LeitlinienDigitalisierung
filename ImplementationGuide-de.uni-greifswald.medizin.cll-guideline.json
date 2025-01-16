@@ -1,0 +1,1139 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "de.uni-greifswald.medizin.cll-guideline",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide de.uni-greifswald.medizin.cll-guideline</b></p><a name=\"de.uni-greifswald.medizin.cll-guideline\"> </a><a name=\"hcde.uni-greifswald.medizin.cll-guideline\"> </a><a name=\"de.uni-greifswald.medizin.cll-guideline-en-US\"> </a><h2>CLL_Guidelines_QI</h2><p>The official URL for this implementation guide is: </p><pre>https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ImplementationGuide/de.uni-greifswald.medizin.cll-guideline</pre></div>"
+  },
+  "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ImplementationGuide/de.uni-greifswald.medizin.cll-guideline",
+  "version" : "0.2.0",
+  "name" : "CLL_Guidelines_QI",
+  "title" : "Chronisch Lymphatische Leukämie Guidline and Quality indicator",
+  "status" : "draft",
+  "date" : "2025-01-16T09:02:23+00:00",
+  "publisher" : "Universitätsmedizin Greifswald, Klink für Anästhesie, Intensiv-, Notfall- und Schmerzmedizin",
+  "contact" : [{
+    "name" : "Universitätsmedizin Greifswald, Klink für Anästhesie, Intensiv-, Notfall- und Schmerzmedizin",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.medizin.uni-greifswald.de/intensiv/"
+    }]
+  }],
+  "packageId" : "de.uni-greifswald.medizin.cll-guideline",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["5.0.0"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r5",
+    "version" : "6.1.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r5",
+    "version" : "5.1.0"
+  },
+  {
+    "id" : "de_netzwerk_universitaetsmedizin_ebm_cpg",
+    "uri" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/ImplementationGuide/de.netzwerk-universitaetsmedizin.ebm-cpg",
+    "packageId" : "de.netzwerk-universitaetsmedizin.ebm-cpg",
+    "version" : "1.0.2"
+  }],
+  "definition" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r5#0.3.0"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/AbdomialUltrasonographyCLL"
+      },
+      "name" : "Abdomial Ultrasonography CLL",
+      "description" : "Abdomensonographie bei CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/AssessmentComorbiditiesCLL"
+      },
+      "name" : "Assesment Comorbidities CLL",
+      "description" : "Assesment Comorbidities CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/AssessmentECOGScoreCLL"
+      },
+      "name" : "Assesment ECOG Score CLL",
+      "description" : "Assesment of the ECOG Score CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/AssessmentKarnofskyIndexCLL"
+      },
+      "name" : "Assesment Karnofsky-Index CLL",
+      "description" : "Assesment Karnofsky-Index CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/BinetStagingCLL"
+      },
+      "name" : "Binet Staging CLL",
+      "description" : "Bestimmung des aktuellen klinischen Stadiums (Binet Staging) CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/ClinicalChemistryTestCLL"
+      },
+      "name" : "Clinical Chemistry Test CLL",
+      "description" : "Klinische Chemie",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/CLLTherapieindikationBinetAB"
+      },
+      "name" : "CLL Therapieindikation Binet A B",
+      "description" : "Die Indikation zur Therapie in Abhängigkeit der Symptomatik wenn Binet A oder B vorliegt",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/CLLTherapieindikationBinetC"
+      },
+      "name" : "CLL Therapieindikation Binet C",
+      "description" : "Die Indikation zur Therapie besteht bei Übergang in Stadium Binet C",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/CLLPatientInCLLRelapseStudy"
+      },
+      "name" : "CLLPatientInCLLRelapseStudy",
+      "description" : "CLLPatientInCLLRelapseStudy",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cll-v2"
+      },
+      "name" : "CLL_V2",
+      "description" : "Concepts required in recommendations that are not defined elsewhere",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/CMVAntibodyIgGCLL"
+      },
+      "name" : "CMV IgG Antibody CLL",
+      "description" : "CMV IgG Antikörper Bestimmung",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/CMVAntibodyIgMCLL"
+      },
+      "name" : "CMV IgM Antibody CLL",
+      "description" : "CMV IgM Antikörper Bestimmung",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/CMVPCRCLL"
+      },
+      "name" : "CMV PCR CLL",
+      "description" : "CMV PCR Viruslast Bestimmung",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/CompleteBloodCountAutomatedCLL"
+      },
+      "name" : "Complete Blood Count and White cell Differential Automated CLL",
+      "description" : "Maschinelles Differentialblutbild CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/ErstlinieMitBCL2beiCLL"
+      },
+      "name" : "Erstlinienterapie mit BCL2-Inhibitor bei CLL",
+      "description" : "Erstlinienterapie mit BCL2-Inhibitor bei CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/RezidivtherapieMitBCL2beiCLL"
+      },
+      "name" : "Erstlinienterapie mit BCL2-Inhibitor bei CLL",
+      "description" : "Erstlinienterapie mit BCL2-Inhibitor bei CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/ErstlinieBCL2undBTKbeiCLL"
+      },
+      "name" : "Erstlinientherapie mit BCL-2- und oder BTK-Inhibitor bei CLL",
+      "description" : "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer BCL-2-Inhibitor- und/oder BTK-Inhibitor-basierten Therapie behandelt werden.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/ExaminationLiverSizeCLL"
+      },
+      "name" : "Examination liver size CLL",
+      "description" : "Abschätzung der Lebergröße bei CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/ExaminationLymphaticNodesCLL"
+      },
+      "name" : "Examination Lymphatic nodes CLL",
+      "description" : "vollständiger Erhebung des peripheren Lymphknotenstatus",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/ExaminationSpleenSizeCLL"
+      },
+      "name" : "Examination spleen size CLL",
+      "description" : "Abschätzung der Milzgröße bei CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/TP53andDEL17pCLL"
+      },
+      "name" : "FISH hinsichtlich TP53 und DEL17p",
+      "description" : "TP53-Deletions- und Mutationsstatus (FISH hinsichtlich del17p und TP53-Mutationsanalyse ≤ 12 Wochen vor Therapiebeginn)",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/HBVSerologyCLL"
+      },
+      "name" : "HBV Serology CLL",
+      "description" : "HBV Serologie",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/HCVSerologyCLL"
+      },
+      "name" : "HCV Serology CLL",
+      "description" : "HCV Serologie",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/HEVSerologyCLL"
+      },
+      "name" : "HEV Serology CLL",
+      "description" : "HEV Serologie",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/HistoryTakingCLL"
+      },
+      "name" : "History Taking CLL",
+      "description" : "Anamnese bei CLL Patienten",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/HIVSerologyCLL"
+      },
+      "name" : "HIV Serology CLL",
+      "description" : "HIV Serologie",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/IGHVmutationCLL"
+      },
+      "name" : "IGHV-Mutationsstatus",
+      "description" : "Bekannter IGHV-Mutationsstatus vor Therapiebeginn",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/PhysicalExaminationCLL"
+      },
+      "name" : "Physical Examination CLL",
+      "description" : "Körperliche Untersuchung bei CLL Patienten",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationQIRezidivKlinischeStudien"
+      },
+      "name" : "Population CLL Rezidiv einschluss in klinische Studien",
+      "description" : "Population CLL Pat. mit Rezidiv",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationQIMedikationErstlinienTherapie"
+      },
+      "name" : "Population für CLL Erstlinien-Therapie",
+      "description" : "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer Bcl-2- oder BTK-Inhibitor-basierten Therapie behandelt werden.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationQIMutationsstatusVorTherapie"
+      },
+      "name" : "Population Genetischer Mutationsstatus vor Therapie",
+      "description" : "Population mit einer Chronisch Lymphatische Leukämie unter Erstlinientherapie",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationCLLOnkoTherapieIdelalisib"
+      },
+      "name" : "Population: CLL onkologische Therapielinie mit Idelalisib Frauen",
+      "description" : "Population, die eine Chronisch Lymphatische Leukämie hat und die mit Idelalisib behandelt werden",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationCLLBinetAB"
+      },
+      "name" : "Population: CLL und Binet Stadium AB ",
+      "description" : "Population, bei der Binet A oder B sowie eine bestimmte klinische Symptomatik vorliegt",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationCLLBinetC"
+      },
+      "name" : "Population: CLL und Binet Stadium C",
+      "description" : "Population, die eine Chronisch Lymphatische Leukämie hat und bei der eine Binet Stadium C vorliegt",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationCLLErstlinientherapie"
+      },
+      "name" : "Population: CLL und Erstlinientherapie",
+      "description" : "Population, die eine Chronisch Lymphatische Leukämie hat und eine Erstlinientherapie bekommt",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationCLLPlanungOnkoTherapie"
+      },
+      "name" : "Population: CLL und Planung Onkologische Therapielinie",
+      "description" : "Population mit einer Chronisch Lymphatische Leukämie und einem behandlungsbedürftigen Progress",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationCLLPlanungOnkoTherapieFertileFemale"
+      },
+      "name" : "Population: CLL und Planung Onkologische Therapielinie gebährfähige Frauen",
+      "description" : "Population mit einer Chronisch Lymphatische Leukämie, einem behandlungsbedürftigen Progress und weiblich in einem gebährfähigen Alter",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationCLLPlanungOnkoTherapieIdelalisib"
+      },
+      "name" : "Population: CLL und Planung Onkologische Therapielinie mit Idelalisib",
+      "description" : "Population mit einer Chronisch Lymphatische Leukämie, einem behandlungsbedürftigen Progress und bei der eine Therapieplanung mit Idelalisib ansteht",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EvidenceVariable"
+      }],
+      "reference" : {
+        "reference" : "EvidenceVariable/PopulationCLLRezidivtherapie"
+      },
+      "name" : "Population: CLL und Rezidivtherapie",
+      "description" : "Population, die eine Chronisch Lymphatische Leukämie hat und eine Rezidivtherapie bekommt",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/PregnancyTestbHCGCLL"
+      },
+      "name" : "Pregnancy Test betaHCG CLL",
+      "description" : "Pregnancy Test betaHCG CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/QIMutationsstatusVorTherapie"
+      },
+      "name" : "QI 2: Bestimmung TP53-Deletions- und TP53-/IGHV-Mutationsstatus vor erster systemischer CLL-Therapie (modifiziert 2024)",
+      "description" : "Folgende Untersuchungsverfahren sollen vor Einleitung einer neuen Therapielinie zur Anwendung kommen: (I) Bestimmung des TP53-Deletions- und Mutationsstatus (FISH hinsichtlich del(17)(p13) und TP53-Mutationsanalyse); (II) Erhebung des IGHV-Mutationsstatus (sofern noch nicht bekannt)",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecCollectionQIMutationsstatusVorTherapie"
+      },
+      "name" : "QI 2: Bestimmung TP53-Deletions- und TP53-/IGHV-Mutationsstatus vor erster systemischer CLL-Therapie (modifiziert 2024)",
+      "description" : "Folgende Untersuchungsverfahren sollen vor Einleitung einer neuen Therapielinie zur Anwendung kommen: (I) Bestimmung des TP53-Deletions- und Mutationsstatus (FISH hinsichtlich del(17)(p13) und TP53-Mutationsanalyse); (II) Erhebung des IGHV-Mutationsstatus (sofern noch nicht bekannt)",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecCollectionQIRezidivKlinischeStudien"
+      },
+      "name" : "QI 4: Einschluss von CLL-Pat. mit Rezidiv in klinische Studien (modifiziert 2024)",
+      "description" : "Patient*innen mit einem Rezidiv sollen, sofern eine passende klinische Studie verfügbar ist, die Therapie im Rahmen einer klinischen Studie angeboten werden.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/QIRezidivKlinischeStudien"
+      },
+      "name" : "QI 4: Einschluss von CLL-Pat. mit Rezidiv in klinische Studien (modifiziert 2024))",
+      "description" : "Patient*innen mit einem Rezidiv sollen, sofern eine passende klinische Studie verfügbar ist, die Therapie im Rahmen einer klinischen Studie angeboten werden.)",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/QICLLErstlinienTherapie"
+      },
+      "name" : "QI 5: Bcl-2- oder BTK-Inhibitor-basierten Therapie als Erstlinientherapie (neu 2024)",
+      "description" : "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer Bcl-2- oder BTK-Inhibitor-basierten Therapie behandelt werden.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecCollectionQIMedikationErstlinienTherapie"
+      },
+      "name" : "QI 5: Bcl-2- oder BTK-Inhibitor-basierten Therapie als Erstlinientherapie (neu 2024)",
+      "description" : "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer Bcl-2- oder BTK-Inhibitor-basierten Therapie behandelt werden.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecCollectionErstlinieBCL2undBTKbeiCLL"
+      },
+      "name" : "Recommendation Collection CLL: Erstlinien-Behandlung mit BCL-2-Inhib. Oder BTK-Inhibitor (4.3)",
+      "description" : "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer BCL-2-Inhibitor- und/oder BTK-Inhibitor-basierten Therapie behandelt werden.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecCollectionRezidivtherapieBCL2undBTKbeiCLL"
+      },
+      "name" : "Recommendation Collection CLL: Rezidivbehandlung mit BCL-2-Inhib. Oder BTK-Inhibitor (5.4)",
+      "description" : "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem BTK-Inhibitor (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecCollectionTherapieplanungBinetCLL"
+      },
+      "name" : "Recommendation Collection CLL: Therapieindikation nach Binet Stadium (4.1)",
+      "description" : "Die Indikation zur Therapie besteht in Abhängigkeit der Symptomatik oder bei Übergang in Stadium Binet C",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie"
+      },
+      "name" : "Recommendation Collection CLL: Untersuchungen vor Therapieeinleitung (3.11)",
+      "description" : "Folgende Untersuchungsverfahren sollen zeitnah vor Einleitung einer neuen Therapielinie zur Anwendung kommen:",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/RezidivBehandlungBCL2undBTKbeiCLL"
+      },
+      "name" : "Rezidivbehandlung mit BCL-2-Inhib. Oder Acalabrutinib",
+      "description" : "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem Acalabrutinib (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/ErstlinieMitBTKbeiCLL"
+      },
+      "name" : "Rezidivtherapie mit BTK-Inhibitor bei CLL",
+      "description" : "Rezidivtherapie mit BTK-Inhibitor bei CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/RezidivtherapieMitBTKbeiCLL"
+      },
+      "name" : "Rezidivtherapie mit BTK-Inhibitor bei CLL",
+      "description" : "Rezidivtherapie mit BTK-Inhibitor bei CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/TherapieIndikationCLL"
+      },
+      "name" : "TherapieIndikationCLL",
+      "description" : "Therapie Indikation bei CLL",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/UntersuchungenVorCLLPlanungOnkoTherapie"
+      },
+      "name" : "Untersuchung vor Einleitung einer CLL Therapielinie ",
+      "description" : "Untersuchung die vor der Einleitung einer CLL Therapielinie vorliegen sollen",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/UntersuchungenVorPlanungOnkoTherapieFertileFemale"
+      },
+      "name" : "Untersuchung vor Einleitung einer CLL Therapielinie bei gebährfähige Frauen",
+      "description" : "Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie gebährfähige Frauen vorliegen sollen",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/UntersuchungenVorPlanungOnkoTherapieIdelalisib"
+      },
+      "name" : "Untersuchung vor Einleitung einer CLL Therapielinie mit Idelalisib",
+      "description" : "Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie mit Idelalisib vorliegen sollen",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PlanDefinition"
+      }],
+      "reference" : {
+        "reference" : "PlanDefinition/UntersuchungenWhileTherapieIdelalisib"
+      },
+      "name" : "Untersuchung waehrend CLL Therapielinie mit Idelalisib",
+      "description" : "regelmäßige Untersuchung waehrend CLL Therapie mit Idelalisib",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActivityDefinition"
+      }],
+      "reference" : {
+        "reference" : "ActivityDefinition/MicroscopyWhiteBloodCellCountCLL"
+      },
+      "name" : "White cell Differential Microscopy CLL",
+      "description" : "Mikroskopisches Differentialblutbild",
+      "isExample" : false
+    }],
+    "page" : {
+      "sourceUrl" : "toc.html",
+      "name" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "sourceUrl" : "index.html",
+        "name" : "index.html",
+        "title" : "Index",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "downloads.html",
+        "name" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "html"
+      },
+      {
+        "sourceUrl" : "changelog.html",
+        "name" : "changelog.html",
+        "title" : "Change Log",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "copyrightyear"
+      },
+      "value" : "2023+"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "releaselabel"
+      },
+      "value" : "ci-build"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "active-tables"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-contact"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-jurisdiction"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-publisher"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-version"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "show-inherited-invariants"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "usage-stats-opt-out"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludexml"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludejsn"
+      },
+      "value" : "false"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludettl"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludemap"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludeexample"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "extension-domain"
+      },
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "extension-domain"
+      },
+      "value" : "https://www.medizin.uni-greifswald.de"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "extension-domain"
+      },
+      "value" : "https://simplifier.net"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "autoload-resources"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/examples"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/extensions"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/models"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/operations"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/profiles"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/maps"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/testing"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/history"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "template/config"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "input/images"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "template/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "input/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-qa"
+      },
+      "value" : "temp/qa"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-temp"
+      },
+      "value" : "temp/pages"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-output"
+      },
+      "value" : "output"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-tx-cache"
+      },
+      "value" : "input-cache/txcache"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-suppressed-warnings"
+      },
+      "value" : "input/ignoreWarnings.txt"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-history"
+      },
+      "value" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/history.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-html"
+      },
+      "value" : "template-page.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-md"
+      },
+      "value" : "template-page-md.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-context"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-copyright"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-license"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-wg"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "fmm-definition"
+      },
+      "value" : "http://hl7.org/fhir/versions.html#maturity"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "propagate-status"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludelogbinaryformat"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "tabbed-snapshots"
+      },
+      "value" : "true"
+    }]
+  }
+}

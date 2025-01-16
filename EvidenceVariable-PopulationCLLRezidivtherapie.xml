@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EvidenceVariable xmlns="http://hl7.org/fhir">
+  <id value="PopulationCLLRezidivtherapie"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: EvidenceVariable PopulationCLLRezidivtherapie</b></p><a name="PopulationCLLRezidivtherapie"> </a><a name="hcPopulationCLLRezidivtherapie"> </a><a name="PopulationCLLRezidivtherapie-en-US"> </a><p><b>url</b>: <a href="EvidenceVariable-PopulationCLLRezidivtherapie.html">EvidenceVariable Population: CLL und Rezidivtherapie</a></p><p><b>name</b>: PopulationCLLRezidivtherapie</p><p><b>title</b>: Population: CLL und Rezidivtherapie</p><p><b>status</b>: Active</p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>description</b>: </p><div><p>Population, die eine Chronisch Lymphatische Leukämie hat und eine Rezidivtherapie bekommt</p>
+</div><p><b>actual</b>: false</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 404684003}">Clinical finding (finding)</span></td><td><span title="Codes:{http://snomed.info/sct 92814006}">Chronic lymphoid leukaemia, disease</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 71388002}">Procedure (procedure)</span></td><td><span title="Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 cllrete}">CLL Relapse therapy</span></td></tr></table></blockquote></blockquote></blockquote></div>
+  </text>
+  <url value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLRezidivtherapie"/>
+  <name value="PopulationCLLRezidivtherapie"/>
+  <title value="Population: CLL und Rezidivtherapie"/>
+  <status value="active"/>
+  <date value="2025-01-16T09:02:23+00:00"/>
+  <description value="Population, die eine Chronisch Lymphatische Leukämie hat und eine Rezidivtherapie bekommt"/>
+  <actual value="false"/>
+  <characteristic>
+    <definitionByCombination>
+      <code value="all-of"/>
+      <characteristic>
+        <linkId value="CLL"/>
+        <definitionByTypeAndValue>
+          <type>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="404684003"/>
+              <display value="Clinical finding (finding)"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="92814006"/>
+              <display value="Chronic lymphoid leukaemia, disease"/>
+            </coding>
+          </valueCodeableConcept>
+        </definitionByTypeAndValue>
+      </characteristic>
+      <characteristic>
+        <linkId value="CLL"/>
+        <definitionByTypeAndValue>
+          <type>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="71388002"/>
+              <display value="Procedure (procedure)"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2"/>
+              <code value="cllrete"/>
+              <display value="CLL Relapse therapy"/>
+            </coding>
+          </valueCodeableConcept>
+        </definitionByTypeAndValue>
+      </characteristic>
+    </definitionByCombination>
+  </characteristic>
+</EvidenceVariable>

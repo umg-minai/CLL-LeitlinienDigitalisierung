@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie</b></p><a name="RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie"> </a><a name="hcRecCollectionUntersuchungenVorCLLPlanungOnkoTherapie"> </a><a name="RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie-en-US"> </a><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method all}">All</span></li></ul></blockquote><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href="PlanDefinition-RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie.html">PlanDefinition Recommendation Collection CLL: Untersuchungen vor Therapieeinleitung (3.11)</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: RecommendationCollection3_11</p><p><b>title</b>: Recommendation Collection CLL: Untersuchungen vor Therapieeinleitung (3.11)</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2024-05-06</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Untersuchungen, die vor Planung einer onkologischen Therapielinie vorhanden sein sollen (mit Spezifizierungen für gebährfähige Frauen und Therapieschemata mit Idelalisib)</p>
+</div><blockquote><p><b>action</b></p><p><b>title</b>: UntersuchungenVorCLLPlanungOnkoTherapie</p><p><b>description</b>: </p><div><p>Untersuchungen, bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-UntersuchungenVorCLLPlanungOnkoTherapie.html">Untersuchung vor Einleitung einer CLL Therapielinie </a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: UntersuchungenVorPlanungOnkoTherapieFertileFemale</p><p><b>description</b>: </p><div><p>Untersuchungen, bei gebährfähigen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-UntersuchungenVorPlanungOnkoTherapieFertileFemale.html">Untersuchung vor Einleitung einer CLL Therapielinie bei gebährfähige Frauen</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: UntersuchungenVorPlanungOnkoTherapieIdelalisib</p><p><b>description</b>: </p><div><p>Untersuchungen, bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie mit Idelalisib vorhanden sein sollen</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-UntersuchungenVorPlanungOnkoTherapieIdelalisib.html">Untersuchung vor Einleitung einer CLL Therapielinie bei gebaehrfähige Frauen</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: UntersuchungenWhileTherapieIdelalisib</p><p><b>description</b>: </p><div><p>Untersuchungen, bei allen CLL-Patienten während der Therapie mit Idelalisib</p>
+</div><p><b>code</b>: <span title="Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}">Guideline-based Care</span></p><p><b>definition</b>: <a href="PlanDefinition-UntersuchungenVorPlanungOnkoTherapieIdelalisib.html">Untersuchung vor Einleitung einer CLL Therapielinie bei gebaehrfähige Frauen</a></p></blockquote></div>
+  </text>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie"/>
+  <version value="Langversion 2.01"/>
+  <name value="RecommendationCollection3_11"/>
+  <title value="Recommendation Collection CLL: Untersuchungen vor Therapieeinleitung (3.11)"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="workflow-definition"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-05-06"/>
+  <publisher value="https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"/>
+  <description value="Untersuchungen, die vor Planung einer onkologischen Therapielinie vorhanden sein sollen (mit Spezifizierungen für gebährfähige Frauen und Therapieschemata mit Idelalisib)"/>
+  <action>
+    <title value="UntersuchungenVorCLLPlanungOnkoTherapie"/>
+    <description value="Untersuchungen, bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorCLLPlanungOnkoTherapie"/>
+  </action>
+  <action>
+    <title value="UntersuchungenVorPlanungOnkoTherapieFertileFemale"/>
+    <description value="Untersuchungen, bei gebährfähigen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieFertileFemale"/>
+  </action>
+  <action>
+    <title value="UntersuchungenVorPlanungOnkoTherapieIdelalisib"/>
+    <description value="Untersuchungen, bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie mit Idelalisib vorhanden sein sollen"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieIdelalisib"/>
+  </action>
+  <action>
+    <title value="UntersuchungenWhileTherapieIdelalisib"/>
+    <description value="Untersuchungen, bei allen CLL-Patienten während der Therapie mit Idelalisib"/>
+    <code>
+      <coding>
+        <system value="http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"/>
+        <code value="guideline-based-care"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieIdelalisib"/>
+  </action>
+</PlanDefinition>

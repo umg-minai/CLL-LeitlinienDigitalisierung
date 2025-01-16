@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionRezidivtherapieBCL2undBTKbeiCLL> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RecCollectionRezidivtherapieBCL2undBTKbeiCLL"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition RecCollectionRezidivtherapieBCL2undBTKbeiCLL</b></p><a name=\"RecCollectionRezidivtherapieBCL2undBTKbeiCLL\"> </a><a name=\"hcRecCollectionRezidivtherapieBCL2undBTKbeiCLL\"> </a><a name=\"RecCollectionRezidivtherapieBCL2undBTKbeiCLL-en-US\"> </a><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method all}\">All</span></li></ul></blockquote><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"PlanDefinition-RecCollectionRezidivtherapieBCL2undBTKbeiCLL.html\">PlanDefinition Recommendation Collection CLL: Rezidivbehandlung mit BCL-2-Inhib. Oder BTK-Inhibitor (5.4)</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: RecommendationCollection5_4</p><p><b>title</b>: Recommendation Collection CLL: Rezidivbehandlung mit BCL-2-Inhib. Oder BTK-Inhibitor (5.4)</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}\">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2024-05-06</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem BTK-Inhibitor (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden.</p>\n</div><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Title</b></td><td><b>Description</b></td><td><b>Code</b></td><td><b>Definition[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>RezidivBehandlungBCL2undBTKbeiCLL</td><td><div><p>Patient*innen mit CLL sollen in der Rezidivbehandlung mit einer BCL-2-Inhibitor- und/oder BTK-Inhibitor-basierten Therapie behandelt werden.</p>\n</div></td><td><span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></td><td><a href=\"PlanDefinition-RezidivBehandlungBCL2undBTKbeiCLL.html\">Rezidivbehandlung mit BCL-2-Inhib. Oder Acalabrutinib</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "all" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionRezidivtherapieBCL2undBTKbeiCLL"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "Langversion 2.01"] ; # 
+  fhir:name [ fhir:v "RecommendationCollection5_4"] ; # 
+  fhir:title [ fhir:v "Recommendation Collection CLL: Rezidivbehandlung mit BCL-2-Inhib. Oder BTK-Inhibitor (5.4)"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "workflow-definition" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-05-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"] ; # 
+  fhir:description [ fhir:v "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem BTK-Inhibitor (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden."] ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "RezidivBehandlungBCL2undBTKbeiCLL" ] ;
+     fhir:description [ fhir:v "Patient*innen mit CLL sollen in der Rezidivbehandlung mit einer BCL-2-Inhibitor- und/oder BTK-Inhibitor-basierten Therapie behandelt werden." ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RezidivBehandlungBCL2undBTKbeiCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RezidivBehandlungBCL2undBTKbeiCLL>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EvidenceVariable xmlns="http://hl7.org/fhir">
+  <id value="PopulationCLLPlanungOnkoTherapieIdelalisib"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: EvidenceVariable PopulationCLLPlanungOnkoTherapieIdelalisib</b></p><a name="PopulationCLLPlanungOnkoTherapieIdelalisib"> </a><a name="hcPopulationCLLPlanungOnkoTherapieIdelalisib"> </a><a name="PopulationCLLPlanungOnkoTherapieIdelalisib-en-US"> </a><p><b>url</b>: <a href="EvidenceVariable-PopulationCLLPlanungOnkoTherapieIdelalisib.html">EvidenceVariable Population: CLL und Planung Onkologische Therapielinie mit Idelalisib</a></p><p><b>name</b>: PopulationCLLPlanungOnkoTherapieIdelalisib</p><p><b>title</b>: Population: CLL und Planung Onkologische Therapielinie mit Idelalisib</p><p><b>status</b>: Active</p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>description</b>: </p><div><p>Population mit einer Chronisch Lymphatische Leukämie, einem behandlungsbedürftigen Progress und bei der eine Therapieplanung mit Idelalisib ansteht</p>
+</div><p><b>actual</b>: false</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>exclude</b>: false</p><h3>DefinitionByTypeAndValues</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 404684003}">Clinical finding (finding)</span></td><td><span title="Codes:{http://snomed.info/sct 92814006}">Chronic lymphoid leukaemia, disease</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 404684003}">Clinical finding (finding)</span></td><td><span title="Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 dprnti}">Disease progression that requires adapted or new treatment with idelalisib</span></td></tr></table></blockquote></blockquote></blockquote></div>
+  </text>
+  <url value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLPlanungOnkoTherapieIdelalisib"/>
+  <name value="PopulationCLLPlanungOnkoTherapieIdelalisib"/>
+  <title value="Population: CLL und Planung Onkologische Therapielinie mit Idelalisib"/>
+  <status value="active"/>
+  <date value="2025-01-16T09:02:23+00:00"/>
+  <description value="Population mit einer Chronisch Lymphatische Leukämie, einem behandlungsbedürftigen Progress und bei der eine Therapieplanung mit Idelalisib ansteht"/>
+  <actual value="false"/>
+  <characteristic>
+    <definitionByCombination>
+      <code value="all-of"/>
+      <characteristic>
+        <exclude value="false"/>
+        <definitionByTypeAndValue>
+          <type>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="404684003"/>
+              <display value="Clinical finding (finding)"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="92814006"/>
+              <display value="Chronic lymphoid leukaemia, disease"/>
+            </coding>
+          </valueCodeableConcept>
+        </definitionByTypeAndValue>
+      </characteristic>
+      <characteristic>
+        <definitionByTypeAndValue>
+          <type>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="404684003"/>
+              <display value="Clinical finding (finding)"/>
+            </coding>
+          </type>
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2"/>
+              <code value="dprnti"/>
+              <display value="Disease progression that requires adapted or new treatment with idelalisib"/>
+            </coding>
+          </valueCodeableConcept>
+        </definitionByTypeAndValue>
+      </characteristic>
+    </definitionByCombination>
+  </characteristic>
+</EvidenceVariable>

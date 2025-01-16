@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="UntersuchungenVorPlanungOnkoTherapieIdelalisib"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition UntersuchungenVorPlanungOnkoTherapieIdelalisib</b></p><a name="UntersuchungenVorPlanungOnkoTherapieIdelalisib"> </a><a name="hcUntersuchungenVorPlanungOnkoTherapieIdelalisib"> </a><a name="UntersuchungenVorPlanungOnkoTherapieIdelalisib-en-US"> </a><p><b>partOf</b>: <a href="PlanDefinition-RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie.html">Recommendation Collection CLL: Untersuchungen vor Therapieeinleitung (3.11)</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method all}">All</span></li></ul></blockquote><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href="PlanDefinition-UntersuchungenVorPlanungOnkoTherapieIdelalisib.html">PlanDefinition Untersuchung vor Einleitung einer CLL Therapielinie bei gebaehrfähige Frauen</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: UntersuchungenVorPlanungOnkoTherapieIdelalisib</p><p><b>title</b>: Untersuchung vor Einleitung einer CLL Therapielinie bei gebaehrfähige Frauen</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>subject</b>: <a href="EvidenceVariable-PopulationCLLPlanungOnkoTherapieIdelalisib.html">Population: CLL und Planung Onkologische Therapielinie mit Idelalisib</a></p><p><b>date</b>: 2023-05</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie mit Idelalisib vorliegen sollen</p>
+</div><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 386053000}">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href="ActivityDefinition-CMVAntibodyIgMCLL.html">CMV IgM Antibody CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 386053000}">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href="ActivityDefinition-CMVAntibodyIgGCLL.html">CMV IgG Antibody CLL</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieIdelalisib"/>
+  <version value="Langversion 2.01"/>
+  <name value="UntersuchungenVorPlanungOnkoTherapieIdelalisib"/>
+  <title value="Untersuchung vor Einleitung einer CLL Therapielinie bei gebaehrfähige Frauen"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="false"/>
+  <subjectCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLPlanungOnkoTherapieIdelalisib"/>
+  <date value="2023-05"/>
+  <publisher value="https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"/>
+  <description value="Untersuchung die vor der Einleitung einer CLL Therapielinie CLL und Planung Onkologische Therapielinie mit Idelalisib vorliegen sollen"/>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CMVAntibodyIgMCLL"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CMVAntibodyIgGCLL"/>
+  </action>
+</PlanDefinition>

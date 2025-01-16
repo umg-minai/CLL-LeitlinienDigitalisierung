@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationQIMedikationErstlinienTherapie> a fhir:EvidenceVariable ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PopulationQIMedikationErstlinienTherapie"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable PopulationQIMedikationErstlinienTherapie</b></p><a name=\"PopulationQIMedikationErstlinienTherapie\"> </a><a name=\"hcPopulationQIMedikationErstlinienTherapie\"> </a><a name=\"PopulationQIMedikationErstlinienTherapie-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-PopulationQIMedikationErstlinienTherapie.html\">EvidenceVariable Population für CLL Erstlinien-Therapie</a></p><p><b>name</b>: PopulationQIMedikationErstlinienTherapie</p><p><b>title</b>: Population für CLL Erstlinien-Therapie</p><p><b>status</b>: Active</p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>description</b>: </p><div><p>Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer Bcl-2- oder BTK-Inhibitor-basierten Therapie behandelt werden.</p>\n</div><p><b>actual</b>: false</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 92814006}\">Chronic lymphoid leukaemia, disease</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 cllflt}\">CLL-specific firstline treatment</span></td></tr></table></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationQIMedikationErstlinienTherapie"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "PopulationQIMedikationErstlinienTherapie"] ; # 
+  fhir:title [ fhir:v "Population für CLL Erstlinien-Therapie"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-01-16T09:02:23+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer Bcl-2- oder BTK-Inhibitor-basierten Therapie behandelt werden."] ; # 
+  fhir:actual [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:characteristic ( [
+     fhir:definitionByCombination [
+       fhir:code [ fhir:v "all-of" ] ;
+       fhir:characteristic ( [
+         fhir:definitionByTypeAndValue [
+           fhir:type [
+             fhir:coding ( [
+               a sct:404684003 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "404684003" ] ;
+               fhir:display [ fhir:v "Clinical finding (finding)" ]
+             ] )
+           ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               a sct:92814006 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "92814006" ] ;
+               fhir:display [ fhir:v "Chronic lymphoid leukaemia, disease" ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:definitionByTypeAndValue [
+           fhir:type [
+             fhir:coding ( [
+               a sct:404684003 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "404684003" ] ;
+               fhir:display [ fhir:v "Clinical finding (finding)" ]
+             ] )
+           ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "cllflt" ] ;
+               fhir:display [ fhir:v "CLL-specific firstline treatment" ]
+             ] )
+           ]
+         ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

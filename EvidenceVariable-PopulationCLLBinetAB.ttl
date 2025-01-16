@@ -1,0 +1,492 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLBinetAB> a fhir:EvidenceVariable ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PopulationCLLBinetAB"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable PopulationCLLBinetAB</b></p><a name=\"PopulationCLLBinetAB\"> </a><a name=\"hcPopulationCLLBinetAB\"> </a><a name=\"PopulationCLLBinetAB-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-PopulationCLLBinetAB.html\">EvidenceVariable Population: CLL und Binet Stadium AB </a></p><p><b>name</b>: PopulationCLLBinetAB</p><p><b>title</b>: Population: CLL und Binet Stadium AB </p><p><b>status</b>: Active</p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>description</b>: </p><div><p>Population, bei der Binet A oder B sowie eine bestimmte klinische Symptomatik vorliegt</p>\n</div><p><b>actual</b>: false</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 92814006}\">Chronic lymphoid leukaemia, disease</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: Any of</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 1149099005}\">Binet staging classification for chronic lymphocytic leukemia</span></td><td><span title=\"Codes:{http://snomed.info/sct 863741000000108}\">Clinical stage A chronic lymphocytic leukaemia</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 1149099005}\">Binet staging classification for chronic lymphocytic leukemia</span></td><td><span title=\"Codes:{http://snomed.info/sct 863761000000109}\">Clinical stage B chronic lymphocytic leukaemia</span></td></tr></table></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: Any of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 161832001}\">Weight decreasing</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 7520000}\">Pyrexia of unknown origin</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 42984000}\">Night sweats</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 271737000}\">Anemia</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 718-7}\">Hemoglobin [Mass/volume] in Blood</span></td><td><span title=\"Codes:{http://snomed.info/sct 260371004}\">Decreasing</span></td></tr></table></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 302215000}\">Thrombocytopenic disorder</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 26515-7}\">Platelets [#/volume] in Blood</span></td><td><span title=\"Codes:{http://snomed.info/sct 260371004}\">Decreasing</span></td></tr></table></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 porecotr}\">Poor response to corticosteroid treatment</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: Any of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 413603009}\">Autoimmune hemolytic anemia</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 2897005}\">Immune thrombocytopenia</span></td></tr></table></blockquote></blockquote></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 sycasp}\">Symptom-causing splenomegaly</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 246120007}\">Nodule size</span></td><td>10-?</td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 30746006}\">Lymphadenopathy</span></td></tr></table></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 246120007}\">Nodule size</span></td><td><span title=\"Codes:{http://snomed.info/sct 260369004}\">Increasing</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 30746006}\">Lymphadenopathy</span></td></tr></table></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 26474-7}\">Lymphocytes [#/volume] in Blood</span></td><td><span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 ingrfiftyintwomo}\">Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 26474-7}\">Lymphocytes [#/volume] in Blood</span></td><td><span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 dopeunsixmo}\">Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl</span></td></tr></table></blockquote></blockquote></blockquote></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLBinetAB"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "PopulationCLLBinetAB"] ; # 
+  fhir:title [ fhir:v "Population: CLL und Binet Stadium AB "] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-01-16T09:02:23+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Population, bei der Binet A oder B sowie eine bestimmte klinische Symptomatik vorliegt"] ; # 
+  fhir:actual [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:characteristic ( [
+     fhir:definitionByCombination [
+       fhir:code [ fhir:v "all-of" ] ;
+       fhir:characteristic ( [
+         fhir:linkId [ fhir:v "CLL" ] ;
+         fhir:definitionByTypeAndValue [
+           fhir:type [
+             fhir:coding ( [
+               a sct:404684003 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "404684003" ] ;
+               fhir:display [ fhir:v "Clinical finding (finding)" ]
+             ] )
+           ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               a sct:92814006 ;
+               fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "92814006" ] ;
+               fhir:display [ fhir:v "Chronic lymphoid leukaemia, disease" ]
+             ] )
+           ]
+         ]
+       ] [
+         fhir:definitionByCombination [
+           fhir:code [ fhir:v "any-of" ] ;
+           fhir:characteristic ( [
+             fhir:definitionByTypeAndValue [
+               fhir:type [
+                 fhir:coding ( [
+                   a sct:1149099005 ;
+                   fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "1149099005" ] ;
+                   fhir:display [ fhir:v "Binet staging classification for chronic lymphocytic leukemia" ]
+                 ] )
+               ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   a sct:863741000000108 ;
+                   fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                   fhir:version [ fhir:v "http://snomed.info/sct/83821000000107/version/20230412fd" ] ;
+                   fhir:code [ fhir:v "863741000000108" ] ;
+                   fhir:display [ fhir:v "Clinical stage A chronic lymphocytic leukaemia" ]
+                 ] )
+               ]
+             ]
+           ] [
+             fhir:definitionByTypeAndValue [
+               fhir:type [
+                 fhir:coding ( [
+                   a sct:1149099005 ;
+                   fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "1149099005" ] ;
+                   fhir:display [ fhir:v "Binet staging classification for chronic lymphocytic leukemia" ]
+                 ] )
+               ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   a sct:863761000000109 ;
+                   fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                   fhir:version [ fhir:v "http://snomed.info/sct/83821000000107/version/20230412fd" ] ;
+                   fhir:code [ fhir:v "863761000000109" ] ;
+                   fhir:display [ fhir:v "Clinical stage B chronic lymphocytic leukaemia" ]
+                 ] )
+               ]
+             ]
+           ] )
+         ]
+       ] [
+         fhir:definitionByCombination [
+           fhir:code [ fhir:v "any-of" ] ;
+           fhir:characteristic ( [
+             fhir:linkId [ fhir:v "CLL" ] ;
+             fhir:definitionByTypeAndValue [
+               fhir:type [
+                 fhir:coding ( [
+                   a sct:404684003 ;
+                   fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "404684003" ] ;
+                   fhir:display [ fhir:v "Clinical finding (finding)" ]
+                 ] )
+               ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   a sct:161832001 ;
+                   fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "161832001" ] ;
+                   fhir:display [ fhir:v "Weight decreasing" ]
+                 ] )
+               ]
+             ]
+           ] [
+             fhir:linkId [ fhir:v "CLL" ] ;
+             fhir:definitionByTypeAndValue [
+               fhir:type [
+                 fhir:coding ( [
+                   a sct:404684003 ;
+                   fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "404684003" ] ;
+                   fhir:display [ fhir:v "Clinical finding (finding)" ]
+                 ] )
+               ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   a sct:7520000 ;
+                   fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "7520000" ] ;
+                   fhir:display [ fhir:v "Pyrexia of unknown origin" ]
+                 ] )
+               ]
+             ]
+           ] [
+             fhir:linkId [ fhir:v "CLL" ] ;
+             fhir:definitionByTypeAndValue [
+               fhir:type [
+                 fhir:coding ( [
+                   a sct:404684003 ;
+                   fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "404684003" ] ;
+                   fhir:display [ fhir:v "Clinical finding (finding)" ]
+                 ] )
+               ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   a sct:42984000 ;
+                   fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "42984000" ] ;
+                   fhir:display [ fhir:v "Night sweats" ]
+                 ] )
+               ]
+             ]
+           ] [
+             fhir:definitionByCombination [
+               fhir:code [ fhir:v "all-of" ] ;
+               fhir:characteristic ( [
+                 fhir:linkId [ fhir:v "CLL" ] ;
+                 fhir:definitionByTypeAndValue [
+                   fhir:type [
+                     fhir:coding ( [
+                       a sct:404684003 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "404684003" ] ;
+                       fhir:display [ fhir:v "Clinical finding (finding)" ]
+                     ] )
+                   ] ;
+                   fhir:value [
+                     a fhir:CodeableConcept ;
+                     fhir:coding ( [
+                       a sct:271737000 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "271737000" ] ;
+                       fhir:display [ fhir:v "Anemia" ]
+                     ] )
+                   ]
+                 ]
+               ] [
+                 fhir:linkId [ fhir:v "CLL" ] ;
+                 fhir:definitionByTypeAndValue [
+                   fhir:type [
+                     fhir:coding ( [
+                       a loinc:718-7 ;
+                       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "718-7" ] ;
+                       fhir:display [ fhir:v "Hemoglobin [Mass/volume] in Blood" ]
+                     ] )
+                   ] ;
+                   fhir:value [
+                     a fhir:CodeableConcept ;
+                     fhir:coding ( [
+                       a sct:260371004 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "260371004" ] ;
+                       fhir:display [ fhir:v "Decreasing" ]
+                     ] )
+                   ]
+                 ]
+               ] )
+             ]
+           ] [
+             fhir:definitionByCombination [
+               fhir:code [ fhir:v "all-of" ] ;
+               fhir:characteristic ( [
+                 fhir:linkId [ fhir:v "CLL" ] ;
+                 fhir:definitionByTypeAndValue [
+                   fhir:type [
+                     fhir:coding ( [
+                       a sct:404684003 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "404684003" ] ;
+                       fhir:display [ fhir:v "Clinical finding (finding)" ]
+                     ] )
+                   ] ;
+                   fhir:value [
+                     a fhir:CodeableConcept ;
+                     fhir:coding ( [
+                       a sct:302215000 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "302215000" ] ;
+                       fhir:display [ fhir:v "Thrombocytopenic disorder" ]
+                     ] )
+                   ]
+                 ]
+               ] [
+                 fhir:linkId [ fhir:v "CLL" ] ;
+                 fhir:definitionByTypeAndValue [
+                   fhir:type [
+                     fhir:coding ( [
+                       a loinc:26515-7 ;
+                       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "26515-7" ] ;
+                       fhir:display [ fhir:v "Platelets [#/volume] in Blood" ]
+                     ] )
+                   ] ;
+                   fhir:value [
+                     a fhir:CodeableConcept ;
+                     fhir:coding ( [
+                       a sct:260371004 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "260371004" ] ;
+                       fhir:display [ fhir:v "Decreasing" ]
+                     ] )
+                   ]
+                 ]
+               ] )
+             ]
+           ] [
+             fhir:definitionByCombination [
+               fhir:code [ fhir:v "all-of" ] ;
+               fhir:characteristic ( [
+                 fhir:definitionByTypeAndValue [
+                   fhir:type [
+                     fhir:coding ( [
+                       a sct:404684003 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "404684003" ] ;
+                       fhir:display [ fhir:v "Clinical finding (finding)" ]
+                     ] )
+                   ] ;
+                   fhir:value [
+                     a fhir:CodeableConcept ;
+                     fhir:coding ( [
+                       fhir:system [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "porecotr" ] ;
+                       fhir:display [ fhir:v "Poor response to corticosteroid treatment" ]
+                     ] )
+                   ]
+                 ]
+               ] [
+                 fhir:definitionByCombination [
+                   fhir:code [ fhir:v "any-of" ] ;
+                   fhir:characteristic ( [
+                     fhir:linkId [ fhir:v "CLL" ] ;
+                     fhir:definitionByTypeAndValue [
+                       fhir:type [
+                         fhir:coding ( [
+                           a sct:404684003 ;
+                           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                           fhir:code [ fhir:v "404684003" ] ;
+                           fhir:display [ fhir:v "Clinical finding (finding)" ]
+                         ] )
+                       ] ;
+                       fhir:value [
+                         a fhir:CodeableConcept ;
+                         fhir:coding ( [
+                           a sct:413603009 ;
+                           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                           fhir:code [ fhir:v "413603009" ] ;
+                           fhir:display [ fhir:v "Autoimmune hemolytic anemia" ]
+                         ] )
+                       ]
+                     ]
+                   ] [
+                     fhir:linkId [ fhir:v "CLL" ] ;
+                     fhir:definitionByTypeAndValue [
+                       fhir:type [
+                         fhir:coding ( [
+                           a sct:404684003 ;
+                           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                           fhir:code [ fhir:v "404684003" ] ;
+                           fhir:display [ fhir:v "Clinical finding (finding)" ]
+                         ] )
+                       ] ;
+                       fhir:value [
+                         a fhir:CodeableConcept ;
+                         fhir:coding ( [
+                           a sct:2897005 ;
+                           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                           fhir:code [ fhir:v "2897005" ] ;
+                           fhir:display [ fhir:v "Immune thrombocytopenia" ]
+                         ] )
+                       ]
+                     ]
+                   ] )
+                 ]
+               ] )
+             ]
+           ] [
+             fhir:linkId [ fhir:v "CLL" ] ;
+             fhir:definitionByTypeAndValue [
+               fhir:type [
+                 fhir:coding ( [
+                   a sct:404684003 ;
+                   fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "404684003" ] ;
+                   fhir:display [ fhir:v "Clinical finding (finding)" ]
+                 ] )
+               ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "sycasp" ] ;
+                   fhir:display [ fhir:v "Symptom-causing splenomegaly" ]
+                 ] )
+               ]
+             ]
+           ] [
+             fhir:definitionByCombination [
+               fhir:code [ fhir:v "all-of" ] ;
+               fhir:characteristic ( [
+                 fhir:linkId [ fhir:v "CLL" ] ;
+                 fhir:definitionByTypeAndValue [
+                   fhir:type [
+                     fhir:coding ( [
+                       a sct:246120007 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "246120007" ] ;
+                       fhir:display [ fhir:v "Nodule size" ]
+                     ] )
+                   ] ;
+                   fhir:value [
+                     a fhir:Range ;
+                     fhir:low [
+                       fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+                       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "cm" ]
+                     ]
+                   ]
+                 ]
+               ] [
+                 fhir:linkId [ fhir:v "CLL" ] ;
+                 fhir:definitionByTypeAndValue [
+                   fhir:type [
+                     fhir:coding ( [
+                       a sct:404684003 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "404684003" ] ;
+                       fhir:display [ fhir:v "Clinical finding (finding)" ]
+                     ] )
+                   ] ;
+                   fhir:value [
+                     a fhir:CodeableConcept ;
+                     fhir:coding ( [
+                       a sct:30746006 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "30746006" ] ;
+                       fhir:display [ fhir:v "Lymphadenopathy" ]
+                     ] )
+                   ]
+                 ]
+               ] )
+             ]
+           ] [
+             fhir:definitionByCombination [
+               fhir:code [ fhir:v "all-of" ] ;
+               fhir:characteristic ( [
+                 fhir:linkId [ fhir:v "CLL" ] ;
+                 fhir:definitionByTypeAndValue [
+                   fhir:type [
+                     fhir:coding ( [
+                       a sct:246120007 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "246120007" ] ;
+                       fhir:display [ fhir:v "Nodule size" ]
+                     ] )
+                   ] ;
+                   fhir:value [
+                     a fhir:CodeableConcept ;
+                     fhir:coding ( [
+                       a sct:260369004 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "260369004" ] ;
+                       fhir:display [ fhir:v "Increasing" ]
+                     ] )
+                   ]
+                 ]
+               ] [
+                 fhir:linkId [ fhir:v "CLL" ] ;
+                 fhir:definitionByTypeAndValue [
+                   fhir:type [
+                     fhir:coding ( [
+                       a sct:404684003 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "404684003" ] ;
+                       fhir:display [ fhir:v "Clinical finding (finding)" ]
+                     ] )
+                   ] ;
+                   fhir:value [
+                     a fhir:CodeableConcept ;
+                     fhir:coding ( [
+                       a sct:30746006 ;
+                       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+                       fhir:code [ fhir:v "30746006" ] ;
+                       fhir:display [ fhir:v "Lymphadenopathy" ]
+                     ] )
+                   ]
+                 ]
+               ] )
+             ]
+           ] [
+             fhir:linkId [ fhir:v "CLL" ] ;
+             fhir:definitionByTypeAndValue [
+               fhir:type [
+                 fhir:coding ( [
+                   a loinc:26474-7 ;
+                   fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "26474-7" ] ;
+                   fhir:display [ fhir:v "Lymphocytes [#/volume] in Blood" ]
+                 ] )
+               ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "ingrfiftyintwomo" ] ;
+                   fhir:display [ fhir:v "Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl" ]
+                 ] )
+               ]
+             ]
+           ] [
+             fhir:linkId [ fhir:v "CLL" ] ;
+             fhir:definitionByTypeAndValue [
+               fhir:type [
+                 fhir:coding ( [
+                   a loinc:26474-7 ;
+                   fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "26474-7" ] ;
+                   fhir:display [ fhir:v "Lymphocytes [#/volume] in Blood" ]
+                 ] )
+               ] ;
+               fhir:value [
+                 a fhir:CodeableConcept ;
+                 fhir:coding ( [
+                   fhir:system [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2"^^xsd:anyURI ] ;
+                   fhir:code [ fhir:v "dopeunsixmo" ] ;
+                   fhir:display [ fhir:v "Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl" ]
+                 ] )
+               ]
+             ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

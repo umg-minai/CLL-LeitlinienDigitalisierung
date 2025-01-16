@@ -1,0 +1,442 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "PopulationCLLBinetAB",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable PopulationCLLBinetAB</b></p><a name=\"PopulationCLLBinetAB\"> </a><a name=\"hcPopulationCLLBinetAB\"> </a><a name=\"PopulationCLLBinetAB-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-PopulationCLLBinetAB.html\">EvidenceVariable Population: CLL und Binet Stadium AB </a></p><p><b>name</b>: PopulationCLLBinetAB</p><p><b>title</b>: Population: CLL und Binet Stadium AB </p><p><b>status</b>: Active</p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>description</b>: </p><div><p>Population, bei der Binet A oder B sowie eine bestimmte klinische Symptomatik vorliegt</p>\n</div><p><b>actual</b>: false</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 92814006}\">Chronic lymphoid leukaemia, disease</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: Any of</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 1149099005}\">Binet staging classification for chronic lymphocytic leukemia</span></td><td><span title=\"Codes:{http://snomed.info/sct 863741000000108}\">Clinical stage A chronic lymphocytic leukaemia</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 1149099005}\">Binet staging classification for chronic lymphocytic leukemia</span></td><td><span title=\"Codes:{http://snomed.info/sct 863761000000109}\">Clinical stage B chronic lymphocytic leukaemia</span></td></tr></table></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: Any of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 161832001}\">Weight decreasing</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 7520000}\">Pyrexia of unknown origin</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 42984000}\">Night sweats</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 271737000}\">Anemia</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 718-7}\">Hemoglobin [Mass/volume] in Blood</span></td><td><span title=\"Codes:{http://snomed.info/sct 260371004}\">Decreasing</span></td></tr></table></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 302215000}\">Thrombocytopenic disorder</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 26515-7}\">Platelets [#/volume] in Blood</span></td><td><span title=\"Codes:{http://snomed.info/sct 260371004}\">Decreasing</span></td></tr></table></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 porecotr}\">Poor response to corticosteroid treatment</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: Any of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 413603009}\">Autoimmune hemolytic anemia</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 2897005}\">Immune thrombocytopenia</span></td></tr></table></blockquote></blockquote></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 sycasp}\">Symptom-causing splenomegaly</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 246120007}\">Nodule size</span></td><td>10-?</td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 30746006}\">Lymphadenopathy</span></td></tr></table></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 246120007}\">Nodule size</span></td><td><span title=\"Codes:{http://snomed.info/sct 260369004}\">Increasing</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 30746006}\">Lymphadenopathy</span></td></tr></table></blockquote></blockquote></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 26474-7}\">Lymphocytes [#/volume] in Blood</span></td><td><span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 ingrfiftyintwomo}\">Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 26474-7}\">Lymphocytes [#/volume] in Blood</span></td><td><span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 dopeunsixmo}\">Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl</span></td></tr></table></blockquote></blockquote></blockquote></blockquote></blockquote></div>"
+  },
+  "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLBinetAB",
+  "name" : "PopulationCLLBinetAB",
+  "title" : "Population: CLL und Binet Stadium AB ",
+  "status" : "active",
+  "date" : "2025-01-16T09:02:23+00:00",
+  "description" : "Population, bei der Binet A oder B sowie eine bestimmte klinische Symptomatik vorliegt",
+  "actual" : false,
+  "characteristic" : [{
+    "definitionByCombination" : {
+      "code" : "all-of",
+      "characteristic" : [{
+        "linkId" : "CLL",
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "404684003",
+              "display" : "Clinical finding (finding)"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "92814006",
+              "display" : "Chronic lymphoid leukaemia, disease"
+            }]
+          }
+        }
+      },
+      {
+        "definitionByCombination" : {
+          "code" : "any-of",
+          "characteristic" : [{
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "1149099005",
+                  "display" : "Binet staging classification for chronic lymphocytic leukemia"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "version" : "http://snomed.info/sct/83821000000107/version/20230412fd",
+                  "code" : "863741000000108",
+                  "display" : "Clinical stage A chronic lymphocytic leukaemia"
+                }]
+              }
+            }
+          },
+          {
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "1149099005",
+                  "display" : "Binet staging classification for chronic lymphocytic leukemia"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "version" : "http://snomed.info/sct/83821000000107/version/20230412fd",
+                  "code" : "863761000000109",
+                  "display" : "Clinical stage B chronic lymphocytic leukaemia"
+                }]
+              }
+            }
+          }]
+        }
+      },
+      {
+        "definitionByCombination" : {
+          "code" : "any-of",
+          "characteristic" : [{
+            "linkId" : "CLL",
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "404684003",
+                  "display" : "Clinical finding (finding)"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "161832001",
+                  "display" : "Weight decreasing"
+                }]
+              }
+            }
+          },
+          {
+            "linkId" : "CLL",
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "404684003",
+                  "display" : "Clinical finding (finding)"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "7520000",
+                  "display" : "Pyrexia of unknown origin"
+                }]
+              }
+            }
+          },
+          {
+            "linkId" : "CLL",
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "404684003",
+                  "display" : "Clinical finding (finding)"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "42984000",
+                  "display" : "Night sweats"
+                }]
+              }
+            }
+          },
+          {
+            "definitionByCombination" : {
+              "code" : "all-of",
+              "characteristic" : [{
+                "linkId" : "CLL",
+                "definitionByTypeAndValue" : {
+                  "type" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "404684003",
+                      "display" : "Clinical finding (finding)"
+                    }]
+                  },
+                  "valueCodeableConcept" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "271737000",
+                      "display" : "Anemia"
+                    }]
+                  }
+                }
+              },
+              {
+                "linkId" : "CLL",
+                "definitionByTypeAndValue" : {
+                  "type" : {
+                    "coding" : [{
+                      "system" : "http://loinc.org",
+                      "code" : "718-7",
+                      "display" : "Hemoglobin [Mass/volume] in Blood"
+                    }]
+                  },
+                  "valueCodeableConcept" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "260371004",
+                      "display" : "Decreasing"
+                    }]
+                  }
+                }
+              }]
+            }
+          },
+          {
+            "definitionByCombination" : {
+              "code" : "all-of",
+              "characteristic" : [{
+                "linkId" : "CLL",
+                "definitionByTypeAndValue" : {
+                  "type" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "404684003",
+                      "display" : "Clinical finding (finding)"
+                    }]
+                  },
+                  "valueCodeableConcept" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "302215000",
+                      "display" : "Thrombocytopenic disorder"
+                    }]
+                  }
+                }
+              },
+              {
+                "linkId" : "CLL",
+                "definitionByTypeAndValue" : {
+                  "type" : {
+                    "coding" : [{
+                      "system" : "http://loinc.org",
+                      "code" : "26515-7",
+                      "display" : "Platelets [#/volume] in Blood"
+                    }]
+                  },
+                  "valueCodeableConcept" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "260371004",
+                      "display" : "Decreasing"
+                    }]
+                  }
+                }
+              }]
+            }
+          },
+          {
+            "definitionByCombination" : {
+              "code" : "all-of",
+              "characteristic" : [{
+                "definitionByTypeAndValue" : {
+                  "type" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "404684003",
+                      "display" : "Clinical finding (finding)"
+                    }]
+                  },
+                  "valueCodeableConcept" : {
+                    "coding" : [{
+                      "system" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2",
+                      "code" : "porecotr",
+                      "display" : "Poor response to corticosteroid treatment"
+                    }]
+                  }
+                }
+              },
+              {
+                "definitionByCombination" : {
+                  "code" : "any-of",
+                  "characteristic" : [{
+                    "linkId" : "CLL",
+                    "definitionByTypeAndValue" : {
+                      "type" : {
+                        "coding" : [{
+                          "system" : "http://snomed.info/sct",
+                          "code" : "404684003",
+                          "display" : "Clinical finding (finding)"
+                        }]
+                      },
+                      "valueCodeableConcept" : {
+                        "coding" : [{
+                          "system" : "http://snomed.info/sct",
+                          "code" : "413603009",
+                          "display" : "Autoimmune hemolytic anemia"
+                        }]
+                      }
+                    }
+                  },
+                  {
+                    "linkId" : "CLL",
+                    "definitionByTypeAndValue" : {
+                      "type" : {
+                        "coding" : [{
+                          "system" : "http://snomed.info/sct",
+                          "code" : "404684003",
+                          "display" : "Clinical finding (finding)"
+                        }]
+                      },
+                      "valueCodeableConcept" : {
+                        "coding" : [{
+                          "system" : "http://snomed.info/sct",
+                          "code" : "2897005",
+                          "display" : "Immune thrombocytopenia"
+                        }]
+                      }
+                    }
+                  }]
+                }
+              }]
+            }
+          },
+          {
+            "linkId" : "CLL",
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://snomed.info/sct",
+                  "code" : "404684003",
+                  "display" : "Clinical finding (finding)"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2",
+                  "code" : "sycasp",
+                  "display" : "Symptom-causing splenomegaly"
+                }]
+              }
+            }
+          },
+          {
+            "definitionByCombination" : {
+              "code" : "all-of",
+              "characteristic" : [{
+                "linkId" : "CLL",
+                "definitionByTypeAndValue" : {
+                  "type" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "246120007",
+                      "display" : "Nodule size"
+                    }]
+                  },
+                  "valueRange" : {
+                    "low" : {
+                      "value" : 10,
+                      "system" : "http://unitsofmeasure.org",
+                      "code" : "cm"
+                    }
+                  }
+                }
+              },
+              {
+                "linkId" : "CLL",
+                "definitionByTypeAndValue" : {
+                  "type" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "404684003",
+                      "display" : "Clinical finding (finding)"
+                    }]
+                  },
+                  "valueCodeableConcept" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "30746006",
+                      "display" : "Lymphadenopathy"
+                    }]
+                  }
+                }
+              }]
+            }
+          },
+          {
+            "definitionByCombination" : {
+              "code" : "all-of",
+              "characteristic" : [{
+                "linkId" : "CLL",
+                "definitionByTypeAndValue" : {
+                  "type" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "246120007",
+                      "display" : "Nodule size"
+                    }]
+                  },
+                  "valueCodeableConcept" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "260369004",
+                      "display" : "Increasing"
+                    }]
+                  }
+                }
+              },
+              {
+                "linkId" : "CLL",
+                "definitionByTypeAndValue" : {
+                  "type" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "404684003",
+                      "display" : "Clinical finding (finding)"
+                    }]
+                  },
+                  "valueCodeableConcept" : {
+                    "coding" : [{
+                      "system" : "http://snomed.info/sct",
+                      "code" : "30746006",
+                      "display" : "Lymphadenopathy"
+                    }]
+                  }
+                }
+              }]
+            }
+          },
+          {
+            "linkId" : "CLL",
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://loinc.org",
+                  "code" : "26474-7",
+                  "display" : "Lymphocytes [#/volume] in Blood"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2",
+                  "code" : "ingrfiftyintwomo",
+                  "display" : "Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
+                }]
+              }
+            }
+          },
+          {
+            "linkId" : "CLL",
+            "definitionByTypeAndValue" : {
+              "type" : {
+                "coding" : [{
+                  "system" : "http://loinc.org",
+                  "code" : "26474-7",
+                  "display" : "Lymphocytes [#/volume] in Blood"
+                }]
+              },
+              "valueCodeableConcept" : {
+                "coding" : [{
+                  "system" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2",
+                  "code" : "dopeunsixmo",
+                  "display" : "Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
+                }]
+              }
+            }
+          }]
+        }
+      }]
+    }
+  }]
+}

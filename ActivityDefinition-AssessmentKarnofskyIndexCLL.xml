@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="AssessmentKarnofskyIndexCLL"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition AssessmentKarnofskyIndexCLL</b></p><a name="AssessmentKarnofskyIndexCLL"> </a><a name="hcAssessmentKarnofskyIndexCLL"> </a><a name="AssessmentKarnofskyIndexCLL-en-US"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href="ActivityDefinition-AssessmentKarnofskyIndexCLL.html">ActivityDefinition Assesment Karnofsky-Index CLL</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: AssesmentKarnofskyIndexCLL</p><p><b>title</b>: Assesment Karnofsky-Index CLL</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>subject</b>: <span title="Codes:{http://hl7.org/fhir/fhir-types Patient}">Patient</span></p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Assesment Karnofsky-Index CLL</p>
+</div><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 273546003}">Karnofsky performance status</span></p><p><b>timing</b>: Count 1  times, Once</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentKarnofskyIndexCLL"/>
+  <version value="Langversion 2.01"/>
+  <name value="AssesmentKarnofskyIndexCLL"/>
+  <title value="Assesment Karnofsky-Index CLL"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Patient"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2025-01-16T09:02:23+00:00"/>
+  <publisher value="https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"/>
+  <description value="Assesment Karnofsky-Index CLL"/>
+  <kind value="ServiceRequest"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="273546003"/>
+      <display value="Karnofsky performance status"/>
+    </coding>
+  </code>
+  <timingTiming>
+    <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/relative-time">
+      <extension url="contextCode">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="63936-9"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="offset">
+        <valueRange>
+          <low>
+            <value value="-4"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="wk"/>
+          </low>
+          <high>
+            <value value="0"/>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="wk"/>
+          </high>
+        </valueRange>
+      </extension>
+    </extension>
+    <repeat>
+      <count value="1"/>
+    </repeat>
+  </timingTiming>
+</ActivityDefinition>

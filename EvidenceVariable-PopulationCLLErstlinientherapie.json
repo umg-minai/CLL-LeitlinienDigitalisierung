@@ -1,0 +1,61 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "PopulationCLLErstlinientherapie",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable PopulationCLLErstlinientherapie</b></p><a name=\"PopulationCLLErstlinientherapie\"> </a><a name=\"hcPopulationCLLErstlinientherapie\"> </a><a name=\"PopulationCLLErstlinientherapie-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-PopulationCLLErstlinientherapie.html\">EvidenceVariable Population: CLL und Erstlinientherapie</a></p><p><b>name</b>: PopulationCLLErstlinientherapie</p><p><b>title</b>: Population: CLL und Erstlinientherapie</p><p><b>status</b>: Active</p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>description</b>: </p><div><p>Population, die eine Chronisch Lymphatische Leukämie hat und eine Erstlinientherapie bekommt</p>\n</div><p><b>actual</b>: false</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 92814006}\">Chronic lymphoid leukaemia, disease</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><p><b>linkId</b>: CLL</p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 71388002}\">Procedure (procedure)</span></td><td><span title=\"Codes:{http://snomed.info/sct 708255002}\">First line treatment</span></td></tr></table></blockquote></blockquote></blockquote></div>"
+  },
+  "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLErstlinientherapie",
+  "name" : "PopulationCLLErstlinientherapie",
+  "title" : "Population: CLL und Erstlinientherapie",
+  "status" : "active",
+  "date" : "2025-01-16T09:02:23+00:00",
+  "description" : "Population, die eine Chronisch Lymphatische Leukämie hat und eine Erstlinientherapie bekommt",
+  "actual" : false,
+  "characteristic" : [{
+    "definitionByCombination" : {
+      "code" : "all-of",
+      "characteristic" : [{
+        "linkId" : "CLL",
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "404684003",
+              "display" : "Clinical finding (finding)"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "92814006",
+              "display" : "Chronic lymphoid leukaemia, disease"
+            }]
+          }
+        }
+      },
+      {
+        "linkId" : "CLL",
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "71388002",
+              "display" : "Procedure (procedure)"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "708255002",
+              "display" : "First line treatment"
+            }]
+          }
+        }
+      }]
+    }
+  }]
+}

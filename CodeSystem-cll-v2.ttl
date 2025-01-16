@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cll-v2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cll-v2</b></p><a name=\"cll-v2\"> </a><a name=\"hccll-v2\"> </a><a name=\"cll-v2-en-US\"> </a><p>This  code system <code>https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">dprnt<a name=\"cll-v2-dprnt\"> </a></td><td>Disease progression that requires adapted or new treatment</td></tr><tr><td style=\"white-space:nowrap\">dprnti<a name=\"cll-v2-dprnti\"> </a></td><td>Disease progression that requires adapted or new treatment with idelalisib</td></tr><tr><td style=\"white-space:nowrap\">scllt<a name=\"cll-v2-scllt\"> </a></td><td>Systemic CLL therapy</td></tr><tr><td style=\"white-space:nowrap\">porecotr<a name=\"cll-v2-porecotr\"> </a></td><td>Poor response to corticosteroid treatment</td></tr><tr><td style=\"white-space:nowrap\">sycasp<a name=\"cll-v2-sycasp\"> </a></td><td>Symptom-causing splenomegaly</td></tr><tr><td style=\"white-space:nowrap\">cllrete<a name=\"cll-v2-cllrete\"> </a></td><td>CLL Relapse therapy</td></tr><tr><td style=\"white-space:nowrap\">ingrfiftyintwomo<a name=\"cll-v2-ingrfiftyintwomo\"> </a></td><td>Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl</td></tr><tr><td style=\"white-space:nowrap\">dopeunsixmo<a name=\"cll-v2-dopeunsixmo\"> </a></td><td>Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl</td></tr><tr><td style=\"white-space:nowrap\">cllflt<a name=\"cll-v2-cllflt\"> </a></td><td>CLL-specific firstline treatment</td></tr><tr><td style=\"white-space:nowrap\">cllrlpstherapy<a name=\"cll-v2-cllrlpstherapy\"> </a></td><td>CLL-relapse under treatment</td></tr><tr><td style=\"white-space:nowrap\">cllrlpsincl<a name=\"cll-v2-cllrlpsincl\"> </a></td><td>Inclusion into specific CLL relapse treatment study</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2"^^xsd:anyURI] ; # 
+  fhir:name [ fhir:v "CLL_V2"] ; # 
+  fhir:title [ fhir:v "CLL_V2"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-01-16T09:02:23+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Concepts required in recommendations that are not defined elsewhere"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "11"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "dprnt" ] ;
+     fhir:display [ fhir:v "Disease progression that requires adapted or new treatment" ]
+  ] [
+     fhir:code [ fhir:v "dprnti" ] ;
+     fhir:display [ fhir:v "Disease progression that requires adapted or new treatment with idelalisib" ]
+  ] [
+     fhir:code [ fhir:v "scllt" ] ;
+     fhir:display [ fhir:v "Systemic CLL therapy" ]
+  ] [
+     fhir:code [ fhir:v "porecotr" ] ;
+     fhir:display [ fhir:v "Poor response to corticosteroid treatment" ]
+  ] [
+     fhir:code [ fhir:v "sycasp" ] ;
+     fhir:display [ fhir:v "Symptom-causing splenomegaly" ]
+  ] [
+     fhir:code [ fhir:v "cllrete" ] ;
+     fhir:display [ fhir:v "CLL Relapse therapy" ]
+  ] [
+     fhir:code [ fhir:v "ingrfiftyintwomo" ] ;
+     fhir:display [ fhir:v "Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl" ]
+  ] [
+     fhir:code [ fhir:v "dopeunsixmo" ] ;
+     fhir:display [ fhir:v "Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl" ]
+  ] [
+     fhir:code [ fhir:v "cllflt" ] ;
+     fhir:display [ fhir:v "CLL-specific firstline treatment" ]
+  ] [
+     fhir:code [ fhir:v "cllrlpstherapy" ] ;
+     fhir:display [ fhir:v "CLL-relapse under treatment" ]
+  ] [
+     fhir:code [ fhir:v "cllrlpsincl" ] ;
+     fhir:display [ fhir:v "Inclusion into specific CLL relapse treatment study" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

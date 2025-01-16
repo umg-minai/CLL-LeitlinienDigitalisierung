@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CMVPCRCLL> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CMVPCRCLL"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition CMVPCRCLL</b></p><a name=\"CMVPCRCLL\"> </a><a name=\"hcCMVPCRCLL\"> </a><a name=\"CMVPCRCLL-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-CMVPCRCLL.html\">ActivityDefinition CMV PCR CLL</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: CMVPCRCLL</p><p><b>title</b>: CMV PCR CLL</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>CMV PCR Viruslast Bestimmung</p>\n</div><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 1107381000000101}\">Cytomegalovirus viral load</span></p><p><b>timing</b>: Once per 2 weeks</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CMVPCRCLL"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "Langversion 2.01"] ; # 
+  fhir:name [ fhir:v "CMVPCRCLL"] ; # 
+  fhir:title [ fhir:v "CMV PCR CLL"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:subject [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Patient" ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2025-01-16T09:02:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"] ; # 
+  fhir:description [ fhir:v "CMV PCR Viruslast Bestimmung"] ; # 
+  fhir:kind [ fhir:v "ServiceRequest"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:1107381000000101 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/83821000000107/version/20230412fd" ] ;
+       fhir:code [ fhir:v "1107381000000101" ] ;
+       fhir:display [ fhir:v "Cytomegalovirus viral load" ]
+     ] )
+  ] ; # 
+  fhir:timing [
+     a fhir:Timing ;
+     fhir:repeat [
+       fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+       fhir:period [ fhir:v "2"^^xsd:decimal ] ;
+       fhir:periodUnit [ fhir:v "wk" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

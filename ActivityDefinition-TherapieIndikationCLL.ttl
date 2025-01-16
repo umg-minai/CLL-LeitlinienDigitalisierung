@@ -1,0 +1,33 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/TherapieIndikationCLL> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TherapieIndikationCLL"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition TherapieIndikationCLL</b></p><a name=\"TherapieIndikationCLL\"> </a><a name=\"hcTherapieIndikationCLL\"> </a><a name=\"TherapieIndikationCLL-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-TherapieIndikationCLL.html\">ActivityDefinition TherapieIndikationCLL</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: TherapieIndikationCLL</p><p><b>title</b>: TherapieIndikationCLL</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Therapie Indikation bei CLL</p>\n</div><p><b>code</b>: <span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 scllt}\">Systemic CLL therapy</span></p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/TherapieIndikationCLL"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "Langversion 2.01"] ; # 
+  fhir:name [ fhir:v "TherapieIndikationCLL"] ; # 
+  fhir:title [ fhir:v "TherapieIndikationCLL"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-01-16T09:02:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"] ; # 
+  fhir:description [ fhir:v "Therapie Indikation bei CLL"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "scllt" ] ;
+       fhir:display [ fhir:v "Systemic CLL therapy" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

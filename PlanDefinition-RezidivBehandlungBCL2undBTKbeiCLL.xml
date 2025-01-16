@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="RezidivBehandlungBCL2undBTKbeiCLL"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition RezidivBehandlungBCL2undBTKbeiCLL</b></p><a name="RezidivBehandlungBCL2undBTKbeiCLL"> </a><a name="hcRezidivBehandlungBCL2undBTKbeiCLL"> </a><a name="RezidivBehandlungBCL2undBTKbeiCLL-en-US"> </a><p><b>partOf</b>: <a href="PlanDefinition-RecCollectionRezidivtherapieBCL2undBTKbeiCLL.html">Recommendation Collection CLL: Rezidivbehandlung mit BCL-2-Inhib. Oder BTK-Inhibitor (5.4)</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method exactly}">Exactly</span></li><li>threshold: 1</li></ul></blockquote><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href="PlanDefinition-RezidivBehandlungBCL2undBTKbeiCLL.html">PlanDefinition Rezidivbehandlung mit BCL-2-Inhib. Oder Acalabrutinib</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: RezidivbehandlungBCL2undBTKbeiCLL</p><p><b>title</b>: Rezidivbehandlung mit BCL-2-Inhib. Oder Acalabrutinib</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>subject</b>: <a href="EvidenceVariable-PopulationCLLRezidivtherapie.html">Population: CLL und Rezidivtherapie</a></p><p><b>date</b>: 2023-05</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem Acalabrutinib (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden.</p>
+</div><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 432102000}">Administration of substance (procedure)</span></p><p><b>definition</b>: <a href="ActivityDefinition-RezidivtherapieMitBCL2beiCLL.html">Erstlinienterapie mit BCL2-Inhibitor bei CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 432102000}">Administration of substance (procedure)</span></p><p><b>definition</b>: <a href="ActivityDefinition-RezidivtherapieMitBTKbeiCLL.html">Rezidivtherapie mit BTK-Inhibitor bei CLL</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionRezidivtherapieBCL2undBTKbeiCLL"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="exactly"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="threshold">
+      <valuePositiveInt value="1"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RezidivBehandlungBCL2undBTKbeiCLL"/>
+  <version value="Langversion 2.01"/>
+  <name value="RezidivbehandlungBCL2undBTKbeiCLL"/>
+  <title value="Rezidivbehandlung mit BCL-2-Inhib. Oder Acalabrutinib"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="false"/>
+  <subjectCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLRezidivtherapie"/>
+  <date value="2023-05"/>
+  <publisher value="https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"/>
+  <description value="Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem Acalabrutinib (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden."/>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="432102000"/>
+        <display value="Administration of substance (procedure)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/RezidivtherapieMitBCL2beiCLL"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="432102000"/>
+        <display value="Administration of substance (procedure)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/RezidivtherapieMitBTKbeiCLL"/>
+  </action>
+</PlanDefinition>

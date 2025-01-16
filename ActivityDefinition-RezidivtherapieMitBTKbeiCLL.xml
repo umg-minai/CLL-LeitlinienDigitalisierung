@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="RezidivtherapieMitBTKbeiCLL"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/drug-administration-action"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition RezidivtherapieMitBTKbeiCLL</b></p><a name="RezidivtherapieMitBTKbeiCLL"> </a><a name="hcRezidivtherapieMitBTKbeiCLL"> </a><a name="RezidivtherapieMitBTKbeiCLL-en-US"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href="ActivityDefinition-RezidivtherapieMitBTKbeiCLL.html">ActivityDefinition Rezidivtherapie mit BTK-Inhibitor bei CLL</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: RezidivtherapieMitBTKbeiCLL</p><p><b>title</b>: Rezidivtherapie mit BTK-Inhibitor bei CLL</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>subject</b>: <span title="Codes:{http://hl7.org/fhir/fhir-types Patient}">Patient</span></p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Rezidivtherapie mit BTK-Inhibitor bei CLL</p>
+</div><p><b>kind</b>: MedicationRequest</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 432102000}">Administration of substance (procedure)</span></p><p><b>product</b>: <span title="Codes:{http://snomed.info/sct 710227007}">Non-specific protein-tyrosine kinase inhibitor</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/RezidivtherapieMitBTKbeiCLL"/>
+  <version value="Langversion 2.01"/>
+  <name value="RezidivtherapieMitBTKbeiCLL"/>
+  <title value="Rezidivtherapie mit BTK-Inhibitor bei CLL"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Patient"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2025-01-16T09:02:23+00:00"/>
+  <publisher value="https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"/>
+  <description value="Rezidivtherapie mit BTK-Inhibitor bei CLL"/>
+  <kind value="MedicationRequest"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="432102000"/>
+      <display value="Administration of substance (procedure)"/>
+    </coding>
+  </code>
+  <productCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="710227007"/>
+      <display value="Non-specific protein-tyrosine kinase inhibitor"/>
+    </coding>
+  </productCodeableConcept>
+</ActivityDefinition>

@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HEVSerologyCLL> a fhir:ActivityDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HEVSerologyCLL"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition HEVSerologyCLL</b></p><a name=\"HEVSerologyCLL\"> </a><a name=\"hcHEVSerologyCLL\"> </a><a name=\"HEVSerologyCLL-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-HEVSerologyCLL.html\">ActivityDefinition HEV Serology CLL</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: HEVSerologyCLL</p><p><b>title</b>: HEV Serology CLL</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>HEV Serologie</p>\n</div><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 36446003}\">Hepatitis E virus measurement (procedure)</span></p><p><b>timing</b>: Count 1  times, Once</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HEVSerologyCLL"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "Langversion 2.01"] ; # 
+  fhir:name [ fhir:v "HEVSerologyCLL"] ; # 
+  fhir:title [ fhir:v "HEV Serology CLL"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:subject [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/fhir-types"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Patient" ]
+     ] )
+  ] ; # 
+  fhir:date [ fhir:v "2025-01-16T09:02:23+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"] ; # 
+  fhir:description [ fhir:v "HEV Serologie"] ; # 
+  fhir:kind [ fhir:v "ServiceRequest"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:36446003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "36446003" ] ;
+       fhir:display [ fhir:v "Hepatitis E virus measurement (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:timing [
+     a fhir:Timing ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "contextCode"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             a loinc:63936-9 ;
+             fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "63936-9" ]
+           ] )
+         ]
+       ] [
+         fhir:url [ fhir:v "offset"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Range ;
+           fhir:low [
+             fhir:value [ fhir:v "-4"^^xsd:decimal ] ;
+             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "wk" ]
+           ] ;
+           fhir:high [
+             fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+             fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "wk" ]
+           ]
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/relative-time"^^xsd:anyURI ]
+     ] ) ;
+     fhir:repeat [
+       fhir:count [ fhir:v "1"^^xsd:positiveInteger ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

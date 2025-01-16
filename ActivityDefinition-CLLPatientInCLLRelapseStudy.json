@@ -1,0 +1,24 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "CLLPatientInCLLRelapseStudy",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition CLLPatientInCLLRelapseStudy</b></p><a name=\"CLLPatientInCLLRelapseStudy\"> </a><a name=\"hcCLLPatientInCLLRelapseStudy\"> </a><a name=\"CLLPatientInCLLRelapseStudy-en-US\"> </a><p><b>url</b>: <a href=\"ActivityDefinition-CLLPatientInCLLRelapseStudy.html\">ActivityDefinition CLLPatientInCLLRelapseStudy</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: CLLPatientInCLLRelapseStudy</p><p><b>title</b>: CLLPatientInCLLRelapseStudy</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Patient*innen mit einem Rezidiv sollen, sofern eine passende klinische Studie verfügbar ist, die Therapie im Rahmen einer klinischen Studie angeboten werden.</p>\n</div><p><b>code</b>: <span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 cllrlpsincl}\">Inclusion into specific CLL relapse treatment study</span></p></div>"
+  },
+  "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CLLPatientInCLLRelapseStudy",
+  "version" : "Langversion 2.01",
+  "name" : "CLLPatientInCLLRelapseStudy",
+  "title" : "CLLPatientInCLLRelapseStudy",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-01-16T09:02:23+00:00",
+  "publisher" : "https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll",
+  "description" : "Patient*innen mit einem Rezidiv sollen, sofern eine passende klinische Studie verfügbar ist, die Therapie im Rahmen einer klinischen Studie angeboten werden.",
+  "code" : {
+    "coding" : [{
+      "system" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2",
+      "code" : "cllrlpsincl",
+      "display" : "Inclusion into specific CLL relapse treatment study"
+    }]
+  }
+}

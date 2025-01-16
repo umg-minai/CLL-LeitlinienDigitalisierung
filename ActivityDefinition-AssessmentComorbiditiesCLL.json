@@ -1,0 +1,74 @@
+{
+  "resourceType" : "ActivityDefinition",
+  "id" : "AssessmentComorbiditiesCLL",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActivityDefinition AssessmentComorbiditiesCLL</b></p><a name=\"AssessmentComorbiditiesCLL\"> </a><a name=\"hcAssessmentComorbiditiesCLL\"> </a><a name=\"AssessmentComorbiditiesCLL-en-US\"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"ActivityDefinition-AssessmentComorbiditiesCLL.html\">ActivityDefinition Assesment Comorbidities CLL</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: AssesmentComorbiditiesCLL</p><p><b>title</b>: Assesment Comorbidities CLL</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>subject</b>: <span title=\"Codes:{http://hl7.org/fhir/fhir-types Patient}\">Patient</span></p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Assesment Comorbidities CLL</p>\n</div><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 398192003}\">Co-morbid conditions (finding)</span></p><p><b>timing</b>: Count 1  times, Once</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability",
+    "valueCode" : "computable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel",
+    "valueCode" : "structured"
+  }],
+  "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentComorbiditiesCLL",
+  "version" : "Langversion 2.01",
+  "name" : "AssesmentComorbiditiesCLL",
+  "title" : "Assesment Comorbidities CLL",
+  "status" : "active",
+  "experimental" : false,
+  "subjectCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Patient"
+    }]
+  },
+  "date" : "2025-01-16T09:02:23+00:00",
+  "publisher" : "https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll",
+  "description" : "Assesment Comorbidities CLL",
+  "kind" : "ServiceRequest",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "398192003",
+      "display" : "Co-morbid conditions (finding)"
+    }]
+  },
+  "timingTiming" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "contextCode",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "63936-9"
+          }]
+        }
+      },
+      {
+        "url" : "offset",
+        "valueRange" : {
+          "low" : {
+            "value" : -4,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "wk"
+          },
+          "high" : {
+            "value" : 0,
+            "system" : "http://unitsofmeasure.org",
+            "code" : "wk"
+          }
+        }
+      }],
+      "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/relative-time"
+    }],
+    "repeat" : {
+      "count" : 1
+    }
+  }
+}

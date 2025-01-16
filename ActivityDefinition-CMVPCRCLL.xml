@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="CMVPCRCLL"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/assessment-action"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition CMVPCRCLL</b></p><a name="CMVPCRCLL"> </a><a name="hcCMVPCRCLL"> </a><a name="CMVPCRCLL-en-US"> </a><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href="ActivityDefinition-CMVPCRCLL.html">ActivityDefinition CMV PCR CLL</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: CMVPCRCLL</p><p><b>title</b>: CMV PCR CLL</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>subject</b>: <span title="Codes:{http://hl7.org/fhir/fhir-types Patient}">Patient</span></p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>CMV PCR Viruslast Bestimmung</p>
+</div><p><b>kind</b>: ServiceRequest</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 1107381000000101}">Cytomegalovirus viral load</span></p><p><b>timing</b>: Once per 2 weeks</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CMVPCRCLL"/>
+  <version value="Langversion 2.01"/>
+  <name value="CMVPCRCLL"/>
+  <title value="CMV PCR CLL"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <subjectCodeableConcept>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="Patient"/>
+    </coding>
+  </subjectCodeableConcept>
+  <date value="2025-01-16T09:02:23+00:00"/>
+  <publisher value="https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"/>
+  <description value="CMV PCR Viruslast Bestimmung"/>
+  <kind value="ServiceRequest"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/83821000000107/version/20230412fd"/>
+      <code value="1107381000000101"/>
+      <display value="Cytomegalovirus viral load"/>
+    </coding>
+  </code>
+  <timingTiming>
+    <repeat>
+      <frequency value="1"/>
+      <period value="2"/>
+      <periodUnit value="wk"/>
+    </repeat>
+  </timingTiming>
+</ActivityDefinition>

@@ -1,0 +1,313 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorCLLPlanungOnkoTherapie> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "UntersuchungenVorCLLPlanungOnkoTherapie"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition UntersuchungenVorCLLPlanungOnkoTherapie</b></p><a name=\"UntersuchungenVorCLLPlanungOnkoTherapie\"> </a><a name=\"hcUntersuchungenVorCLLPlanungOnkoTherapie\"> </a><a name=\"UntersuchungenVorCLLPlanungOnkoTherapie-en-US\"> </a><p><b>partOf</b>: <a href=\"PlanDefinition-RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie.html\">Recommendation Collection CLL: Untersuchungen vor Therapieeinleitung (3.11)</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method all}\">All</span></li></ul></blockquote><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"PlanDefinition-UntersuchungenVorCLLPlanungOnkoTherapie.html\">PlanDefinition Untersuchung vor Einleitung einer CLL Therapielinie </a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: UntersuchungenVorCLLPlanungOnkoTherapie</p><p><b>title</b>: Untersuchung vor Einleitung einer CLL Therapielinie </p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>subject</b>: <a href=\"EvidenceVariable-PopulationCLLPlanungOnkoTherapie.html\">Population: CLL und Planung Onkologische Therapielinie</a></p><p><b>date</b>: 2023-05</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Untersuchung die vor der Einleitung einer CLL Therapielinie vorliegen sollen</p>\n</div><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-HistoryTakingCLL.html\">History Taking CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-PhysicalExaminationCLL.html\">Physical Examination CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-ExaminationLymphaticNodesCLL.html\">Examination Lymphatic nodes CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-ExaminationSpleenSizeCLL.html\">Examination spleen size CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-ExaminationLiverSizeCLL.html\">Examination liver size CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-AbdomialUltrasonographyCLL.html\">Abdomial Ultrasonography CLL</a></p></blockquote><blockquote><p><b>action</b></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method one-or-more}\">One or More</span></li></ul></blockquote><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 89780004}\">Combined (qualifier value)</span></p><h3>Actions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Definition[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></td><td><a href=\"ActivityDefinition-AssessmentECOGScoreCLL.html\">Assesment ECOG Score CLL</a></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></td><td><a href=\"ActivityDefinition-AssessmentKarnofskyIndexCLL.html\">Assesment Karnofsky-Index CLL</a></td></tr></table></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-AssessmentComorbiditiesCLL.html\">Assesment Comorbidities CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-CompleteBloodCountAutomatedCLL.html\">Complete Blood Count and White cell Differential Automated CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-MicroscopyWhiteBloodCellCountCLL.html\">White cell Differential Microscopy CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-ClinicalChemistryTestCLL.html\">Clinical Chemistry Test CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-HIVSerologyCLL.html\">HIV Serology CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-HBVSerologyCLL.html\">HBV Serology CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-HCVSerologyCLL.html\">HCV Serology CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-HEVSerologyCLL.html\">HEV Serology CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 386053000}\">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-BinetStagingCLL.html\">Binet Staging CLL</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "all" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorCLLPlanungOnkoTherapie"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "Langversion 2.01"] ; # 
+  fhir:name [ fhir:v "UntersuchungenVorCLLPlanungOnkoTherapie"] ; # 
+  fhir:title [ fhir:v "Untersuchung vor Einleitung einer CLL Therapielinie "] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:subject [
+     fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLPlanungOnkoTherapie"^^xsd:anyURI ;
+     fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLPlanungOnkoTherapie>
+  ] ; # 
+  fhir:date [ fhir:v "2023-05"^^xsd:gYearMonth] ; # 
+  fhir:publisher [ fhir:v "https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"] ; # 
+  fhir:description [ fhir:v "Untersuchung die vor der Einleitung einer CLL Therapielinie vorliegen sollen"] ; # 
+  fhir:action ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HistoryTakingCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HistoryTakingCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/PhysicalExaminationCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/PhysicalExaminationCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ExaminationLymphaticNodesCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ExaminationLymphaticNodesCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ExaminationSpleenSizeCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ExaminationSpleenSizeCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ExaminationLiverSizeCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ExaminationLiverSizeCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AbdomialUltrasonographyCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AbdomialUltrasonographyCLL>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "one-or-more" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         a sct:89780004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "89780004" ] ;
+         fhir:display [ fhir:v "Combined (qualifier value)" ]
+       ] )
+     ] ;
+     fhir:action ( [
+       fhir:code [
+         fhir:coding ( [
+           a sct:386053000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "386053000" ] ;
+           fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+         ] )
+       ] ;
+       fhir:definition [
+         fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentECOGScoreCLL"^^xsd:anyURI ;
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentECOGScoreCLL>
+       ]
+     ] [
+       fhir:code [
+         fhir:coding ( [
+           a sct:386053000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "386053000" ] ;
+           fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+         ] )
+       ] ;
+       fhir:definition [
+         fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentKarnofskyIndexCLL"^^xsd:anyURI ;
+         fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentKarnofskyIndexCLL>
+       ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentComorbiditiesCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentComorbiditiesCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CompleteBloodCountAutomatedCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CompleteBloodCountAutomatedCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/MicroscopyWhiteBloodCellCountCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/MicroscopyWhiteBloodCellCountCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ClinicalChemistryTestCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ClinicalChemistryTestCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HIVSerologyCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HIVSerologyCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HBVSerologyCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HBVSerologyCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HCVSerologyCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HCVSerologyCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HEVSerologyCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HEVSerologyCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:386053000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/BinetStagingCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/BinetStagingCLL>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PlanDefinition xmlns="http://hl7.org/fhir">
+  <id value="QIMutationsstatusVorTherapie"/>
+  <meta>
+    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PlanDefinition QIMutationsstatusVorTherapie</b></p><a name="QIMutationsstatusVorTherapie"> </a><a name="hcQIMutationsstatusVorTherapie"> </a><a name="QIMutationsstatusVorTherapie-en-US"> </a><p><b>partOf</b>: <a href="PlanDefinition-RecCollectionQIMutationsstatusVorTherapie.html">QI 2: Bestimmung TP53-Deletions- und TP53-/IGHV-Mutationsstatus vor erster systemischer CLL-Therapie (modifiziert 2024)</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title="Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method all}">All</span></li></ul></blockquote><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href="PlanDefinition-QIMutationsstatusVorTherapie.html">PlanDefinition QI 2: Bestimmung TP53-Deletions- und TP53-/IGHV-Mutationsstatus vor erster systemischer CLL-Therapie (modifiziert 2024)</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: UntersuchungenVorCLLPlanungOnkoTherapie</p><p><b>title</b>: QI 2: Bestimmung TP53-Deletions- und TP53-/IGHV-Mutationsstatus vor erster systemischer CLL-Therapie (modifiziert 2024)</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>subject</b>: <a href="EvidenceVariable-PopulationQIMutationsstatusVorTherapie.html">Population Genetischer Mutationsstatus vor Therapie</a></p><p><b>date</b>: 2024-07</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Folgende Untersuchungsverfahren sollen vor Einleitung einer neuen Therapielinie zur Anwendung kommen: (I) Bestimmung des TP53-Deletions- und Mutationsstatus (FISH hinsichtlich del(17)(p13) und TP53-Mutationsanalyse); (II) Erhebung des IGHV-Mutationsstatus (sofern noch nicht bekannt)</p>
+</div><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 386053000}">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href="ActivityDefinition-TP53andDEL17pCLL.html">FISH hinsichtlich TP53 und DEL17p</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 386053000}">Evaluation procedure (procedure)</span></p><p><b>definition</b>: <a href="ActivityDefinition-IGHVmutationCLL.html">IGHV-Mutationsstatus</a></p></blockquote></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf">
+    <valueCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionQIMutationsstatusVorTherapie"/>
+  </extension>
+  <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method">
+    <extension url="method">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"/>
+          <code value="all"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability">
+    <valueCode value="computable"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel">
+    <valueCode value="structured"/>
+  </extension>
+  <url value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/QIMutationsstatusVorTherapie"/>
+  <version value="Langversion 2.01"/>
+  <name value="UntersuchungenVorCLLPlanungOnkoTherapie"/>
+  <title value="QI 2: Bestimmung TP53-Deletions- und TP53-/IGHV-Mutationsstatus vor erster systemischer CLL-Therapie (modifiziert 2024)"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/plan-definition-type"/>
+      <code value="eca-rule"/>
+    </coding>
+  </type>
+  <status value="active"/>
+  <experimental value="false"/>
+  <subjectCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationQIMutationsstatusVorTherapie"/>
+  <date value="2024-07"/>
+  <publisher value="https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"/>
+  <description value="Folgende Untersuchungsverfahren sollen vor Einleitung einer neuen Therapielinie zur Anwendung kommen: (I) Bestimmung des TP53-Deletions- und Mutationsstatus (FISH hinsichtlich del(17)(p13) und TP53-Mutationsanalyse); (II) Erhebung des IGHV-Mutationsstatus (sofern noch nicht bekannt)"/>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/TP53andDEL17pCLL"/>
+  </action>
+  <action>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </coding>
+    </code>
+    <definitionCanonical value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/IGHVmutationCLL"/>
+  </action>
+</PlanDefinition>

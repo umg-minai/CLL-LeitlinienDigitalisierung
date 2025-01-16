@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ActivityDefinition xmlns="http://hl7.org/fhir">
+  <id value="TherapieIndikationCLL"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActivityDefinition TherapieIndikationCLL</b></p><a name="TherapieIndikationCLL"> </a><a name="hcTherapieIndikationCLL"> </a><a name="TherapieIndikationCLL-en-US"> </a><p><b>url</b>: <a href="ActivityDefinition-TherapieIndikationCLL.html">ActivityDefinition TherapieIndikationCLL</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: TherapieIndikationCLL</p><p><b>title</b>: TherapieIndikationCLL</p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Therapie Indikation bei CLL</p>
+</div><p><b>code</b>: <span title="Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 scllt}">Systemic CLL therapy</span></p></div>
+  </text>
+  <url value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/TherapieIndikationCLL"/>
+  <version value="Langversion 2.01"/>
+  <name value="TherapieIndikationCLL"/>
+  <title value="TherapieIndikationCLL"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-01-16T09:02:23+00:00"/>
+  <publisher value="https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"/>
+  <description value="Therapie Indikation bei CLL"/>
+  <code>
+    <coding>
+      <system value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2"/>
+      <code value="scllt"/>
+      <display value="Systemic CLL therapy"/>
+    </coding>
+  </code>
+</ActivityDefinition>

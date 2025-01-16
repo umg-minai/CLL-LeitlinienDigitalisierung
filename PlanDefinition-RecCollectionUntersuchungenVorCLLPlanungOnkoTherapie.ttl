@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie</b></p><a name=\"RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie\"> </a><a name=\"hcRecCollectionUntersuchungenVorCLLPlanungOnkoTherapie\"> </a><a name=\"RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie-en-US\"> </a><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method all}\">All</span></li></ul></blockquote><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"PlanDefinition-RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie.html\">PlanDefinition Recommendation Collection CLL: Untersuchungen vor Therapieeinleitung (3.11)</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: RecommendationCollection3_11</p><p><b>title</b>: Recommendation Collection CLL: Untersuchungen vor Therapieeinleitung (3.11)</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type workflow-definition}\">Workflow Definition</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2024-05-06</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Untersuchungen, die vor Planung einer onkologischen Therapielinie vorhanden sein sollen (mit Spezifizierungen für gebährfähige Frauen und Therapieschemata mit Idelalisib)</p>\n</div><blockquote><p><b>action</b></p><p><b>title</b>: UntersuchungenVorCLLPlanungOnkoTherapie</p><p><b>description</b>: </p><div><p>Untersuchungen, bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-UntersuchungenVorCLLPlanungOnkoTherapie.html\">Untersuchung vor Einleitung einer CLL Therapielinie </a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: UntersuchungenVorPlanungOnkoTherapieFertileFemale</p><p><b>description</b>: </p><div><p>Untersuchungen, bei gebährfähigen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-UntersuchungenVorPlanungOnkoTherapieFertileFemale.html\">Untersuchung vor Einleitung einer CLL Therapielinie bei gebährfähige Frauen</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: UntersuchungenVorPlanungOnkoTherapieIdelalisib</p><p><b>description</b>: </p><div><p>Untersuchungen, bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie mit Idelalisib vorhanden sein sollen</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-UntersuchungenVorPlanungOnkoTherapieIdelalisib.html\">Untersuchung vor Einleitung einer CLL Therapielinie bei gebaehrfähige Frauen</a></p></blockquote><blockquote><p><b>action</b></p><p><b>title</b>: UntersuchungenWhileTherapieIdelalisib</p><p><b>description</b>: </p><div><p>Untersuchungen, bei allen CLL-Patienten während der Therapie mit Idelalisib</p>\n</div><p><b>code</b>: <span title=\"Codes:{http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process guideline-based-care}\">Guideline-based Care</span></p><p><b>definition</b>: <a href=\"PlanDefinition-UntersuchungenVorPlanungOnkoTherapieIdelalisib.html\">Untersuchung vor Einleitung einer CLL Therapielinie bei gebaehrfähige Frauen</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "all" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "Langversion 2.01"] ; # 
+  fhir:name [ fhir:v "RecommendationCollection3_11"] ; # 
+  fhir:title [ fhir:v "Recommendation Collection CLL: Untersuchungen vor Therapieeinleitung (3.11)"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "workflow-definition" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-05-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"] ; # 
+  fhir:description [ fhir:v "Untersuchungen, die vor Planung einer onkologischen Therapielinie vorhanden sein sollen (mit Spezifizierungen für gebährfähige Frauen und Therapieschemata mit Idelalisib)"] ; # 
+  fhir:action ( [
+     fhir:title [ fhir:v "UntersuchungenVorCLLPlanungOnkoTherapie" ] ;
+     fhir:description [ fhir:v "Untersuchungen, bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorCLLPlanungOnkoTherapie"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorCLLPlanungOnkoTherapie>
+     ]
+  ] [
+     fhir:title [ fhir:v "UntersuchungenVorPlanungOnkoTherapieFertileFemale" ] ;
+     fhir:description [ fhir:v "Untersuchungen, bei gebährfähigen CLL-Patienten vor Planung einer onkologischen Therapielinie vorhanden sein sollen" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieFertileFemale"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieFertileFemale>
+     ]
+  ] [
+     fhir:title [ fhir:v "UntersuchungenVorPlanungOnkoTherapieIdelalisib" ] ;
+     fhir:description [ fhir:v "Untersuchungen, bei allen CLL-Patienten vor Planung einer onkologischen Therapielinie mit Idelalisib vorhanden sein sollen" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieIdelalisib"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieIdelalisib>
+     ]
+  ] [
+     fhir:title [ fhir:v "UntersuchungenWhileTherapieIdelalisib" ] ;
+     fhir:description [ fhir:v "Untersuchungen, bei allen CLL-Patienten während der Therapie mit Idelalisib" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/uv/cpg/CodeSystem/cpg-common-process"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "guideline-based-care" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieIdelalisib"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieIdelalisib>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

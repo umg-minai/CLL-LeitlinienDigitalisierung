@@ -1,0 +1,410 @@
+[
+  {
+    "id" : "AbdomialUltrasonographyCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AbdomialUltrasonographyCLL",
+    "version" : "Langversion 2.01",
+    "name" : "AbdomialUltrasonographyCLL"
+  },
+  {
+    "id" : "AssessmentComorbiditiesCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentComorbiditiesCLL",
+    "version" : "Langversion 2.01",
+    "name" : "AssesmentComorbiditiesCLL"
+  },
+  {
+    "id" : "AssessmentECOGScoreCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentECOGScoreCLL",
+    "version" : "Langversion 2.01",
+    "name" : "AssesmentECOGScoreCLL"
+  },
+  {
+    "id" : "AssessmentKarnofskyIndexCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/AssessmentKarnofskyIndexCLL",
+    "version" : "Langversion 2.01",
+    "name" : "AssesmentKarnofskyIndexCLL"
+  },
+  {
+    "id" : "BinetStagingCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/BinetStagingCLL",
+    "version" : "Langversion 2.01",
+    "name" : "BinetStagingCLL"
+  },
+  {
+    "id" : "CLLPatientInCLLRelapseStudy",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CLLPatientInCLLRelapseStudy",
+    "version" : "Langversion 2.01",
+    "name" : "CLLPatientInCLLRelapseStudy"
+  },
+  {
+    "id" : "CMVAntibodyIgGCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CMVAntibodyIgGCLL",
+    "version" : "Langversion 2.01",
+    "name" : "CMVAntibodyIgGCLL"
+  },
+  {
+    "id" : "CMVAntibodyIgMCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CMVAntibodyIgMCLL",
+    "version" : "Langversion 2.01",
+    "name" : "CMVAntibodyIgMCLL"
+  },
+  {
+    "id" : "CMVPCRCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CMVPCRCLL",
+    "version" : "Langversion 2.01",
+    "name" : "CMVPCRCLL"
+  },
+  {
+    "id" : "ClinicalChemistryTestCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ClinicalChemistryTestCLL",
+    "version" : "Langversion 2.01",
+    "name" : "ClinicalChemistryTestCLL"
+  },
+  {
+    "id" : "CompleteBloodCountAutomatedCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/CompleteBloodCountAutomatedCLL",
+    "version" : "Langversion 2.01",
+    "name" : "CompleteBloodCountAutomatedCLL"
+  },
+  {
+    "id" : "ErstlinieMitBCL2beiCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ErstlinieMitBCL2beiCLL",
+    "version" : "Langversion 2.01",
+    "name" : "ErstlinieMitBCL2beiCLL"
+  },
+  {
+    "id" : "ErstlinieMitBTKbeiCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ErstlinieMitBTKbeiCLL",
+    "version" : "Langversion 2.01",
+    "name" : "RezidivtherapieMitBTKbeiCLL"
+  },
+  {
+    "id" : "ExaminationLiverSizeCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ExaminationLiverSizeCLL",
+    "version" : "Langversion 2.01",
+    "name" : "ExaminationLiverSizeCLL"
+  },
+  {
+    "id" : "ExaminationLymphaticNodesCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ExaminationLymphaticNodesCLL",
+    "version" : "Langversion 2.01",
+    "name" : "ExaminationLymphaticNodesCLL"
+  },
+  {
+    "id" : "ExaminationSpleenSizeCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ExaminationSpleenSizeCLL",
+    "version" : "Langversion 2.01",
+    "name" : "ExaminationSpleenSizeCLL"
+  },
+  {
+    "id" : "HBVSerologyCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HBVSerologyCLL",
+    "version" : "Langversion 2.01",
+    "name" : "HBVSerologyCLL"
+  },
+  {
+    "id" : "HCVSerologyCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HCVSerologyCLL",
+    "version" : "Langversion 2.01",
+    "name" : "HCVSerologyCLL"
+  },
+  {
+    "id" : "HEVSerologyCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HEVSerologyCLL",
+    "version" : "Langversion 2.01",
+    "name" : "HEVSerologyCLL"
+  },
+  {
+    "id" : "HIVSerologyCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HIVSerologyCLL",
+    "version" : "Langversion 2.01",
+    "name" : "HIVSerologyCLL"
+  },
+  {
+    "id" : "HistoryTakingCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/HistoryTakingCLL",
+    "version" : "Langversion 2.01",
+    "name" : "HistoryTakingCLL"
+  },
+  {
+    "id" : "IGHVmutationCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/IGHVmutationCLL",
+    "version" : "Langversion 2.01",
+    "name" : "IGHVmutationCLL"
+  },
+  {
+    "id" : "MicroscopyWhiteBloodCellCountCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/MicroscopyWhiteBloodCellCountCLL",
+    "version" : "Langversion 2.01",
+    "name" : "MicroscopyWhiteBloodCellCountCLL"
+  },
+  {
+    "id" : "PhysicalExaminationCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/PhysicalExaminationCLL",
+    "version" : "Langversion 2.01",
+    "name" : "PhysicalExaminationCLL"
+  },
+  {
+    "id" : "PregnancyTestbHCGCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/PregnancyTestbHCGCLL",
+    "version" : "Langversion 2.01",
+    "name" : "PregnancyTestbHCGCLL"
+  },
+  {
+    "id" : "RezidivtherapieMitBCL2beiCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/RezidivtherapieMitBCL2beiCLL",
+    "version" : "Langversion 2.01",
+    "name" : "ErstlinieMitBCL2beiCLL"
+  },
+  {
+    "id" : "RezidivtherapieMitBTKbeiCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/RezidivtherapieMitBTKbeiCLL",
+    "version" : "Langversion 2.01",
+    "name" : "RezidivtherapieMitBTKbeiCLL"
+  },
+  {
+    "id" : "TP53andDEL17pCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/TP53andDEL17pCLL",
+    "version" : "Langversion 2.01",
+    "name" : "TP53andDEL17pCLL"
+  },
+  {
+    "id" : "TherapieIndikationCLL",
+    "type" : "ActivityDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/TherapieIndikationCLL",
+    "version" : "Langversion 2.01",
+    "name" : "TherapieIndikationCLL"
+  },
+  {
+    "id" : "cll-v2",
+    "type" : "CodeSystem",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2",
+    "name" : "CLL_V2"
+  },
+  {
+    "id" : "PopulationCLLBinetAB",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLBinetAB",
+    "name" : "PopulationCLLBinetAB"
+  },
+  {
+    "id" : "PopulationCLLBinetC",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLBinetC",
+    "name" : "PopulationCLLBinetC"
+  },
+  {
+    "id" : "PopulationCLLErstlinientherapie",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLErstlinientherapie",
+    "name" : "PopulationCLLErstlinientherapie"
+  },
+  {
+    "id" : "PopulationCLLOnkoTherapieIdelalisib",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLOnkoTherapieIdelalisib",
+    "name" : "PopulationCLLOnkoTherapieIdelalisib"
+  },
+  {
+    "id" : "PopulationCLLPlanungOnkoTherapie",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLPlanungOnkoTherapie",
+    "name" : "PopulationCLLPlanungOnkoTherapie"
+  },
+  {
+    "id" : "PopulationCLLPlanungOnkoTherapieFertileFemale",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLPlanungOnkoTherapieFertileFemale",
+    "name" : "PopulationCLLPlanungOnkoTherapieFertileFemale"
+  },
+  {
+    "id" : "PopulationCLLPlanungOnkoTherapieIdelalisib",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLPlanungOnkoTherapieIdelalisib",
+    "name" : "PopulationCLLPlanungOnkoTherapieIdelalisib"
+  },
+  {
+    "id" : "PopulationCLLRezidivtherapie",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLRezidivtherapie",
+    "name" : "PopulationCLLRezidivtherapie"
+  },
+  {
+    "id" : "PopulationQIMedikationErstlinienTherapie",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationQIMedikationErstlinienTherapie",
+    "name" : "PopulationQIMedikationErstlinienTherapie"
+  },
+  {
+    "id" : "PopulationQIMutationsstatusVorTherapie",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationQIMutationsstatusVorTherapie",
+    "name" : "PopulationQIMutationsstatusVorTherapie"
+  },
+  {
+    "id" : "PopulationQIRezidivKlinischeStudien",
+    "type" : "EvidenceVariable",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationQIRezidivKlinischeStudien",
+    "name" : "PopulationQIRezidivKlinischeStudien"
+  },
+  {
+    "id" : "de.uni-greifswald.medizin.cll-guideline",
+    "type" : "ImplementationGuide",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ImplementationGuide/de.uni-greifswald.medizin.cll-guideline",
+    "version" : "0.2.0",
+    "name" : "CLL_Guidelines_QI"
+  },
+  {
+    "id" : "CLLTherapieindikationBinetAB",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/CLLTherapieindikationBinetAB",
+    "version" : "Langversion 2.01",
+    "name" : "CLLTherapieindikationBinetAB"
+  },
+  {
+    "id" : "CLLTherapieindikationBinetC",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/CLLTherapieindikationBinetC",
+    "version" : "Langversion 2.01",
+    "name" : "CLLTherapieindikationBinetC"
+  },
+  {
+    "id" : "ErstlinieBCL2undBTKbeiCLL",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/ErstlinieBCL2undBTKbeiCLL",
+    "version" : "Langversion 2.01",
+    "name" : "ErstlinieBCL2undBTKbeiCLL"
+  },
+  {
+    "id" : "QICLLErstlinienTherapie",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/QICLLErstlinienTherapie",
+    "version" : "Langversion 2.01",
+    "name" : "QICLLErstlinienTherapie"
+  },
+  {
+    "id" : "QIMutationsstatusVorTherapie",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/QIMutationsstatusVorTherapie",
+    "version" : "Langversion 2.01",
+    "name" : "UntersuchungenVorCLLPlanungOnkoTherapie"
+  },
+  {
+    "id" : "QIRezidivKlinischeStudien",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/QIRezidivKlinischeStudien",
+    "version" : "Langversion 2.01",
+    "name" : "QIRezidivKlinischeStudien"
+  },
+  {
+    "id" : "RecCollectionErstlinieBCL2undBTKbeiCLL",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionErstlinieBCL2undBTKbeiCLL",
+    "version" : "Langversion 2.01",
+    "name" : "RecommendationCollection4_3"
+  },
+  {
+    "id" : "RecCollectionQIMedikationErstlinienTherapie",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionQIMedikationErstlinienTherapie",
+    "version" : "Langversion 2.01",
+    "name" : "RecommendationCollection_QI_5"
+  },
+  {
+    "id" : "RecCollectionQIMutationsstatusVorTherapie",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionQIMutationsstatusVorTherapie",
+    "version" : "Langversion 2.01",
+    "name" : "RecommendationCollection_QI_2"
+  },
+  {
+    "id" : "RecCollectionQIRezidivKlinischeStudien",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionQIRezidivKlinischeStudien",
+    "version" : "Langversion 2.01",
+    "name" : "RecommendationCollection_QI_4"
+  },
+  {
+    "id" : "RecCollectionRezidivtherapieBCL2undBTKbeiCLL",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionRezidivtherapieBCL2undBTKbeiCLL",
+    "version" : "Langversion 2.01",
+    "name" : "RecommendationCollection5_4"
+  },
+  {
+    "id" : "RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionUntersuchungenVorCLLPlanungOnkoTherapie",
+    "version" : "Langversion 2.01",
+    "name" : "RecommendationCollection3_11"
+  },
+  {
+    "id" : "RezidivBehandlungBCL2undBTKbeiCLL",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RezidivBehandlungBCL2undBTKbeiCLL",
+    "version" : "Langversion 2.01",
+    "name" : "RezidivbehandlungBCL2undBTKbeiCLL"
+  },
+  {
+    "id" : "UntersuchungenVorCLLPlanungOnkoTherapie",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorCLLPlanungOnkoTherapie",
+    "version" : "Langversion 2.01",
+    "name" : "UntersuchungenVorCLLPlanungOnkoTherapie"
+  },
+  {
+    "id" : "UntersuchungenVorPlanungOnkoTherapieFertileFemale",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieFertileFemale",
+    "version" : "Langversion 2.01",
+    "name" : "UntersuchungenVorPlanungOnkoTherapieFertileFemale"
+  },
+  {
+    "id" : "UntersuchungenVorPlanungOnkoTherapieIdelalisib",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenVorPlanungOnkoTherapieIdelalisib",
+    "version" : "Langversion 2.01",
+    "name" : "UntersuchungenVorPlanungOnkoTherapieIdelalisib"
+  },
+  {
+    "id" : "UntersuchungenWhileTherapieIdelalisib",
+    "type" : "PlanDefinition",
+    "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/UntersuchungenWhileTherapieIdelalisib",
+    "version" : "Langversion 2.01",
+    "name" : "UntersuchungenWhileTherapieIdelalisib"
+  },
+  {
+    "id" : "RecCollectionTherapieplanungBinetCLL",
+    "type" : "PlanDefinition",
+    "url" : "https://www.netzwerk-universitaetsmedizin.de/fhir/codex-celida/guideline/covid19-inpatient-therapy/recommendation/therapeutic-anticoagulation",
+    "version" : "Langversion 2.01",
+    "name" : "RecommendationCollection4_1"
+  }
+]

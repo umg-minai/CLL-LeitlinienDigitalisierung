@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cll-v2",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cll-v2</b></p><a name=\"cll-v2\"> </a><a name=\"hccll-v2\"> </a><a name=\"cll-v2-en-US\"> </a><p>This  code system <code>https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">dprnt<a name=\"cll-v2-dprnt\"> </a></td><td>Disease progression that requires adapted or new treatment</td></tr><tr><td style=\"white-space:nowrap\">dprnti<a name=\"cll-v2-dprnti\"> </a></td><td>Disease progression that requires adapted or new treatment with idelalisib</td></tr><tr><td style=\"white-space:nowrap\">scllt<a name=\"cll-v2-scllt\"> </a></td><td>Systemic CLL therapy</td></tr><tr><td style=\"white-space:nowrap\">porecotr<a name=\"cll-v2-porecotr\"> </a></td><td>Poor response to corticosteroid treatment</td></tr><tr><td style=\"white-space:nowrap\">sycasp<a name=\"cll-v2-sycasp\"> </a></td><td>Symptom-causing splenomegaly</td></tr><tr><td style=\"white-space:nowrap\">cllrete<a name=\"cll-v2-cllrete\"> </a></td><td>CLL Relapse therapy</td></tr><tr><td style=\"white-space:nowrap\">ingrfiftyintwomo<a name=\"cll-v2-ingrfiftyintwomo\"> </a></td><td>Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl</td></tr><tr><td style=\"white-space:nowrap\">dopeunsixmo<a name=\"cll-v2-dopeunsixmo\"> </a></td><td>Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl</td></tr><tr><td style=\"white-space:nowrap\">cllflt<a name=\"cll-v2-cllflt\"> </a></td><td>CLL-specific firstline treatment</td></tr><tr><td style=\"white-space:nowrap\">cllrlpstherapy<a name=\"cll-v2-cllrlpstherapy\"> </a></td><td>CLL-relapse under treatment</td></tr><tr><td style=\"white-space:nowrap\">cllrlpsincl<a name=\"cll-v2-cllrlpsincl\"> </a></td><td>Inclusion into specific CLL relapse treatment study</td></tr></table></div>"
+  },
+  "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2",
+  "name" : "CLL_V2",
+  "title" : "CLL_V2",
+  "status" : "draft",
+  "date" : "2025-01-16T09:02:23+00:00",
+  "description" : "Concepts required in recommendations that are not defined elsewhere",
+  "content" : "complete",
+  "count" : 11,
+  "concept" : [{
+    "code" : "dprnt",
+    "display" : "Disease progression that requires adapted or new treatment"
+  },
+  {
+    "code" : "dprnti",
+    "display" : "Disease progression that requires adapted or new treatment with idelalisib"
+  },
+  {
+    "code" : "scllt",
+    "display" : "Systemic CLL therapy"
+  },
+  {
+    "code" : "porecotr",
+    "display" : "Poor response to corticosteroid treatment"
+  },
+  {
+    "code" : "sycasp",
+    "display" : "Symptom-causing splenomegaly"
+  },
+  {
+    "code" : "cllrete",
+    "display" : "CLL Relapse therapy"
+  },
+  {
+    "code" : "ingrfiftyintwomo",
+    "display" : "Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
+  },
+  {
+    "code" : "dopeunsixmo",
+    "display" : "Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"
+  },
+  {
+    "code" : "cllflt",
+    "display" : "CLL-specific firstline treatment"
+  },
+  {
+    "code" : "cllrlpstherapy",
+    "display" : "CLL-relapse under treatment"
+  },
+  {
+    "code" : "cllrlpsincl",
+    "display" : "Inclusion into specific CLL relapse treatment study"
+  }]
+}

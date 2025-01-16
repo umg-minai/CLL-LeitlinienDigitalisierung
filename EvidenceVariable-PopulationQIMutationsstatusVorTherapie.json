@@ -1,0 +1,59 @@
+{
+  "resourceType" : "EvidenceVariable",
+  "id" : "PopulationQIMutationsstatusVorTherapie",
+  "meta" : {
+    "profile" : ["https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-eligibility-criteria"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EvidenceVariable PopulationQIMutationsstatusVorTherapie</b></p><a name=\"PopulationQIMutationsstatusVorTherapie\"> </a><a name=\"hcPopulationQIMutationsstatusVorTherapie\"> </a><a name=\"PopulationQIMutationsstatusVorTherapie-en-US\"> </a><p><b>url</b>: <a href=\"EvidenceVariable-PopulationQIMutationsstatusVorTherapie.html\">EvidenceVariable Population Genetischer Mutationsstatus vor Therapie</a></p><p><b>name</b>: PopulationQIMutationsstatusVorTherapie</p><p><b>title</b>: Population Genetischer Mutationsstatus vor Therapie</p><p><b>status</b>: Active</p><p><b>date</b>: 2025-01-16 09:02:23+0000</p><p><b>description</b>: </p><div><p>Population mit einer Chronisch Lymphatische Leukämie unter Erstlinientherapie</p>\n</div><p><b>actual</b>: false</p><blockquote><p><b>characteristic</b></p><blockquote><p><b>definitionByCombination</b></p><p><b>code</b>: All of</p><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{http://snomed.info/sct 92814006}\">Chronic lymphoid leukaemia, disease</span></td></tr></table></blockquote><blockquote><p><b>characteristic</b></p><h3>DefinitionByTypeAndValues</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://snomed.info/sct 404684003}\">Clinical finding (finding)</span></td><td><span title=\"Codes:{https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2 cllflt}\">CLL-specific firstline treatment</span></td></tr></table></blockquote></blockquote></blockquote></div>"
+  },
+  "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationQIMutationsstatusVorTherapie",
+  "name" : "PopulationQIMutationsstatusVorTherapie",
+  "title" : "Population Genetischer Mutationsstatus vor Therapie",
+  "status" : "active",
+  "date" : "2025-01-16T09:02:23+00:00",
+  "description" : "Population mit einer Chronisch Lymphatische Leukämie unter Erstlinientherapie",
+  "actual" : false,
+  "characteristic" : [{
+    "definitionByCombination" : {
+      "code" : "all-of",
+      "characteristic" : [{
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "404684003",
+              "display" : "Clinical finding (finding)"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "92814006",
+              "display" : "Chronic lymphoid leukaemia, disease"
+            }]
+          }
+        }
+      },
+      {
+        "definitionByTypeAndValue" : {
+          "type" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "404684003",
+              "display" : "Clinical finding (finding)"
+            }]
+          },
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2",
+              "code" : "cllflt",
+              "display" : "CLL-specific firstline treatment"
+            }]
+          }
+        }
+      }]
+    }
+  }]
+}

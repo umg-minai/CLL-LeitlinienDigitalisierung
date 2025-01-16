@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/ErstlinieBCL2undBTKbeiCLL> a fhir:PlanDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ErstlinieBCL2undBTKbeiCLL"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan"^^xsd:anyURI ;
+       fhir:link <https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/recommendation-plan>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PlanDefinition ErstlinieBCL2undBTKbeiCLL</b></p><a name=\"ErstlinieBCL2undBTKbeiCLL\"> </a><a name=\"hcErstlinieBCL2undBTKbeiCLL\"> </a><a name=\"ErstlinieBCL2undBTKbeiCLL-en-US\"> </a><p><b>partOf</b>: <a href=\"PlanDefinition-RecCollectionErstlinieBCL2undBTKbeiCLL.html\">Recommendation Collection CLL: Erstlinien-Behandlung mit BCL-2-Inhib. Oder BTK-Inhibitor (4.3)</a></p><blockquote><p><b>Action Combination Method</b></p><ul><li>method: <span title=\"Codes:{https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method exactly}\">Exactly</span></li><li>threshold: 1</li></ul></blockquote><p><b>knowledgeCapability</b>: computable</p><p><b>knowledgeRepresentationLevel</b>: structured</p><p><b>url</b>: <a href=\"PlanDefinition-ErstlinieBCL2undBTKbeiCLL.html\">PlanDefinition Erstlinientherapie mit BCL-2- und oder BTK-Inhibitor bei CLL</a></p><p><b>version</b>: Langversion 2.01</p><p><b>name</b>: ErstlinieBCL2undBTKbeiCLL</p><p><b>title</b>: Erstlinientherapie mit BCL-2- und oder BTK-Inhibitor bei CLL</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/plan-definition-type eca-rule}\">ECA Rule</span></p><p><b>status</b>: Active</p><p><b>experimental</b>: false</p><p><b>subject</b>: <a href=\"EvidenceVariable-PopulationCLLErstlinientherapie.html\">Population: CLL und Erstlinientherapie</a></p><p><b>date</b>: 2023-05</p><p><b>publisher</b>: https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll</p><p><b>description</b>: </p><div><p>Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer BCL-2-Inhibitor- und/oder BTK-Inhibitor-basierten Therapie behandelt werden.</p>\n</div><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-ErstlinieMitBCL2beiCLL.html\">Erstlinienterapie mit BCL2-Inhibitor bei CLL</a></p></blockquote><blockquote><p><b>action</b></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 432102000}\">Administration of substance (procedure)</span></p><p><b>definition</b>: <a href=\"ActivityDefinition-ErstlinieMitBTKbeiCLL.html\">Rezidivtherapie mit BTK-Inhibitor bei CLL</a></p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-partOf"^^xsd:anyURI ] ;
+     fhir:value [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionErstlinieBCL2undBTKbeiCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/RecCollectionErstlinieBCL2undBTKbeiCLL>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "method"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/CodeSystem/cs-action-combination-method"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "exactly" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "threshold"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:url [ fhir:v "https://www.netzwerk-universitaetsmedizin.de/fhir/cpg-on-ebm-on-fhir/StructureDefinition/ext-action-combination-method"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeCapability"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "computable" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-knowledgeRepresentationLevel"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "structured" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/PlanDefinition/ErstlinieBCL2undBTKbeiCLL"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "Langversion 2.01"] ; # 
+  fhir:name [ fhir:v "ErstlinieBCL2undBTKbeiCLL"] ; # 
+  fhir:title [ fhir:v "Erstlinientherapie mit BCL-2- und oder BTK-Inhibitor bei CLL"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/plan-definition-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "eca-rule" ]
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:subject [
+     fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLErstlinientherapie"^^xsd:anyURI ;
+     fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/EvidenceVariable/PopulationCLLErstlinientherapie>
+  ] ; # 
+  fhir:date [ fhir:v "2023-05"^^xsd:gYearMonth] ; # 
+  fhir:publisher [ fhir:v "https://www.leitlinienprogramm-onkologie.de/leitlinien/s3-leitlinie-zur-diagnostik-therapie-und-nachsorge-fuer-patienten-mit-einer-chronischen-lymphatischen-leukaemie-cll"] ; # 
+  fhir:description [ fhir:v "Patient*innen mit CLL sollen in der Erstlinienbehandlung mit einer BCL-2-Inhibitor- und/oder BTK-Inhibitor-basierten Therapie behandelt werden."] ; # 
+  fhir:action ( [
+     fhir:code [
+       fhir:coding ( [
+         a sct:432102000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "432102000" ] ;
+         fhir:display [ fhir:v "Administration of substance (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ErstlinieMitBCL2beiCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ErstlinieMitBCL2beiCLL>
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a sct:432102000 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "432102000" ] ;
+         fhir:display [ fhir:v "Administration of substance (procedure)" ]
+       ] )
+     ] ;
+     fhir:definition [
+       fhir:v "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ErstlinieMitBTKbeiCLL"^^xsd:anyURI ;
+       fhir:link <https://www.medizin.uni-greifswald.de/fhir/guideline/cll/ActivityDefinition/ErstlinieMitBTKbeiCLL>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

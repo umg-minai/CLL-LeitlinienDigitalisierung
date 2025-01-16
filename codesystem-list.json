@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2",
+      "version" : null,
+      "status" : "draft",
+      "name" : "CLL_V2",
+      "title" : "CLL_V2",
+      "description" : "Concepts required in recommendations that are not defined elsewhere"
+    }
+  ]
+}

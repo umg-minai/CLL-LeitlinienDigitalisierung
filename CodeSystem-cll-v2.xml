@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cll-v2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cll-v2</b></p><a name="cll-v2"> </a><a name="hccll-v2"> </a><a name="cll-v2-en-US"> </a><p>This  code system <code>https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">dprnt<a name="cll-v2-dprnt"> </a></td><td>Disease progression that requires adapted or new treatment</td></tr><tr><td style="white-space:nowrap">dprnti<a name="cll-v2-dprnti"> </a></td><td>Disease progression that requires adapted or new treatment with idelalisib</td></tr><tr><td style="white-space:nowrap">scllt<a name="cll-v2-scllt"> </a></td><td>Systemic CLL therapy</td></tr><tr><td style="white-space:nowrap">porecotr<a name="cll-v2-porecotr"> </a></td><td>Poor response to corticosteroid treatment</td></tr><tr><td style="white-space:nowrap">sycasp<a name="cll-v2-sycasp"> </a></td><td>Symptom-causing splenomegaly</td></tr><tr><td style="white-space:nowrap">cllrete<a name="cll-v2-cllrete"> </a></td><td>CLL Relapse therapy</td></tr><tr><td style="white-space:nowrap">ingrfiftyintwomo<a name="cll-v2-ingrfiftyintwomo"> </a></td><td>Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl</td></tr><tr><td style="white-space:nowrap">dopeunsixmo<a name="cll-v2-dopeunsixmo"> </a></td><td>Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl</td></tr><tr><td style="white-space:nowrap">cllflt<a name="cll-v2-cllflt"> </a></td><td>CLL-specific firstline treatment</td></tr><tr><td style="white-space:nowrap">cllrlpstherapy<a name="cll-v2-cllrlpstherapy"> </a></td><td>CLL-relapse under treatment</td></tr><tr><td style="white-space:nowrap">cllrlpsincl<a name="cll-v2-cllrlpsincl"> </a></td><td>Inclusion into specific CLL relapse treatment study</td></tr></table></div>
+  </text>
+  <url value="https://www.medizin.uni-greifswald.de/fhir/guideline/cll/CodeSystem/cll-v2"/>
+  <name value="CLL_V2"/>
+  <title value="CLL_V2"/>
+  <status value="draft"/>
+  <date value="2025-01-16T09:02:23+00:00"/>
+  <description value="Concepts required in recommendations that are not defined elsewhere"/>
+  <content value="complete"/>
+  <count value="11"/>
+  <concept>
+    <code value="dprnt"/>
+    <display value="Disease progression that requires adapted or new treatment"/>
+  </concept>
+  <concept>
+    <code value="dprnti"/>
+    <display value="Disease progression that requires adapted or new treatment with idelalisib"/>
+  </concept>
+  <concept>
+    <code value="scllt"/>
+    <display value="Systemic CLL therapy"/>
+  </concept>
+  <concept>
+    <code value="porecotr"/>
+    <display value="Poor response to corticosteroid treatment"/>
+  </concept>
+  <concept>
+    <code value="sycasp"/>
+    <display value="Symptom-causing splenomegaly"/>
+  </concept>
+  <concept>
+    <code value="cllrete"/>
+    <display value="CLL Relapse therapy"/>
+  </concept>
+  <concept>
+    <code value="ingrfiftyintwomo"/>
+    <display value="Zunahme mehr als 50 Prozent innerhalb von 2 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"/>
+  </concept>
+  <concept>
+    <code value="dopeunsixmo"/>
+    <display value="Lymphozytenverdopplungszeit unter 6 Monaten, gemessen ab einer absoluten Lymphozytenzahl von mindestens 30.000/µl"/>
+  </concept>
+  <concept>
+    <code value="cllflt"/>
+    <display value="CLL-specific firstline treatment"/>
+  </concept>
+  <concept>
+    <code value="cllrlpstherapy"/>
+    <display value="CLL-relapse under treatment"/>
+  </concept>
+  <concept>
+    <code value="cllrlpsincl"/>
+    <display value="Inclusion into specific CLL relapse treatment study"/>
+  </concept>
+</CodeSystem>
