@@ -15,6 +15,7 @@ Description: "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- bas
 * date = "2024-05-06"
 * status = #active
 * description = "Als Rezidivtherapie sollen die zeitlich begrenzte, Venetoclax- basierte Behandlung oder die Dauertherapien mit einem BTK-Inhibitor (Acalabrutinib, Zanubrutinib, Ibrutinib) einer Chemoimmuntherapie vorgezogen werden."
+* insert rs-combination-all
 * action[+]
   * title = "RezidivBehandlungBCL2undBTKbeiCLL"
   * code = $cs-common-process#guideline-based-care // ist das richtig??

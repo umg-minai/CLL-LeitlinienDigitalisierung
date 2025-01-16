@@ -34,7 +34,7 @@ Description: "TP53-Deletions- und Mutationsstatus (FISH hinsichtlich del17p und 
 * insert publisher-experimental-version
 * status = #active
 * code = $loinc#103680-5 "TP53 gene full mutation analysis in Blood or Tissue by Molecular genetics method"
-* insert rs-timingCLL(12)
+* insert rs-timingCLL(12) //TODO: relative timing darf hier laut FHIR Validator nicht genutzt werden.
 
 Instance: IGHVmutationCLL
 InstanceOf: assessment-action   
@@ -46,5 +46,7 @@ Description: "Bekannter IGHV-Mutationsstatus vor Therapiebeginn"
 * insert publisher-experimental-version
 * status = #active
 * code = $loinc#78221-9 "IGH gene rearrangements [Presence] in Blood or Tissue by FISH"
-* insert rs-timingCLL(12) // TODO: ich möchte hier nut zeitlich darstellen: Der Mutationsstatus wurde bestimmt oder ist vorhanden oder ist bereits bekannt
+* insert rs-timingCLL(12) 
 
+// TODO: ich möchte hier zeitlich darstellen: Der Mutationsstatus wurde bestimmt oder ist bereits bekannt (kann ich dann die Zeit einfach weglassen?)
+// Greogor relative time "vor" nutzen

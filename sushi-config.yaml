@@ -1,7 +1,7 @@
-id: cll-guideline.medizin.uni-greifswald.de
-canonical: https://www.medizin.uni-greifswald.de/intensiv/fhir/guidelines/cll
-name: CPG-on-EBMonFHIR template
-title: CPG-on-EBMonFHIR template
+id: de.uni-greifswald.medizin.cll-guideline
+canonical: https://www.medizin.uni-greifswald.de/fhir/guideline/cll
+name: CLL_Guidelines_QI
+title: Chronisch Lymphatische Leukämie Guidline and Quality indicator 
 status: draft
 version: 0.1.0
 fhirVersion: 5.0.0
@@ -20,7 +20,6 @@ dependencies:
 
 pages:
   index.md:
-    title: CLL Guideline
   downloads.xml:
   changelog.md:
     title: Change Log
@@ -46,4 +45,5 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   excludeexample: 'true'
   extension-domain: # An external domain for which extensions are allowed to come (else they'll be flagged as invalid when validating).
   - https://www.netzwerk-universitaetsmedizin.de
+  - https://www.medizin.uni-greifswald.de
   - https://simplifier.net
